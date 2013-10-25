@@ -1,0 +1,2 @@
+pygments: false
+exclude: [/css, /img, /js, README.md]
