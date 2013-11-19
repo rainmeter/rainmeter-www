@@ -627,7 +627,7 @@ ul li ul li {
 
 /* NEW - JSMorley */
 
-img {
+/*img {
 	display:block;
 	max-width:100%;
 	vertical-align:middle;
@@ -640,7 +640,7 @@ img {
 	margin:25px 0;
 	margin-left:auto;
 	margin-right:auto;
-}
+}*/
 
 .exampleprev {
 	display:inline-block;
