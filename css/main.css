@@ -627,21 +627,6 @@ ul li ul li {
 
 /* NEW - JSMorley */
 
-/*img {
-	display:block;
-	max-width:100%;
-	vertical-align:middle;
-	border:0;
-	-ms-interpolation-mode:bicubic;
-	line-height:1;
-	border:1px solid #ddd;
-	box-shadow:0 1px 1px rgba(0, 0, 0, 0.075);
-	max-width:100%;
-	margin:25px 0;
-	margin-left:auto;
-	margin-right:auto;
-}*/
-
 .exampleprev {
 	display:inline-block;
 	margin-bottom:10px;
