@@ -521,148 +521,15 @@ ul li ul li {
 	margin:0;
 }
 
-#suiteleftcol {
-	margin-top:0px;
-	margin-right:25px;
+.discover-img {
 	float:left;
-	width:440px;
-}
-
-#suiterightcol {
-	margin-top:12px;
-	width:440px;
-	padding-top:10px;
-	padding-left:10px;
-	margin-bottom:15px;
-	color:#222222;
-	background-color:#F3F5FD;
-	border:3px solid #AFAFAF;
-}
-
-#suiterightcolnobox {
-	margin-top:12px;
-	width:440px;
-	padding-top:10px;
-	padding-left:10px;
-	margin-bottom:15px;
-}
-
-#suitenameheader {
-	height:28px;
-	clear:both;
-	margin-top:10px;
-	padding:5px;
-	background-color:#333;
-	font-size:1.25em;
-	font-weight:bold;
-	color:#fff;
-	border:2px solid #808080;
-}	
-
-.suitedownloadbox {
-	height:150px;
-	clear:both;
-	margin-top:10px;
-	padding:5px;
-	background-color:#333;
-	color:#fff;
-	border:2px solid #808080;
-}	
-
-.suitedownloadicon {
-	width:70;
-	height:70;
-	float:left;
-	margin-left:5px;
-	margin-right:10xp;
-}
-
-.suitedownloadtext {
-	height:70;
-	width:382;
-	float:left;
-	margin-top:5px;
-	font-size:1.4em;
-	font-weight:bold;
-}	
-
-.suiteleftdetails {
-	float:left;
-	clear:left;
-	margin-left:10px;
-	margin-right:10px;
-	font-size:15px;
-}
-
-.suiterightdetails {
-	float:left;
-	font-size:15px;
-}
-
-.discoveryimagebox {
-	width:270px;
-	margin-top:10px;
-	margin-right:10px;
-	float:left;
-	background-color:#111;
-	color:#fff;
-	border:5px solid #AFAFAF;
-}
-
-.discoveryimageboxname {
-	width:276px;
-	margin-top:10px;
-	margin-right:10px;
-	float:left;
-	background-color:#F3F5FD;
-	color:#fff;
-	border:2px solid #AFAFAF;
-}
-
-.footnote  {
-	border-top:1px solid #ced1da;
-	margin-top:50px;
-	font-size:10pt;
-}
-
-/* NEW - JSMorley */
-
-.exampleprev {
-	display:inline-block;
-	margin-bottom:10px;
-	padding:8px;
-	background-color:#f7f7f9;
-	border:1px solid #ddd;
-	font-size:0.8em;
-	font-weight:bold;
-	line-height:14px;
-}
-
-.exampleprev.floatleft {
 	margin-right:20px;
-	float:left;
-	clear:left;
+	margin-bottom:20px;
+	width:64px;
+	height:64px;
 }
 
-.exampleprev.floatright {
-	margin-left:20px;
-	float:right;
-	clear:right;
-}
-
-.exampleprev * {
-	margin:0;
-	padding:0;
-}
-
-.exampleprev p {
-	text-align:left;
-}
-
-.exampleprev img {
-	max-width:650px;
-}
-
-.exampleprev .thumbnail {
-	max-width:400px;
+.discover-title {
+	display: block;
+	font-size: 140%;
 }
