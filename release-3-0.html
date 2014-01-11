@@ -9,13 +9,13 @@
 <body class="no-sidebars">
 <div id="wrapper">
 <div id="header" class="clearfix">
-	<a href="index.html"><div id="logo"></div></a>
+	<a href="index"><div id="logo"></div></a>
 	<div id="nav">
-		<ul class="menu"><li class="first leaf"><a href="index.html">Home</a></li>
-		<li class="leaf"><a href="about.html">About</a></li>
+		<ul class="menu"><li class="first leaf"><a href="index">Home</a></li>
+		<li class="leaf"><a href="about">About</a></li>
 		<li class="leaf"><a href="http://docs.rainmeter.net/">Docs</a></li>
-		<li class="leaf"><a href="discover.html">Discover</a></li>
-		<li class="last leaf"><a href="http://rainmeter.net/forum">Forum</a></li>
+		<li class="leaf"><a href="discover">Discover</a></li>
+		<li class="last leaf"><a href="/forum">Forum</a></li>
 		</ul>
 	</div>
 </div>
@@ -92,7 +92,7 @@ custom fonts, may need some tweaking for position with Direct2D.</p>
 <li>The <a href="http://docs.rainmeter.net/manual/plugins/webparser#Dynamic">WebParser</a> plugin now supports <a href="http://docs.rainmeter.net/manual/variables#DynamicVariables">Dynamic Variables</a>.
  This is a long-awaited and very welcome change to the way WebParser 
 works, and should provide a lot of flexibility in creating skins that 
-access the web. See <a href="http://rainmeter.net/forum/viewtopic.php?p=90521#p90521">Change Announcements</a> for additional information about this change.</li>
+access the web. See <a href="/forum/viewtopic.php?p=90521#p90521">Change Announcements</a> for additional information about this change.</li>
 
 <li>We have added support for Unicode characters in Lua scripting. This 
 means that you can use languages and alphabets in Lua other than those 
@@ -121,7 +121,7 @@ all meters. When set to 1, the more accurate method will be used, giving
 <li>Added a new <a href="http://docs.rainmeter.net/manual/measures/calc#UniqueRandom">UniqueRandom</a> option. If set to 1, any Calc measure using the <a href="http://docs.rainmeter.net/manual/measures/calc#Constants">Random</a>
  constant and UpdateRandom will not repeat until all values between and 
 including LowBound and HighBound have been used. Note that any dynamic 
-change to LowBound or HighBound will reset the tracking of values. See <a href="http://rainmeter.net/forum/viewtopic.php?p=91109#p91109">Change Announcements</a> for an example skin.</li>
+change to LowBound or HighBound will reset the tracking of values. See <a href="/forum/viewtopic.php?p=91109#p91109">Change Announcements</a> for an example skin.</li>
 
 <li>Added <a href="http://docs.rainmeter.net/manual/bangs#PauseMeasure">!PauseMeasure</a>, <a href="http://docs.rainmeter.net/manual/bangs#PauseMeasure">!UnpauseMeasure</a>, and <a href="http://docs.rainmeter.net/manual/bangs#PauseMeasure">!TogglePauseMeasure</a>
  bangs. This is similar to a disabled measure, however the measure 
@@ -153,7 +153,7 @@ meters that support images. <i>Note that Histogram uses
 PrimaryImagePath, SecondaryImagePath and BothImagePath due to the fact 
 that the Histogram meter has an optional secondary measure binding.</i></li>
 
-<li>Added a <a href="http://docs.rainmeter.net/manual/meters/general-options/image-options#UseExifOrientation">UseExifOrientation</a> option for meters using images, to automatically correct the orientation of the image based on the <a href="http://www.impulseadventure.com/photo/exif-orientation.html">EXIF</a> data encoded by a camera.</li>
+<li>Added a <a href="http://docs.rainmeter.net/manual/meters/general-options/image-options#UseExifOrientation">UseExifOrientation</a> option for meters using images, to automatically correct the orientation of the image based on the <a href="http://www.impulseadventure.com/photo/exif-orientation">EXIF</a> data encoded by a camera.</li>
 
 <li>Added new "Config" and "File" parameters to the <a href="http://docs.rainmeter.net/manual/bangs#Manage">!Manage</a>
  bang. This will allow opening the Manage / Skins panel with the desired
@@ -179,7 +179,7 @@ the log displayed in the panel.</li>
 <h3>Version history and details</h3>
 
 <ul>
-<li>Detailed explanations of major changes at <a href="http://rainmeter.net/forum/viewforum.php?f=106">Change Announcements</a>.</li>
+<li>Detailed explanations of major changes at <a href="/forum/viewforum.php?f=106">Change Announcements</a>.</li>
 <li>Additional details on bug fixes and other minor changes at <a href="http://docs.rainmeter.net/history">Version History</a>.</li>
 <li>Full history of all changes to the Rainmeter code at <a href="https://github.com/rainmeter/rainmeter/commits/master">Rainmeter GitHub</a>.</li>
 </ul>
@@ -194,7 +194,7 @@ the log displayed in the panel.</li>
 	<div id="footer-inside" class="clearfix">Hosting provided by <a href="http://osirisdevelopment.com/">Osiris Development</a>.<br><a href="http://osirisdevelopment.com/BatteryBar">BatteryBar</a> - The most accurate laptop battery meter available.</div>
 </div>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
