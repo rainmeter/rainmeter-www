@@ -406,33 +406,6 @@ ul.inline li {
   padding:0 0.5em;
 }
 
-/* FOOTER */
-#footer {
-	position:relative;
-	width:100%;
-	bottom:0;
-	clear:both;
-	display:block;
-	padding:20px 0;
-}
-
-#footer-inside {
-	width:950px;
-	margin:0 auto;
-	text-align:left;
-	min-height:50px;
-	color:#a0a0a0;
-	font-size:11px;
-}
-
-#footer-inside h4 {
-	color:#444444;
-	height:24px;
-	background:url(../img/sprite.png) no-repeat 0 -200px;
-	padding:4px 0 0 34px;
-}
-
-
 /* SEARCH */
 #search {
 	display:inline-block;
