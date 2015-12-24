@@ -10,9 +10,9 @@ title: 'Rainmeter 3.2 Beta'
 	<div id="nav">
 		<ul class="menu"><li class="first leaf"><a href="/">Home</a></li>
 		<li class="leaf"><a href="/about">About</a></li>
-		<li class="leaf"><a href="http://docs.rainmeter.net/">Docs</a></li>
+		<li class="leaf"><a href="//docs.rainmeter.net/">Docs</a></li>
 		<li class="leaf"><a href="/discover">Discover</a></li>
-		<li class="last leaf"><a href="http://forum.rainmeter.net">Forum</a></li>
+		<li class="last leaf"><a href="//forum.rainmeter.net">Forum</a></li>
 		</ul>
 	</div>
 </div>
@@ -31,8 +31,8 @@ done will be lost or changed. There is never any need to uninstall any earlier v
 <p>March 15, 2015 - Revision 2383</p>
 <p><b>Release Candidate 1</b></p>
 <ul>
-<li><b>Added</b> WebParser: Added new <a href="http://docs.rainmeter.net/manual-beta/plugins/webparser/#OnDownloadErrorAction">OnDownloadErrorAction</a> to WebParser measures to allow taking an action when a remote file defined by <code>Download=1</code> fails to download or can't be saved locally.</li>
-<li><b>Changed</b> Rainmeter: Added the value <code>~100</code> to both Manage and the skin context menus to support setting the transparency of a skin to an opacity of <code>1</code>, which is invisible but will still react to the mouse. This can be used in conjunction with the <a href="http://docs.rainmeter.net/manual-beta/user-interface/manage/#SkinSettings">fade in / fade out / on hover</a> capabilities.</li>
+<li><b>Added</b> WebParser: Added new <a href="//docs.rainmeter.net/manual-beta/plugins/webparser/#OnDownloadErrorAction">OnDownloadErrorAction</a> to WebParser measures to allow taking an action when a remote file defined by <code>Download=1</code> fails to download or can't be saved locally.</li>
+<li><b>Changed</b> Rainmeter: Added the value <code>~100</code> to both Manage and the skin context menus to support setting the transparency of a skin to an opacity of <code>1</code>, which is invisible but will still react to the mouse. This can be used in conjunction with the <a href="//docs.rainmeter.net/manual-beta/user-interface/manage/#SkinSettings">fade in / fade out / on hover</a> capabilities.</li>
 </ul>
 
 <p>March 9, 2015 - Revision 2380</p>
@@ -47,10 +47,10 @@ done will be lost or changed. There is never any need to uninstall any earlier v
 
 <p>March 2, 2015 - Revision 2378</p>
 <ul>
-<li><b>Added</b> WebParser: Added new <a href="http://docs.rainmeter.net/manual-beta/plugins/webparser/#OnConnectErrorAction">OnConnectErrorAction</a> to WebParser parent measures to allow taking an action when a site or file resource cannot be connected to.</li>
-<li><b>Added</b> WebParser: Added new <a href="http://docs.rainmeter.net/manual-beta/plugins/webparser/#OnRegExpErrorAction">OnRegExpErrorAction</a> to WebParser parent measures to allow taking an action when parsing a site or file resource with <code>RegExp</code> (regular expression) fails.</li>
-<li><b>Changed</b> WebParser: Changed <a href="http://docs.rainmeter.net/manual-beta/plugins/webparser/#FinishAction">FinishAction</a> to not be executed when parsing a site or file resource with <code>RegExp</code> (regular expression) fails AND an <code>OnRegExpErrorAction</code> is defined on the measure.</li>
-<li><b>Added</b> WebParser: Added a new <a href="http://docs.rainmeter.net/manual-beta/plugins/webparser/#CommandMeasureReset">Reset</a> command, used with the <a href="http://docs.rainmeter.net/manual-beta/bangs/#CommandMeasure">!CommandMeasure</a> bang, to reset all values in the WebParser parent and related child measures to their initial empty values.</li>
+<li><b>Added</b> WebParser: Added new <a href="//docs.rainmeter.net/manual-beta/plugins/webparser/#OnConnectErrorAction">OnConnectErrorAction</a> to WebParser parent measures to allow taking an action when a site or file resource cannot be connected to.</li>
+<li><b>Added</b> WebParser: Added new <a href="//docs.rainmeter.net/manual-beta/plugins/webparser/#OnRegExpErrorAction">OnRegExpErrorAction</a> to WebParser parent measures to allow taking an action when parsing a site or file resource with <code>RegExp</code> (regular expression) fails.</li>
+<li><b>Changed</b> WebParser: Changed <a href="//docs.rainmeter.net/manual-beta/plugins/webparser/#FinishAction">FinishAction</a> to not be executed when parsing a site or file resource with <code>RegExp</code> (regular expression) fails AND an <code>OnRegExpErrorAction</code> is defined on the measure.</li>
+<li><b>Added</b> WebParser: Added a new <a href="//docs.rainmeter.net/manual-beta/plugins/webparser/#CommandMeasureReset">Reset</a> command, used with the <a href="//docs.rainmeter.net/manual-beta/bangs/#CommandMeasure">!CommandMeasure</a> bang, to reset all values in the WebParser parent and related child measures to their initial empty values.</li>
 <li><b>Fixed</b> Math: Corrected a problem when a comma-separated, multi-argument math function was used in a formula in a comma-separated, multi-argument option. For instance using <code>Clamp(x,low,high)</code> in the arguments for <code>FontColor=rrr,ggg,bbb,aaa</code>.</li>
 <li><b>Fixed</b> Skin Installer: Changed the Skin Packager to only allow inclusion of a valid 400x60 .bmp file as a custom header in a .rmskin. Improperly sized custom images were causing visual problems in the Skin Installer user interface.</li>
 </ul>
@@ -63,25 +63,25 @@ done will be lost or changed. There is never any need to uninstall any earlier v
 
 <p>February 18, 2015 - Revision 2371</p>
 <ul>
-<li><b>Changed</b> Time: Changed the <a href="http://docs.rainmeter.net/manual-beta/measures/time#TimeStamp">TimeStamp</a> option to allow a formatted date / time string as input.</li> 
-<li><b>Added</b> Time: Added new <a href="http://docs.rainmeter.net/manual-beta/measures/time#TimeStampFormat">TimeStampFormat</a> and <a href="http://docs.rainmeter.net/manual-beta/measures/time#TimeStampLocale">TimeStampLocale</a> options to support the changes to TimeStamp above.</li>
-<li><b>Added</b> Time: Added new <a href="http://docs.rainmeter.net/manual-beta/measures/time#FormatLocale">FormatLocale</a> option to support formatting a Time measure in any defined language / locale.</li>
-<li><b>Added</b> UpTime: Added a new <a href="http://docs.rainmeter.net/manual-beta/measures/uptime#SecondsValue">SecondsValue</a> option to allow formatting any defined number of seconds into "days, hours, minutes, seconds" as desired. This will override the default behavior of the UpTime measure.</li>
-<li><b>Added</b> Section Variables: Added a new <a href="http://docs.rainmeter.net/manual-beta/variables/section-variables#Timestamp">:Timestamp</a> section variable measure modifier. This will return the Windows timestamp value of the named Time measure, and overcomes a limitation with getting and using this number when a Time measure has a Format option.<br/><br/>
-All of the above additions and changes are related to new functionality for getting and using date / time information in skins, as well as support for Language / Locale values in Time measures. Details and examples can be found at <a href="http://forum.rainmeter.net/viewtopic.php?f=114&t=20398">Change Announcements</a>.</li>
+<li><b>Changed</b> Time: Changed the <a href="//docs.rainmeter.net/manual-beta/measures/time#TimeStamp">TimeStamp</a> option to allow a formatted date / time string as input.</li> 
+<li><b>Added</b> Time: Added new <a href="//docs.rainmeter.net/manual-beta/measures/time#TimeStampFormat">TimeStampFormat</a> and <a href="//docs.rainmeter.net/manual-beta/measures/time#TimeStampLocale">TimeStampLocale</a> options to support the changes to TimeStamp above.</li>
+<li><b>Added</b> Time: Added new <a href="//docs.rainmeter.net/manual-beta/measures/time#FormatLocale">FormatLocale</a> option to support formatting a Time measure in any defined language / locale.</li>
+<li><b>Added</b> UpTime: Added a new <a href="//docs.rainmeter.net/manual-beta/measures/uptime#SecondsValue">SecondsValue</a> option to allow formatting any defined number of seconds into "days, hours, minutes, seconds" as desired. This will override the default behavior of the UpTime measure.</li>
+<li><b>Added</b> Section Variables: Added a new <a href="//docs.rainmeter.net/manual-beta/variables/section-variables#Timestamp">:Timestamp</a> section variable measure modifier. This will return the Windows timestamp value of the named Time measure, and overcomes a limitation with getting and using this number when a Time measure has a Format option.<br/><br/>
+All of the above additions and changes are related to new functionality for getting and using date / time information in skins, as well as support for Language / Locale values in Time measures. Details and examples can be found at <a href="//forum.rainmeter.net/viewtopic.php?f=114&t=20398">Change Announcements</a>.</li>
 </ul>
 
 <p>February 8, 2015 - Revision 2360</p>
 <ul>
-<li><b>Added</b> Time: Added several <a href="http://docs.rainmeter.net/manual-beta/measures/time#TimeStamp">TimeStamp</a> options to obtain Daylight Savings Time information for the local computer.</li>
-<li><b>Added</b> SysInfo plugin: Added several <a href="http://docs.rainmeter.net/manual-beta/plugins/sysinfo#TimeZoneValues">SysInfoType</a> option values to obtain Time Zone and Daylight Savings Time information for the local computer.<br/><br/>
-More details at <a href="http://forum.rainmeter.net/viewtopic.php?p=108447#p108447">Change Announcements</a>.</li>
+<li><b>Added</b> Time: Added several <a href="//docs.rainmeter.net/manual-beta/measures/time#TimeStamp">TimeStamp</a> options to obtain Daylight Savings Time information for the local computer.</li>
+<li><b>Added</b> SysInfo plugin: Added several <a href="//docs.rainmeter.net/manual-beta/plugins/sysinfo#TimeZoneValues">SysInfoType</a> option values to obtain Time Zone and Daylight Savings Time information for the local computer.<br/><br/>
+More details at <a href="//forum.rainmeter.net/viewtopic.php?p=108447#p108447">Change Announcements</a>.</li>
 </ul>
 
 <p>February 1, 2015 - Revision 2357</p>
 <ul>
 <li><b>Added</b> Formulas: Added <a href="http://en.wikipedia.org/wiki/Atan2">Atan2</a> - <code>Atan2(<em>y</em>, <em>x</em>)</code> math function. Returns the radians of arc tangent between points <em>Y</em> and <em>X</em> in the Cartesian plane. The sign of the elements determines the quadrant.<br><br><em>Code for addition submitted by user dcgrace</em></li>
-<li><b>Added</b> FileView: Added a new <em>PathToFile</em> value for the <a href="http://docs.rainmeter.net/manual-beta/plugins/fileview#Type">Type</a> child measure option. This will return just the path the file, including a trailing "\".</li>
+<li><b>Added</b> FileView: Added a new <em>PathToFile</em> value for the <a href="//docs.rainmeter.net/manual-beta/plugins/fileview#Type">Type</a> child measure option. This will return just the path the file, including a trailing "\".</li>
 </ul>
 
 <p>January 27, 2015 - Revision 2355</p>
@@ -91,7 +91,7 @@ More details at <a href="http://forum.rainmeter.net/viewtopic.php?p=108447#p1084
 
 <p>January 25, 2015 - Revision 2353</p>
 <ul>
-<li><b>Added</b> Context Menu: Added <a href="http://docs.rainmeter.net/manual-beta/user-interface/context-menus#RainmeterContextMenus">Favorites</a> functionality to the Rainmeter and Skins context menus. Also added support for making a skin a "Favorite" in the <a href="http://docs.rainmeter.net/manual-beta/user-interface/manage#SkinsTab">Manage</a> dialog. More details at <a href="http://forum.rainmeter.net/viewtopic.php?p=107563#p107563">Change Announcements</a>.</li>
+<li><b>Added</b> Context Menu: Added <a href="//docs.rainmeter.net/manual-beta/user-interface/context-menus#RainmeterContextMenus">Favorites</a> functionality to the Rainmeter and Skins context menus. Also added support for making a skin a "Favorite" in the <a href="//docs.rainmeter.net/manual-beta/user-interface/manage#SkinsTab">Manage</a> dialog. More details at <a href="//forum.rainmeter.net/viewtopic.php?p=107563#p107563">Change Announcements</a>.</li>
 <li><b>Added</b> WifiStatus: Added support for the 802.11ac protocol.</li>
 <li><b>Changed</b> Context Menu: Moved "Open folder" and "Disable dragging" options to the top of the Skins context menu for easier access.</li>
 <li><b>Fixed</b> Regular Expressions: Fixed a recursion bug in the PCRE regular expression library that could cause a crash of Rainmeter in rare cases.</li>
@@ -105,7 +105,7 @@ More details at <a href="http://forum.rainmeter.net/viewtopic.php?p=108447#p1084
 
 <p>September 16, 2014 - Revision 2325</p>
 <ul>
-<li><b>Added</b> Skins: Added a new <a href="http://docs.rainmeter.net/manual-beta/skins/rainmeter-section/#DefaultUpdateDivider">DefaultUpdateDivider</a> option to the [Rainmeter] section of skins.</li>
+<li><b>Added</b> Skins: Added a new <a href="//docs.rainmeter.net/manual-beta/skins/rainmeter-section/#DefaultUpdateDivider">DefaultUpdateDivider</a> option to the [Rainmeter] section of skins.</li>
 </ul>
 
 <p>September 9, 2014 - Revision 2318</p>
@@ -115,7 +115,7 @@ More details at <a href="http://forum.rainmeter.net/viewtopic.php?p=108447#p1084
 
 <p>September 9, 2014 - Revision 2317</p>
 <ul>
-<li><b>Added</b> Plugins: Added new AudioLevel plugin by author dgrace to the Rainmeter build. This will allow for real-time VU-Meter and Spectrum Analyzer visualizations of sound output. See <a href="http://docs.rainmeter.net/manual-beta/plugins/audiolevel">AudioLevel plugin</a> for full documentation and example skins.</a></li>
+<li><b>Added</b> Plugins: Added new AudioLevel plugin by author dgrace to the Rainmeter build. This will allow for real-time VU-Meter and Spectrum Analyzer visualizations of sound output. See <a href="//docs.rainmeter.net/manual-beta/plugins/audiolevel">AudioLevel plugin</a> for full documentation and example skins.</a></li>
 <li><b>Fixed</b> AudioLevel plugin: Fixed an issue with the <code>Format</code> child measure option that was not returning a Unicode string value.</li>
 </ul>
 
@@ -136,7 +136,7 @@ More details at <a href="http://forum.rainmeter.net/viewtopic.php?p=108447#p1084
 
 <p>August 21, 2014 - Revision 2308</p>
 <ul>
-<li><b>Added</b> Image: New Mask Image functionality added. See <a href="http://docs.rainmeter.net/manual-beta/meters/image#MaskImage">Image - Mask Image</a> for documentation, and <a href="http://forum.rainmeter.net/viewtopic.php?p=103408#p103408">Change Announcements</a> for more details.</li>
+<li><b>Added</b> Image: New Mask Image functionality added. See <a href="//docs.rainmeter.net/manual-beta/meters/image#MaskImage">Image - Mask Image</a> for documentation, and <a href="//forum.rainmeter.net/viewtopic.php?p=103408#p103408">Change Announcements</a> for more details.</li>
 <li><b>Changed</b> Rainmeter: Updated Metadata and removed AppVersion from default illustro skins.</li>
 <li><b>Changed</b> About: Prevent invalid plugins from showing up on Plugins tab in Manage.</li>
 </ul>
