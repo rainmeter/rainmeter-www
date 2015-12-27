@@ -37,6 +37,10 @@ title: 'Rainmeter 3.3 Beta'
 <li><b>Changed</b> Rainmeter Project: Upgraded the project to use the latest Visual Studio 2015 for development.</li>
 </ul>
 
+<p><b>Note:</b> We have both upgraded our development environment to Visual Studio 2015, and are no longer "dynamically linking" to any C++ runtime libraries. You no longer need to have any version of the runtime libraries installed for Rainmeter, and the build no longer includes or installs any libraries.</p>
+
+<p>If you are using the <a href="https://forum.rainmeter.net/viewtopic.php?f=18&t=13670">HWiNFO plugin for Rainmeter</a>, you might have an issue with a missing C++ runtime library for VS2013. If you have problems with HWiNFO and Rainmeter after installing 3.3, you can correct this by getting the runtime libraries for your bit version (32bit or 64bit) of Rainmeter from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">https://www.microsoft.com/en-us/download/details.aspx?id=40784</a> and installing.</p>
+
 <p>October 4, 2015 - Revision 2468</p>
 <ul>
 <li><b>Changed</b> Context options: Changed the maximum number of ContextTitle<em>N</em> / ContextAction<em>N</em> pairs from 15 to 25.</li>
