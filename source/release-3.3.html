@@ -1,0 +1,113 @@
+---
+layout: page
+permalink: release-3-3
+title: 'Rainmeter 3.3 Release'
+---
+<body class="no-sidebars">
+<div id="wrapper">
+<div id="header" class="clearfix">
+	<a href="/"><div id="logo"></div></a>
+	<div id="nav">
+		<ul class="menu"><li class="first leaf"><a href="/">Home</a></li>
+		<li class="leaf"><a href="/about">About</a></li>
+		<li class="leaf"><a href="//docs.rainmeter.net/">Docs</a></li>
+		<li class="leaf"><a href="/discover">Discover</a></li>
+		<li class="last leaf"><a href="//forum.rainmeter.net">Forum</a></li>
+		</ul>
+	</div>
+</div>
+<div id="main-area-inside" class="clearfix">
+<div id="main" class="inside clearfix">
+	<div id="block-system-main" class="clear-block block block-system">
+		<div class="content"><div class="node">
+<h2>Rainmeter 3.3 Release</h2>
+<div class="content clearfix">
+
+<p>There are a lot of new features and capabilities in the latest 
+Rainmeter 3.3.  You can safely install the new 3.3 release version right
+ over your existing Rainmeter 3.2 or earlier installation, and nothing you have 
+done will be lost or changed. There is never any need to uninstall any 
+earlier version of Rainmeter to use the newest version.</p>
+
+<h3>Major additions and changes in Rainmeter 3.3</h3>
+
+<br/>
+<h4><b>Inline options</b></h4>
+
+<p>Added new <a href="https://docs.rainmeter.net/manual/meters/string/inline">Inline Options</a> features to the String meter. This will allow "inline" formatting of part or all of a string, and adds several new formatting options including a color gradient. Example skins demonstrating the features can be found at <a href="https://forum.rainmeter.net/viewtopic.php?p=114118">Change Announcements</a>.</p>
+
+<br/>
+<h4><b>Loop measure</b></h4>
+
+<p>Added new <a href="https://docs.rainmeter.net/manual/measures/loop">Loop measure</a>. This will create a looping counter between two numbers. The loop will start at <code>StartValue</code>, end at <code>EndValue</code>, increment by <code>Increment</code>, and will loop <code>LoopCount</code> (or endless) times. Details and examples can be found at <a href="https://forum.rainmeter.net/viewtopic.php?p=110828">Change Announcements</a>.</p>
+
+<br/>
+<h4><b>"Best" network values</b></h4>
+
+<p><b>Net measures</b>: Changed the values accepted for the <a href="https://docs.rainmeter.net/manual/measures/net#Interface">Interface</a> option to accept new values of "Best", which will automatically use the active network interface, or a string value of the name of the desired Network Interface Controller (NIC).</p>
+<p><b>SysInfo plugin</b>: Changed the values accepted for the <a href="https://docs.rainmeter.net/manual/plugins/sysinfo#SysInfoData">SysInfoData</a> option with network related <a href="https://docs.rainmeter.net/manual/plugins/sysinfo#Network">SysInfoType</a> options to accept new values of "Best", which will automatically use the active network interface, or a string value of the name of the desired Network Interface Controller (NIC).</p>
+
+<br/>
+<h4><b>ActionTimer plugin</b></h4>
+<p>Added the ActionTimer plugin to the Rainmeter build. This plugin can be used to support animations and meter transitions. Details and examples can be found at <a href="https://docs.rainmeter.net/manual/plugins/actiontimer/">ActionTimer Plugin</a> and <a href="https://forum.rainmeter.net/viewtopic.php?p=112669#p112669">ActionTimer forum post</a>.</p>
+
+<br/>
+<h4><b>RunCommand plugin</b></h4>
+<p>Added the RunCommand plugin to the Rainmeter build. This plugin can be used to execute and obtain values from external commands and programs. Details and examples can be found at <a href="https://docs.rainmeter.net/manual/plugins/runcommand/">RunCommand Plugin</a> and <a href="https://forum.rainmeter.net/viewtopic.php?p=92974#p92974">RunCommand forum post</a>.</p>
+
+<br/>
+<h4><b>SkinWidth / SkinHeight</b></h4>
+
+<p>Added new <a href="https://docs.rainmeter.net/manual/skins/rainmeter-section#SkinWidthHeight">SkinWidth</a> and <a href="https://docs.rainmeter.net/manual/skins/rainmeter-section#SkinWidthHeight">SkinHeight</a> options to the [Rainmeter] section of a skin. This will constrain the skin to the dimensions defined, either the width, the height, or both. Any meter or part of a meter positioned outside the defined boundaries will be truncated. DynamicWindowSize will be ignored for the defined dimension(s), and meters that would normally display even "outside" the skin will be truncated by the "fixed" skin dimensions.</p>
+<p>This can be very useful for having some meter(s) initially defined outside the left/top/right/bottom boundaries of the skin, and then pop or slide into view on mouse or measure actions. An example skin demonstrating how this might be used is at <a href="https://forum.rainmeter.net/viewtopic.php?p=114479">Change Announcements</a>.</p>
+
+<br/>
+<h4><b>Skin installer plugin version</b></h4>
+
+<p>The Skin Installer application, used to install .rmskin files in Rainmeter, has been modified so it will by default not replace a newer version of an included 3rd-party plugin with an older version. This is based on the "File version" information in the compiled .dll file(s), and is to protect users from having an old plugin in a .rmskin replace a newer version.<br/><br/>
+It is very important that all 3rd-party plugin authors keep up-to-date with version information in their plugin releases. Going forward, if an author releases a new version of their plugin, but doesn't change the version number information in the .dll, it will not be installed by Rainmeter if the end-user already has the older version of the plugin.</p>
+
+<br/>
+<h4><b>Important Note about HWiNFO</b></h4>
+
+<p>If you are using the <a href="https://forum.rainmeter.net/viewtopic.php?f=18&t=13670">HWiNFO plugin for Rainmeter</a>, you must upgrade to the latest 3.0 version of the plugin and SharedMemoryViewer.exe found in that post. If you have distributed skins using the plugin, you should update them for your users. Skins using older versions of the HWiNFO plugin may fail when users upgrade to Rainmeter 3.3.</p>
+
+<h3>Other enhancements and fixes in Rainmeter 3.3</h3>
+
+<br/>
+<p>Upgraded the project to use the latest Visual Studio 2015 for development.</p>
+
+<p>Added some additional Time measure <a href="https://docs.rainmeter.net/manual/measures/time/#FormatCodes">Format Codes</a>, made possible by the upgrade of the Rainmeter project to Visual Studio 2015. This also corrects some issues with existing codes like %p and a change to %z.</p>
+
+<p>Added a value of <code>Genre</code> to the NowPlaying <a href="https://docs.rainmeter.net/manual/plugins/nowplaying#PlayerType">PlayerType</a> option. This option value is currently supported with the AIMP, CAD, iTunes, WMP and WinAmp <a href="https://docs.rainmeter.net/manual/plugins/nowplaying#PlayerName">PlayerName</a> values.</p>
+
+<p>Modified the Time column in the About / Log panel to use the current time in Hours, Minutes, Seconds and Milliseconds rather than elapsed time since Rainmeter was started.</p>
+
+<p>Corrected an issue in an Image meter where removing a <code>MaskImageName</code> with !SetOption was not possible.</p>
+
+<p>Corrected an issue with IfMatch where doing a match on a measure that has returned no string value could crash Rainmeter.</p>
+
+<p>Corrected an issue where some Unicode characters in a text file read by the Quote plugin could be mistaken for an end-of-file control character and truncate the returned string.</p>
+
+<p>Added support for Windows 10 to the SysInfo <code>SysInfoType=OS_VERSION</code>.</p>
+
+<p>Corrected an issue where removing a ToolTipTitle with !SetOption would not work, and an issue where a dynamic value for a ToolTipTitle would be one skin update behind.</p>
+
+<p>Changed the maximum number of ContextTitle<em>N</em> / ContextAction<em>N</em> pairs from 15 to 25.</p>
+
+<p>Corrected an issue where WebParser could not read a local file if it was locked open by some other process.</p>
+
+
+<h3>Version history and details</h3>
+
+<ul>
+<li>Detailed explanations of major changes at <a href="https://forum.rainmeter.net/viewforum.php?f=114">Change Announcements</a>.</li>
+<li>Additional details on bug fixes and other minor changes at <a href="https://docs.rainmeter.net/history">Version History</a>.</li>
+<li>Full history of all changes to the Rainmeter code at <a href="https://github.com/rainmeter/rainmeter/commits/master">Rainmeter GitHub</a>.</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
