@@ -1,0 +1,29 @@
+<div id="hero" class="hero">
+  <%- partial('_partial/navigation') %>
+  <%- partial('_partial/index/intro') %>
+</div>
+
+<div id="mainBlock" class="container block">
+  <div class="row">
+  <%- partial('_partial/index/downloads') %>
+  <%- partial('_partial/index/news') %>
+  </div>
+</div>
+
+<div class="divider container"></div>
+
+<div id="subBlock" class="container block">
+  <div class="row">
+    <%- partial('_partial/index/help') %>
+    <%- partial('_partial/index/discover') %>
+  </div>
+</div>
+
+<div class="divider container"></div>
+<%- partial('_partial/index/features') %>
+<div class="divider container"></div>
+<%- partial('_partial/index/gallery') %>
+
+<%- page.content %>
+
+<%- partial('_partial/footer') %>

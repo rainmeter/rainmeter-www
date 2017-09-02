@@ -1,0 +1,18 @@
+<div id="news" class="news col-lg-4 mt-4 mt-lg-0">
+  <div class="block-bar">
+    <!-- Icon by feathericons.com -->
+    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-danger"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+    <h4 class="title">News</h4>
+  </div>
+  <hr />
+
+  <div class="group align-items-center" role="group" aria-label="Basic example">
+    <% theme.news.forEach(function(news) { %>
+        <div class="news-post">
+          <a class="news-title font-weight-bold" href="<%- news.url %>"><%- news.title %></a>
+          <p class="news-date"><%- news.date %></p>
+        </div>
+    <% }) %>
+  </div>
+
+</div>

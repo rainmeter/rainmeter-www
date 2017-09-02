@@ -1,136 +1,93 @@
 ---
-layout: page
+layout: post
 permalink: release-4-0
 title: 'Rainmeter 4.0 Release'
 ---
-<body class="no-sidebars">
-<div id="wrapper">
-<div id="header" class="clearfix">
-	<a href="/"><div id="logo"></div></a>
-	<div id="nav">
-		<ul class="menu"><li class="first leaf"><a href="/">Home</a></li>
-		<li class="leaf"><a href="/about">About</a></li>
-		<li class="leaf"><a href="//docs.rainmeter.net/">Docs</a></li>
-		<li class="leaf"><a href="/discover">Discover</a></li>
-		<li class="last leaf"><a href="//forum.rainmeter.net">Forum</a></li>
-		</ul>
-	</div>
-</div>
-<div id="main-area-inside" class="clearfix">
-<div id="main" class="inside clearfix">
-	<div id="block-system-main" class="clear-block block block-system">
-		<div class="content"><div class="node">
-<h2>Rainmeter 4.0 Release</h2>
-<div class="content clearfix">
-
-<p>There are a lot of new features and capabilities in the latest 
-Rainmeter 4.0.  You can safely install the new 4.0 release version right
- over your existing Rainmeter 3.3.3 or earlier installation, and nothing you have 
-done will be lost or changed. There is never any need to uninstall any 
-earlier version of Rainmeter to use the newest version.</p>
-
-<h3><u>Important change to supported versions of Microsoft Windows</u></h3>
-<p>Due to current and future improvements and additions to functionality, which will require the latest version of the Direct2D / DirectWrite graphical engines:</p>
-<p><b>As of Rainmeter 4.0, Windows XP and Windows Vista are no longer supported.</b></p>
-<p>Rainmeter 4.0 requires at least Windows 7 with <a href="http://windows.microsoft.com/en-us/windows7/install-windows-7-service-pack-1">Service Pack 1</a> and the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=36805">Platform Update</a> applied. These should have been automatically applied several years ago by Windows Update, but if you have Windows Update turned off you may need to get and apply these updates manually. Windows versions later than Windows 7 are fully supported.</p>
-<p>If you are on Windows XP or Windows Vista, and can't or don't wish to upgrade, you will need to stay on the <a href="https://builds.rainmeter.net/Rainmeter-3.3.3.exe">3.3.3 Release</a> version of Rainmeter.</p>
-
-<h3>Major additions and changes in Rainmeter 4.0</h3>
-
-<br/>
-<h4><b>Shape Meter</b></h4>
-
-<p>This new meter type draws shapes using vector graphics. This includes Rectangles, Ellipses, Arcs, Bézier curves and Paths. See the documentation at: <a href="https://docs.rainmeter.net/manual/meters/shape/">Shape Meter</a>, and other details and examples at <a href="https://forum.rainmeter.net/viewforum.php?f=116">Change Announcements</a>.</p>
-
-<br/>
-<h4><b>New Skin Dialog</b></h4>
-
-<p>This new dialog is opened with the <em>Create new skin</em> button in Manage, or by using the context menus on existing folders. This will allow you to add new root-level folders and skin files, or add folders or files to existing skins. See <a href="https://docs.rainmeter.net/manual/user-interface/manage/new-skin/">New Skin</a> for details.</p>
-
-<br/>
-<h4><b>Inline Shadow</b></h4>
-
-<p>Added <a href="https://docs.rainmeter.net/manual/meters/string/inline/#InlineShadow">Shadow</a> InlineSetting type to String meter Inline options. This will allow you to add a drop shadow to all or part of a string.</p>
-
-<br/>
-<h4><b>Inline String Case</b></h4>
-
-<p>Added <a href="https://docs.rainmeter.net/manual/meters/string/inline/#InlineCase">Case</a> InlineSetting type to String meter Inline options. This will allow you to set the string case to one of <code>Lower</code>, <code>Upper</code>, <code>Proper</code>, or <code>Sentence</code> for all or part of the displayed text.</p>
-
-<br/>
-<h4><b>Domain / Workgroup</b></h4>
-
-<p>Added <a href="https://docs.rainmeter.net/manual/plugins/sysinfo/#Network">DOMAINWORKGROUP</a> SysInfoType value to the SysInfo plugin. This will return either the "domain" or "workgroup" set for the system.</p>
-
-<br/>
-<h4><b>Not Enough Substrings</b></h4>
-
-<p>Added <a href="https://docs.rainmeter.net/manual/plugins/webparser/#LogSubstringErrors">LogSubstringErrors</a> WebParser parent measure option. If set to "0", this will suppress logging of "Not enough substring" errors. This can be useful when for instance you are using <a href="https://docs.rainmeter.net/tips/webparser-lookahead-assertions-in-regexp/">lookahead assertions</a> in a regular expression, and missing (captures) should not be treated as an "error".</p>
-
-<br/>
-<h4><b>User Agent String</b></h4>
-
-<p>Added <a href="https://docs.rainmeter.net/manual/plugins/webparser/#UserAgent">UserAgent</a> WebParser parent measure option to allow setting a custom User Agent String.</p>
-
-<br/>
-<h4><b>HTTP Headers</b></h4>
-
-<p>Added <a href="https://docs.rainmeter.net/manual/plugins/webparser/#Header">Header1, Header2, Header3...</a> WebParser parent measure option to allow setting custom HTTP Header Fields.</p>
-
-<br/>
-<h4><b>Auto Select Screen</b></h4>
-
-<p>Added <a href="https://docs.rainmeter.net/manual/bangs/#AutoSelectScreen">AutoSelectScreen</a> and <a href="https://docs.rainmeter.net/manual/bangs/#AutoSelectScreenGroup">AutoSelectScreenGroup</a> bangs.</p>
-
-<br/>
-<h4><b>Network Adapter Type</b></h4>
-
-<p>Added a new <a href="https://docs.rainmeter.net/manual/plugins/sysinfo/#Network">ADAPTER_TYPE</a> SysInfoType option for the SysInfo plugin. This will return the adapter type (Ethernet or Wireless) as both string and number values. Details can be found at <a href="https://forum.rainmeter.net/viewtopic.php?f=116&t=22782">Change Announcements</a>.</p>
-
-<br/>
-<h4><b>Limiting InputText</b></h4>
-
-<p>Added <a href="https://docs.rainmeter.net/manual/plugins/inputtext/#InputLimit">InputLimit</a> (default 0) option to limit the number of characters input, and <a href="https://docs.rainmeter.net/manual/plugins/inputtext/#InputNumber">InputNumber</a> (default 0) option to force numeric-only input.</p>
-
-<br/>
-<h4><b>Lua Scripting Changes</b></h4>
-
-<p>We corrected an issue where anything defined in the Initialize() function of a Lua script was treated as "global" across all skins using Lua, which could cause "bleeding" of defined variables between skins, or between script measures in a single skin. Each Lua measure will now run in an entirely separate local context.<p>
-
-<p>This change to the context of each Lua measure in a skin has allowed for the use of the Lua <a href="https://docs.rainmeter.net/manual/lua-scripting/#dofile">dofile function</a> in your scripts.</p>
-
-<h3>Other enhancements and fixes in Rainmeter 4.0</h3>
-
-<br/>
-<p>String meter: Fixed a problem parsing the <code>*</code> (skip) parameter in the CharacterSpacing feature of InlineSetting.</p>
-
-<p>String meter: Corrected an issue where <code>ClipString=1</code> was not working correctly if <code>W</code> (width) was defined without defining <code>H</code> (height).</p>
-
-<p>String meter: Changed the number of degrees of angle in InlineSetting Gradients to allow fractional numbers. (e.g. 45.5).</p>
-
-<p>String meter: Changed the default value for InlinePattern(<em>N</em>) to <code>.*</code> (the entire string) when the option is left off or set to <code>""</code>. This will allow you to set an InlineSetting on the entire string value without needing to define any matching InlinePattern.</p>
-
-<p>String meter: Corrected a bug that would not properly adjust a GradientColor InlineSetting when the width or height of the meter was changed but the string value was not.</p>
-
-<p>RunCommand plugin: Corrected a rare issue when the command is run by OnCloseAction, where Rainmeter would unexpectedly terminate and the command not execute.</p>
-
-<p>About dialog: Corrected an issue where tab characters were not being correctly displayed in the Log and Skins panels.</p>
-
-<p>Rainmeter: Corrected a rare issue where skins might be loaded with only partial opacity when Windows is first started.</p>
-
-<p>Rainmeter: The Rainmeter notification area icon is forced to be visible any time there are no skins loaded in Rainmeter. This will temporarily override any setting for "Show notification area icon" in Manage. This change is to eliminate the possibility that a user could turn off the tray icon and then unload all skins, thus no longer having any way to interact with Rainmeter.</p>
-
-
-<h3>Version history and details</h3>
-
-<ul>
-<li>Detailed explanations of major changes at <a href="https://forum.rainmeter.net/viewforum.php?f=116">Change Announcements</a>.</li>
-<li>Additional details on bug fixes and other minor changes at <a href="https://docs.rainmeter.net/history">Version History</a>.</li>
-<li>Full history of all changes to the Rainmeter code at <a href="https://github.com/rainmeter/rainmeter/commits/master">Rainmeter GitHub</a>.</li>
-</ul>
-</div>
-</div></div>
-</div>
-</div>
-</div>
+<div class="release-notes">
+  <div class="description">
+    <h1>Rainmeter 4.0 Release</h1>
+    <hr>
+    <p>There are a lot of new features and capabilities in the latest Rainmeter 4.0. You can safely install the new 4.0 release version right over your existing Rainmeter 3.3.3 or earlier installation, and nothing you have done will be lost or changed. There is never any need to uninstall any earlier version of Rainmeter to use the newest version.</p>
+    <div class="warning">
+      <h3>Important change to supported versions of Microsoft Windows</h3>
+      <p>Due to current and future improvements and additions to functionality, which will require the latest version of the Direct2D / DirectWrite graphical engines:</p>
+      <p>As of Rainmeter 4.0, Windows XP and Windows Vista are no longer supported.</p>
+    </div>
+    <p>Rainmeter 4.0 requires at least Windows 7 with <a href="http://windows.microsoft.com/en-us/windows7/install-windows-7-service-pack-1">Service Pack 1</a> and the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=36805">Platform Update</a> applied. These should have been automatically applied several years ago by Windows Update, but if you have Windows Update turned off you may need to get and apply these updates manually. Windows versions later than Windows 7 are fully supported.</p>
+    <p>If you are on Windows XP or Windows Vista, and can't or don't wish to upgrade, you will need to stay on the <a href="https://builds.rainmeter.net/Rainmeter-3.3.3.exe">3.3.3 Release</a> version of Rainmeter.</p>
+  </div>
+  <div class="changelog">
+    <h2>Major additions and changes in Rainmeter 4.0</h2>
+    <hr>
+    <div class="feature">
+      <h4><b>Shape Meter</b></h4>
+      <p class="text-muted">This new meter type draws shapes using vector graphics. This includes Rectangles, Ellipses, Arcs, Bézier curves and Paths. See the documentation at: <a href="https://docs.rainmeter.net/manual/meters/shape/">Shape Meter</a>, and other details and examples at <a href="https://forum.rainmeter.net/viewforum.php?f=116">Change Announcements</a>.</p>
+    </div>
+    <div class="feature">
+      <h4><b>New Skin Dialog</b></h4>
+      <p class="text-muted">This new dialog is opened with the <em>Create new skin</em> button in Manage, or by using the context menus on existing folders. This will allow you to add new root-level folders and skin files, or add folders or files to existing skins. See <a href="https://docs.rainmeter.net/manual/user-interface/manage/new-skin/">New Skin</a> for details.</p>
+    </div>
+    <div class="feature">
+      <h4><b>Inline Shadow</b></h4>
+      <p class="text-muted">Added <a href="https://docs.rainmeter.net/manual/meters/string/inline/#InlineShadow">Shadow</a> InlineSetting type to String meter Inline options. This will allow you to add a drop shadow to all or part of a string.</p>
+    </div>
+    <div class="feature">
+      <h4><b>Inline String Case</b></h4>
+      <p class="text-muted">Added <a href="https://docs.rainmeter.net/manual/meters/string/inline/#InlineCase">Case</a> InlineSetting type to String meter Inline options. This will allow you to set the string case to one of <code>Lower</code>, <code>Upper</code>, <code>Proper</code>, or <code>Sentence</code> for all or part of the displayed text.</p>
+    </div>
+    <div class="feature">
+      <h4><b>Domain / Workgroup</b></h4>
+      <p class="text-muted">Added <a href="https://docs.rainmeter.net/manual/plugins/sysinfo/#Network">DOMAINWORKGROUP</a> SysInfoType value to the SysInfo plugin. This will return either the "domain" or "workgroup" set for the system.</p>
+    </div>
+    <div class="feature">
+      <h4><b>Not Enough Substrings</b></h4>
+      <p class="text-muted">Added <a href="https://docs.rainmeter.net/manual/plugins/webparser/#LogSubstringErrors">LogSubstringErrors</a> WebParser parent measure option. If set to "0", this will suppress logging of "Not enough substring" errors. This can be useful when for instance you are using <a href="https://docs.rainmeter.net/tips/webparser-lookahead-assertions-in-regexp/">lookahead assertions</a> in a regular expression, and missing (captures) should not be treated as an "error".</p>
+    </div>
+    <div class="feature">
+      <h4><b>User Agent String</b></h4>
+      <p class="text-muted">Added <a href="https://docs.rainmeter.net/manual/plugins/webparser/#UserAgent">UserAgent</a> WebParser parent measure option to allow setting a custom User Agent String.</p>
+    </div>
+    <div class="feature">
+      <h4><b>HTTP Headers</b></h4>
+      <p class="text-muted">Added <a href="https://docs.rainmeter.net/manual/plugins/webparser/#Header">Header1, Header2, Header3...</a> WebParser parent measure option to allow setting custom HTTP Header Fields.</p>
+    </div>
+    <div class="feature">
+      <h4><b>Auto Select Screen</b></h4>
+      <p class="text-muted">Added <a href="https://docs.rainmeter.net/manual/bangs/#AutoSelectScreen">AutoSelectScreen</a> and <a href="https://docs.rainmeter.net/manual/bangs/#AutoSelectScreenGroup">AutoSelectScreenGroup</a> bangs.</p>
+    </div>
+    <div class="feature">
+      <h4><b>Network Adapter Type</b></h4>
+      <p class="text-muted">Added a new <a href="https://docs.rainmeter.net/manual/plugins/sysinfo/#Network">ADAPTER_TYPE</a> SysInfoType option for the SysInfo plugin. This will return the adapter type (Ethernet or Wireless) as both string and number values. Details can be found at <a href="https://forum.rainmeter.net/viewtopic.php?f=116&t=22782">Change Announcements</a>.</p>
+    </div>
+    <div class="feature">
+      <h4><b>Limiting InputText</b></h4>
+      <p class="text-muted">Added <a href="https://docs.rainmeter.net/manual/plugins/inputtext/#InputLimit">InputLimit</a> (default 0) option to limit the number of characters input, and <a href="https://docs.rainmeter.net/manual/plugins/inputtext/#InputNumber">InputNumber</a> (default 0) option to force numeric-only input.</p>
+    </div>
+    <div class="feature">
+      <h4><b>Lua Scripting Changes</b></h4>
+      <p class="text-muted">We corrected an issue where anything defined in the Initialize() function of a Lua script was treated as "global" across all skins using Lua, which could cause "bleeding" of defined variables between skins, or between script measures in a single skin. Each Lua measure will now run in an entirely separate local context.</p>
+      <p class="text-muted">This change to the context of each Lua measure in a skin has allowed for the use of the Lua <a href="https://docs.rainmeter.net/manual/lua-scripting/#dofile">dofile function</a> in your scripts.</p>
+    </div>
+    <h2>Other enhancements and fixes in Rainmeter 4.0</h2>
+    <hr>
+    <ul>
+    <li><b>String meter:</b> Fixed a problem parsing the <code>*</code> (skip) parameter in the CharacterSpacing feature of InlineSetting.</li>
+    <li><b>String meter:</b> Corrected an issue where <code>ClipString=1</code> was not working correctly if <code>W</code> (width) was defined without defining <code>H</code> (height).</li>
+    <li><b>String meter:</b> Changed the number of degrees of angle in InlineSetting Gradients to allow fractional numbers. (e.g. 45.5).</li>
+    <li><b>String meter:</b> Changed the default value for InlinePattern(<em>N</em>) to <code>.*</code> (the entire string) when the option is left off or set to <code>""</code>. This will allow you to set an InlineSetting on the entire string value without needing to define any matching InlinePattern.</li>
+    <li><b>String meter:</b> Corrected a bug that would not properly adjust a GradientColor InlineSetting when the width or height of the meter was changed but the string value was not.</li>
+    <li><b>RunCommand plugin:</b> Corrected a rare issue when the command is run by OnCloseAction, where Rainmeter would unexpectedly terminate and the command not execute.</li>
+    <li><b>About dialog:</b> Corrected an issue where tab characters were not being correctly displayed in the Log and Skins panels.</li>
+    <li><b>Rainmeter:</b> Corrected a rare issue where skins might be loaded with only partial opacity when Windows is first started.</li>
+    <li><b>Rainmeter:</b> The Rainmeter notification area icon is forced to be visible any time there are no skins loaded in Rainmeter. This will temporarily override any setting for "Show notification area icon" in Manage. This change is to eliminate the possibility that a user could turn off the tray icon and then unload all skins, thus no longer having any way to interact with Rainmeter.</li>
+  </div>
+  <div class="links">
+    <h2>Version history and details</h2>
+    <hr>
+    <ul>
+      <li>Detailed explanations of major changes at <a href="https://forum.rainmeter.net/viewforum.php?f=116">Change Announcements</a>.</li>
+      <li>Additional details on bug fixes and other minor changes at <a href="https://docs.rainmeter.net/history">Version History</a>.</li>
+      <li>Full history of all changes to the Rainmeter code at <a href="https://github.com/rainmeter/rainmeter/commits/master">Rainmeter GitHub</a>.</li>
+    </ul>
+  </div>
 </div>

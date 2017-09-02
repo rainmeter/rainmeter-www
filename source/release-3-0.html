@@ -1,126 +1,108 @@
 ---
-layout: page
+layout: post
 permalink: release-3-0
 title: 'Rainmeter 3.0.1 Release'
 ---
-<body class="no-sidebars">
-<div id="wrapper">
-<div id="header" class="clearfix">
-	<a href="/"><div id="logo"></div></a>
-	<div id="nav">
-		<ul class="menu"><li class="first leaf"><a href="/">Home</a></li>
-		<li class="leaf"><a href="/about">About</a></li>
-		<li class="leaf"><a href="//docs.rainmeter.net/">Docs</a></li>
-		<li class="leaf"><a href="/discover">Discover</a></li>
-		<li class="last leaf"><a href="//forum.rainmeter.net">Forum</a></li>
-		</ul>
-	</div>
-</div>
-<div id="main-area-inside" class="clearfix">
-<div id="main" class="inside clearfix">
-	<div id="block-system-main" class="clear-block block block-system">
-		<div class="content"><div class="node">
-<h2>Rainmeter 3.0 Release</h2>
-<div class="content clearfix">
-
-<p>There are a lot of new features and capabilities in the latest 
+<h1>Rainmeter 3.0 Release</h1>
+<hr />
+<p>There are a lot of new features and capabilities in the latest
 Rainmeter 3.0.  You can safely install the new 3.0 release version right
- over your existing Rainmeter 2.5 installation, and nothing you have 
-done will be lost or changed. There is never any need to uninstall any 
+ over your existing Rainmeter 2.5 installation, and nothing you have
+done will be lost or changed. There is never any need to uninstall any
 earlier version of Rainmeter to use the newest version.</p>
 
 <h3>Improved font rendering</h3>
 
 <p>The biggest single change in Rainmeter 3.0 is that we have moved from
- the older GDI+ display rendering method for applications to the newer 
+ the older GDI+ display rendering method for applications to the newer
 and vastly better <a href="http://en.wikipedia.org/wiki/Direct2D">Direct2D</a>
  rendering engine. As a part of a bigger effort to move all of Rainmeter
- to the new engine, the initial change concentrates on improving the 
+ to the new engine, the initial change concentrates on improving the
 quality of text displayed in <a href="//docs.rainmeter.net/manual/meters/string">String</a> meters.</p>
 
 <p>There will be a dramatic improvement in the quality of text you display in your skins.</p>
 
-<p>Rainmeter will use the new Direct2D rendering by default if your 
-system supports it. If not, it will fall back to the older GDI+ engine, 
-and there will be no impact. Direct2D requires either Windows 8, or 
+<p>Rainmeter will use the new Direct2D rendering by default if your
+system supports it. If not, it will fall back to the older GDI+ engine,
+and there will be no impact. Direct2D requires either Windows 8, or
 Windows 7 with the latest <a href="http://www.microsoft.com/en-us/download/details.aspx?id=36805">Platform Update</a>.</p>
 
-<p>The Rainmeter user is given complete control over when Direct2D is 
-used and when it is not.  The overall default use of Direct2D for your 
-entire Rainmeter installation is controlled with the UseD2D option in 
+<p>The Rainmeter user is given complete control over when Direct2D is
+used and when it is not.  The overall default use of Direct2D for your
+entire Rainmeter installation is controlled with the UseD2D option in
 the <a href="//docs.rainmeter.net/manual/user-interface/manage#SettingsTab">Manage / Settings</a> Tab.  In addition, the user can have individual skins override this setting by changing the UseD2D option in the <a href="//docs.rainmeter.net/manual/user-interface/context-menus#SkinContextMenus">skin context menu</a>.</p>
 
-<p>There may be some minor differences when Direct2D is used with older 
-Rainmeter skins, due to differences in the way Direct2D and GDI+ handle 
-font metrics and create the "container" the meter is displayed in.  It 
-is possible that some older skins, particularly those using 3rd-party 
+<p>There may be some minor differences when Direct2D is used with older
+Rainmeter skins, due to differences in the way Direct2D and GDI+ handle
+font metrics and create the "container" the meter is displayed in.  It
+is possible that some older skins, particularly those using 3rd-party
 custom fonts, may need some tweaking for position with Direct2D.</p>
 
 <h3>Other enhancements in Rainmeter 3.0</h3>
 
 <ul>
 <li>The <a href="//docs.rainmeter.net/manual/plugins/webparser#Dynamic">WebParser</a> plugin now supports <a href="//docs.rainmeter.net/manual/variables#DynamicVariables">Dynamic Variables</a>.
- This is a long-awaited and very welcome change to the way WebParser 
-works, and should provide a lot of flexibility in creating skins that 
+ This is a long-awaited and very welcome change to the way WebParser
+works, and should provide a lot of flexibility in creating skins that
 access the web. See <a href="//forum.rainmeter.net/viewtopic.php?p=90521#p90521">Change Announcements</a> for additional information about this change.</li>
 
-<li>We have added support for Unicode characters in Lua scripting. This 
-means that you can use languages and alphabets in Lua other than those 
+<li>We have added support for Unicode characters in Lua scripting. This
+means that you can use languages and alphabets in Lua other than those
 supported by standard "ANSI" in your text editor. See <a href="//docs.rainmeter.net/tips/unicode-in-rainmeter">Unicode in Rainmeter</a> for details on using Unicode in Rainmeter in general, and Lua in particular.</li>
 
 
 <li>Added a <a href="//docs.rainmeter.net/manual/meters/general-options#Padding">Padding</a>=<i>left,top,right,bottom</i>
  option to meters. Allows adding pixels around any or all sides a meter.
- The width and height of the meter will dynamically be adjusted to the 
-new size.  This can be very useful for positioning meters relative to 
+ The width and height of the meter will dynamically be adjusted to the
+new size.  This can be very useful for positioning meters relative to
 each other with more flexibility, and when used with the <a href="//docs.rainmeter.net/manual/meters/general-options#SolidColor">SolidColor</a>
- meter option, can give you a lot of control over the "background" of 
+ meter option, can give you a lot of control over the "background" of
 your meters, without having to create additional meters specifically for
  this purpose.</li>
 
 <li>Added a <a href="//docs.rainmeter.net/manual/skins/rainmeter-section#AccurateText">AccurateText</a>
- option in the [Rainmeter] section of skins. One of the failings of the 
-older GDI+ rendering engine was some forced and undesirable extra 
+ option in the [Rainmeter] section of skins. One of the failings of the
+older GDI+ rendering engine was some forced and undesirable extra
 padding around fonts when rendered in String meters. Whether your system
- or skin uses Direct2D or not, this option can be used to render fonts 
-with the much more accurate method used in Direct2D. This option 
-defaults to 0, which will use the GDI+ positioning of the string within 
+ or skin uses Direct2D or not, this option can be used to render fonts
+with the much more accurate method used in Direct2D. This option
+defaults to 0, which will use the GDI+ positioning of the string within
 all meters. When set to 1, the more accurate method will be used, giving
  you much better flexibility with relative positioning.</li>
 
 <li>Added a new <a href="//docs.rainmeter.net/manual/measures/calc#UniqueRandom">UniqueRandom</a> option. If set to 1, any Calc measure using the <a href="//docs.rainmeter.net/manual/measures/calc#Constants">Random</a>
- constant and UpdateRandom will not repeat until all values between and 
-including LowBound and HighBound have been used. Note that any dynamic 
+ constant and UpdateRandom will not repeat until all values between and
+including LowBound and HighBound have been used. Note that any dynamic
 change to LowBound or HighBound will reset the tracking of values. See <a href="//forum.rainmeter.net/viewtopic.php?p=91109#p91109">Change Announcements</a> for an example skin.</li>
 
 <li>Added <a href="//docs.rainmeter.net/manual/bangs#PauseMeasure">!PauseMeasure</a>, <a href="//docs.rainmeter.net/manual/bangs#PauseMeasure">!UnpauseMeasure</a>, and <a href="//docs.rainmeter.net/manual/bangs#PauseMeasure">!TogglePauseMeasure</a>
- bangs. This is similar to a disabled measure, however the measure 
-retains its current value instead of changing to zero.  Group versions 
+ bangs. This is similar to a disabled measure, however the measure
+retains its current value instead of changing to zero.  Group versions
 of these bangs have also been added.</li>
 
 <li>Added a <a href="//docs.rainmeter.net/manual/measures/general-options#Paused">Paused</a>=<i>0/1</i>
- option to measures.  This allows setting the "paused" state of a 
-measure, in addition to the 
+ option to measures.  This allows setting the "paused" state of a
+measure, in addition to the
 !PauseMeasure/!UnpauseMeasure/!TogglePauseMeasure bangs above.</li>
 
 <li>Added a <a href="//docs.rainmeter.net/manual/skins/rainmeter-section#OnWakeAction">OnWakeAction</a> option to the [Rainmeter] section of skins, to take action when Windows returns from sleep or hibernate states.</li>
 
 <li>Important improvements made to the <a href="//docs.rainmeter.net/manual/plugins/process">Process</a>
- plugin to correct issues with the plugin not being able to detect 
-processes started with a higher security level than Rainmeter, 64bit 
-processes when Rainmeter is 32bit, and processes run as a Windows 
+ plugin to correct issues with the plugin not being able to detect
+processes started with a higher security level than Rainmeter, 64bit
+processes when Rainmeter is 32bit, and processes run as a Windows
 "service".</li>
 
 <li>Added a <a href="//docs.rainmeter.net/manual/plugins/inputtext#OnDismissAction">OnDismissAction</a>
- option to the InputText plugin.  This will allow you to define an 
-action to be taken when you hit escape to dismiss the input text field 
+ option to the InputText plugin.  This will allow you to define an
+action to be taken when you hit escape to dismiss the input text field
 without submitting any value.</li>
 
 <li>Added a <a href="//docs.rainmeter.net/manual/meters/general-options/image-options#ImagePath">ImagePath</a>
- option to General Image Options.  This replaces the existing Path 
-option on Image meters, and extends the functionality to all other 
-meters that support images. <i>Note that Histogram uses 
-PrimaryImagePath, SecondaryImagePath and BothImagePath due to the fact 
+ option to General Image Options.  This replaces the existing Path
+option on Image meters, and extends the functionality to all other
+meters that support images. <i>Note that Histogram uses
+PrimaryImagePath, SecondaryImagePath and BothImagePath due to the fact
 that the Histogram meter has an optional secondary measure binding.</i></li>
 
 <li>Added a <a href="//docs.rainmeter.net/manual/meters/general-options/image-options#UseExifOrientation">UseExifOrientation</a> option for meters using images, to automatically correct the orientation of the image based on the <a href="http://www.impulseadventure.com/photo/exif-orientation">EXIF</a> data encoded by a camera.</li>
@@ -130,15 +112,15 @@ that the Histogram meter has an optional secondary measure binding.</i></li>
  config and / or skin .ini file automatically selected in the list.</li>
 
 <li>Added a new <a href="//docs.rainmeter.net/manual/variables/built-in-variables#ROOTCONFIG">#ROOTCONFIG#</a>
- built-in variable. This provides the name of the root config - The 
+ built-in variable. This provides the name of the root config - The
 highest-level folder under the skins folder for the current skin.</li>
 
 <li>Made improvements to the <a href="//docs.rainmeter.net/manual/user-interface/about#LogTab">About / Log</a>
  dialog to better show the source of errors.  Where possible, the config
- or skin.ini, and meter or measure section producing the error will be 
-displayed.  In addition, we have made improvements to the level of 
-detail in the Rainmeter log when there are command or bang errors, and 
-added a "Clear" button to the panel to remove the current contents of 
+ or skin.ini, and meter or measure section producing the error will be
+displayed.  In addition, we have made improvements to the level of
+detail in the Rainmeter log when there are command or bang errors, and
+added a "Clear" button to the panel to remove the current contents of
 the log displayed in the panel.</li>
 
 <li>Improved performance when using the <a href="//docs.rainmeter.net/manual/bangs#SetWallpaper">!SetWallpaper</a> bang with large images.</li>
@@ -153,9 +135,3 @@ the log displayed in the panel.</li>
 <li>Additional details on bug fixes and other minor changes at <a href="//docs.rainmeter.net/history">Version History</a>.</li>
 <li>Full history of all changes to the Rainmeter code at <a href="https://github.com/rainmeter/rainmeter/commits/master">Rainmeter GitHub</a>.</li>
 </ul>
-</div>
-</div></div>
-</div>
-</div>
-</div>
-</div>
