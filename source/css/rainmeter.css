@@ -14,6 +14,10 @@ body {
 iframe, object, embed {
   max-width: 100%;
 }
+code {
+  background-color: #F4F4F4;
+  color: rgb(240, 91, 25);
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
@@ -34,6 +38,9 @@ iframe, object, embed {
   flex: 1 1 0%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.text-muted {
+  color: rgb(114, 121, 127) !important;
 }
 footer {
   padding-top: 2rem;
@@ -101,11 +108,11 @@ footer {
   margin-top: 0.5rem;
 }
 .navbar-brand img {
-  width: 200;
+  width: 201px;
 }
 @media (min-width: 992px) {
   .navbar-brand img {
-    width: 250;
+    width: 251px;
   }
   .navbar ul>li>a {
     font-size: 1rem;
@@ -272,21 +279,33 @@ footer {
 p.news-date {
   margin-bottom: 0.8rem;
 }
+.downloads-date {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.downloads-date svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.8rem;
+}
+.downloads-date p {
+    margin-bottom: 0;
+}
 .downloads img {
-  width: 250;
+  width: 250px;
   display: block;
   margin: auto auto 1rem;
 }
 .downloads .col-lg {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+.downloads h4 {
+  font-weight: 400;
 }
 @media (min-width: 992px) {
   .downloads, .news {
     text-align: left;
-  }
-  .downloads p.text-muted {
-    height: 4rem;
   }
 }
 .row.additional {
@@ -305,7 +324,7 @@ p.news-date {
   padding-left: 15px;
 }
 .sub-block svg {
-  width: 200;
+  width: 200px;
   height: 135px;
 }
 .sub-block a.external-link {
@@ -515,7 +534,7 @@ p.news-date {
 }
 .release-notes li {
   padding-bottom: 0.5rem;
-  color: rgb(134, 142, 150);
+  color: rgb(114, 121, 127);
   position: relative;
 }
 .release-notes b {
