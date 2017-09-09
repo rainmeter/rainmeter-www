@@ -25,7 +25,7 @@ code {
   color: rgb(240, 91, 25);
 }
 .post {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 .divider {
@@ -39,17 +39,18 @@ code {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.text-muted {
-  color: rgb(114, 121, 127) !important;
-}
 footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: rgba(0, 0, 0, 0.03);
+  z-index: 2;
 }
 @media (min-width: 576px) {
   body {
     font-size: 1rem;
+  }
+  .post {
+    width: 80%;
   }
 }
 
@@ -57,15 +58,10 @@ footer {
 
 .hero {
   position: relative;
-  background-color: rgb(40, 93, 159);
-  background-image: url("../img/bg.jpg");
+  background-color: rgb(25, 89, 166);
+  /* background-image: url("../img/bg.jpg"); */
   background-position: center 35%;
   background-size: cover;
-}
-.no-image {
-  background-color: rgb(40, 93, 159);
-  background-size: 200%;
-  background-position: 50% 50%;
 }
 .hero::before {
   content: "";
@@ -74,16 +70,19 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgb(40, 93, 159);
-  background-image: linear-gradient(to right bottom, rgb(12, 148, 200), rgb(96, 0, 149));
-  filter: brightness(85%);
+  background-color: rgb(25, 89, 166);
+  background-image: linear-gradient(to bottom right, rgb(29, 53, 143), rgb(9, 180, 206));
   opacity: 0.95;
+}
+#hero.flat {
+  background-color: rgb(25, 89, 166);
 }
 
 /* Navbar */
 
 .navbar {
   padding: 1.5rem 0rem !important;
+  z-index: 2;
 }
 .navbar button:focus {
   outline: none;
@@ -97,6 +96,7 @@ footer {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   transition: all 0.2s ease-in-out;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .navbar li>a:hover {
   color: rgba(255, 255, 255, 0.85) !important;
@@ -107,16 +107,17 @@ footer {
 .navbar-nav {
   margin-top: 0.5rem;
 }
+.navbar-brand {
+  padding: 0;
+}
 .navbar-brand img {
   width: 201px;
+  image-rendering: -webkit-optimize-contrast;
 }
 @media (min-width: 992px) {
-  .navbar-brand img {
-    width: 251px;
-  }
   .navbar ul>li>a {
     font-size: 1rem;
-    padding-left: 2rem !important;
+    padding-left: 2.5rem !important;
     padding-right: 0rem !important;
   }
 }
@@ -162,6 +163,9 @@ footer {
   margin-right: 0.2rem;
   text-decoration: underline;
 }
+.block-bar .additional a:hover, .block-bar .additional a:focus {
+  text-decoration: underline;
+}
 @media (min-width: 576px) {
   .block-bar .additional a {
     text-decoration: none;
@@ -185,6 +189,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   padding-top: 0rem;
   padding-bottom: 2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .intro h1 {
   color: rgb(255, 255, 255);
@@ -198,6 +203,10 @@ footer {
 }
 .intro .btn {
   margin-right: 0.5rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  text-transform: capitalize;
+  text-shadow: none;
 }
 .intro .icon {
   display: inline-flex;
@@ -210,6 +219,11 @@ footer {
   height: 1.25rem;
   width: 1.25rem;
   margin-right: 0.5rem;
+}
+.intro .btn:hover {
+  color: rgb(25, 89, 166);
+  background-color: rgb(248, 249, 250);
+  border-color: rgb(248, 249, 250);
 }
 @media (min-width: 576px) {
   .intro {
@@ -267,12 +281,6 @@ footer {
 
 /* Download and News block */
 
-.downloads {
-  padding-right: 25px;
-}
-.news {
-  padding-left: 25px;
-}
 .downloads, .news {
   text-align: center;
 }
@@ -289,7 +297,7 @@ p.news-date {
   margin-right: 0.8rem;
 }
 .downloads-date p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .downloads img {
   width: 250px;
@@ -297,15 +305,22 @@ p.news-date {
   margin: auto auto 1rem;
 }
 .downloads .col-lg {
-    margin-top: 0.2rem;
-    margin-bottom: 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
 }
 .downloads h4 {
   font-weight: 400;
+  color: #2D3133;
 }
 @media (min-width: 992px) {
   .downloads, .news {
     text-align: left;
+  }
+  .downloads {
+    padding-right: 25px;
+  }
+  .news {
+    padding-left: 25px;
   }
 }
 .row.additional {
@@ -333,6 +348,7 @@ p.news-date {
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 .sub-block a:hover {
   transform: scale(1.1);
@@ -381,10 +397,10 @@ p.news-date {
 .gallery {
   margin-bottom: 3rem;
 }
-.gallery .col-4 {
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-bottom: 8px;
+.gallery .col-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
 .gallery a {
   width: 100%;
@@ -418,6 +434,13 @@ p.news-date {
 #baguetteBox-overlay figcaption a:hover, #baguetteBox-overlay figcaption a:focus {
   color: rgb(255, 255, 255);
 }
+@media (min-width: 576px) {
+  .gallery .col-12 {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 8px;
+  }
+}
 @media (min-width: 992px) {
   #baguetteBox-overlay figcaption {
     font-size: 3rem;
@@ -434,15 +457,12 @@ p.news-date {
   padding-bottom: 1rem;
 }
 .discover-entry svg {
-  width: 201px;
+  width: 151px;
   padding-bottom: 1rem;
 }
 .discover-entry h1.title {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 200;
-}
-.discover-entry p {
-  font-size: 1rem;
 }
 .discover-icon svg {
   width: 5rem;
@@ -495,6 +515,12 @@ p.news-date {
 @media (min-width: 576px) {
   .discover-block {
     width: 70%;
+  }
+  .discover-entry h1.title {
+    font-size: 4rem;
+  }
+  .discover-entry svg {
+    width: 201px;
   }
 }
 @media (min-width: 992px) {
@@ -556,7 +582,7 @@ p.news-date {
 
 .error404 {
   color: rgb(255, 255, 255);
-  background-image: linear-gradient(rgb(40, 93, 159), rgb(96, 0, 149));
+  background-image: linear-gradient(to bottom, rgb(25, 89, 166), rgb(9, 180, 206));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -570,4 +596,145 @@ p.news-date {
   color: rgb(33, 37, 41);
   background-color: rgb(248, 249, 250);
   border-color: rgb(248, 249, 250);
+}
+.error404 .container {
+  z-index: 2;
+}
+.floatingIcons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.floatingIcons li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  bottom: -180px;
+  animation: animation1 25s infinite;
+  transition-timing-function: linear;
+}
+.floatingIcons svg {
+  width: 100%;
+  height: 100%;
+}
+.floatingIcons li:nth-child(1) {
+  left: 5%;
+  width: 16rem;
+  height: 16rem;
+  animation: animation1 25s infinite;
+  animation-delay: 3s;
+}
+.floatingIcons li:nth-child(2) {
+  left: 20%;
+  width: 11rem;
+  height: 11rem;
+  animation: animation2 25s infinite;
+  animation-delay: 9s;
+}
+.floatingIcons li:nth-child(3) {
+  left: 5%;
+  width: 14rem;
+  height: 14rem;
+  animation: animation1 25s infinite;
+  animation-delay: 13s;
+}
+.floatingIcons li:nth-child(4) {
+  left: 30%;
+  width: 12rem;
+  height: 12rem;
+  animation: animation3 25s infinite;
+  animation-delay: 17s;
+}
+.floatingIcons li:nth-child(5) {
+  left: 65%;
+  width: 13rem;
+  height: 13rem;
+  animation: animation2 25s infinite;
+  animation-delay: 6s;
+}
+.floatingIcons li:nth-child(6) {
+  left: 65%;
+  width: 15rem;
+  height: 15rem;
+  animation: animation1 25s infinite;
+  animation-delay: 19s;
+}
+.floatingIcons li:nth-child(7) {
+  left: 20%;
+  width: 14rem;
+  height: 14rem;
+  animation: animation1 25s infinite;
+  animation-delay: 22s;
+}
+.floatingIcons li:nth-child(8) {
+  left: 80%;
+  width: 12rem;
+  height: 12rem;
+  animation-delay: 3s;
+  animation: animation2 25s infinite;
+}
+.floatingIcons li:nth-child(9) {
+  left: 85%;
+  width: 14rem;
+  height: 14rem;
+  animation: animation3 25s infinite;
+  transition-timing-function: linear;
+  animation-delay: 14s;
+}
+.floatingIcons li:nth-child(10) {
+  left: 50%;
+  width: 16rem;
+  height: 16rem;
+  animation: animation1 25s infinite;
+  animation-delay: 12s;
+}
+@keyframes animation1 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-1080px) rotate(65deg);
+    transform: translateY(-1080px) rotate(65deg);
+    opacity: 0;
+  }
+}
+@keyframes animation2 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-1080px) rotate(-25deg);
+    transform: translateY(-1080px) rotate(-25deg);
+    opacity: 0;
+  }
+}
+@keyframes animation3 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-1080px) rotate(-85deg);
+    transform: translateY(-1080px) rotate(-85deg);
+    opacity: 0;
+  }
 }

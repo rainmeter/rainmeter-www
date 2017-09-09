@@ -2,7 +2,7 @@
   <h1 class="block-title">Showcase</h1>
   <div class="row gallery">
   <% theme.gallery.forEach(function(gallery) { %>
-      <a class="col-4" href="<%- gallery.imageURL %>" data-caption="<a href='<%- gallery.link %>' alt='<%- gallery.title %> by <%- gallery.author %>'><b><%- gallery.title %></b> by <%- gallery.author %></a>">
+      <a class="col-12 col-md-4" href="<%- gallery.imageURL %>" data-caption="<a href='<%- gallery.link %>' alt='<%- gallery.title %> by <%- gallery.author %>'><b><%- gallery.title %></b> by <%- gallery.author %></a>">
         <img src="<%- gallery.thumbnailURL %>" alt="<%- gallery.title %> by <%- gallery.author %>">
       </a>
   <% }) %>
