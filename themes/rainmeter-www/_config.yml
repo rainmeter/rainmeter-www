@@ -45,33 +45,33 @@ carousel:
 
 # Showcase gallery
 gallery:
-  - link: example.com
-    thumbnailURL: http://via.placeholder.com/445x250
-    imageURL: http://via.placeholder.com/1920x1080.jpg
-    title: 'Example 1'
-    author: 'test'
-  - link: example.com
-    thumbnailURL: http://via.placeholder.com/445x250
-    imageURL: http://via.placeholder.com/1920x1080.jpg
-    title: 'Example 2'
-    author: 'test'
-  - link: example.com
-    thumbnailURL: http://via.placeholder.com/445x250
-    imageURL: http://via.placeholder.com/1920x1080.jpg
-    title: 'Example 3'
-    author: 'test'
-  - link: example.com
-    thumbnailURL: http://via.placeholder.com/445x250
-    imageURL: http://via.placeholder.com/1920x1080.jpg
-    title: 'Example 4'
-    author: 'test'
-  - link: example.com
-    thumbnailURL: http://via.placeholder.com/445x250
-    imageURL: http://via.placeholder.com/1920x1080.jpg
-    title: 'Example 5'
-    author: 'test'
-  - link: example.com
-    thumbnailURL: http://via.placeholder.com/445x250
-    imageURL: http://via.placeholder.com/1920x1080.jpg
-    title: 'Example 6'
-    author: 'test'
+  - link: https://hiphopium.deviantart.com/art/Momento-698402825
+    thumbnailURL: img/showcase/momento_by_hiphopium.jpg
+    imageURL: img/showcase/momento_by_hiphopium.jpg
+    title: 'Momento'
+    author: 'HipHopium'
+  - link: https://www.deviantart.com/art/Rime-Rainmeter-642132946
+    thumbnailURL: img/showcase/rime_rainmeter_by_iroaseta.png
+    imageURL: img/showcase/rime_rainmeter_by_iroaseta.png
+    title: 'Rime Rainmeter'
+    author: 'Iroaseta'
+  - link: https://www.reddit.com/r/Rainmeter/comments/60qz2m/cyberpunk_coffee/
+    thumbnailURL: img/showcase/cyberpunk_coffee_by_labr4t_thumb.png
+    imageURL: img/showcase/cyberpunk_coffee_by_labr4t.gif
+    title: 'Cyberpunk Coffee'
+    author: 'Labr4t'
+  - link: https://www.reddit.com/r/Rainmeter/comments/6fi83s/blue_and_simple/
+    thumbnailURL: img/showcase/blue_and_simple_by_keeWend.jpg
+    imageURL: img/showcase/blue_and_simple_by_keeWend.jpg
+    title: 'Blue and Simple'
+    author: 'keeWend'
+  - link: https://www.reddit.com/user/khanhas
+    thumbnailURL: img/showcase/polybar_by_khanhas.png
+    imageURL: img/showcase/polybar_by_khanhas.png
+    title: 'polybar'
+    author: 'khanhas'
+  - link: https://iroaseta.deviantart.com/art/Geometry-Rainmeter-666821772
+    thumbnailURL: img/showcase/geometry_rainmeter_by_iroaseta.png
+    imageURL: img/showcase/geometry_rainmeter_by_iroaseta.png
+    title: 'Geometry Rainmeter'
+    author: 'Iroaseta'

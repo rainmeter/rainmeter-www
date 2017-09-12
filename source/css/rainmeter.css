@@ -9,28 +9,31 @@
 /* General styling  */
 
 html {
-  height: 100%;
   overflow-y: scroll;
+  height: 100%;
 }
 body {
-  height: 100%;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 400;
   z-index: 0;
-  font-size: 0.9rem;
-  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  height: 100%;
   min-height: 100vh;
 }
 iframe, object, embed {
   max-width: 100%;
 }
 code {
-  background-color: #F4F4F4;
   color: rgb(240, 91, 25);
+  background-color: #f4f4f4;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: 500;
 }
-.warning {
-  color: rgb(240, 91, 25);
+.text-warning {
+  color: rgb(240, 91, 25) !important;
+}
+.text-danger {
+  color: rgb(233, 23, 6) !important;
 }
 .post {
   width: 95%;
@@ -40,25 +43,27 @@ code {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-width: 1px 0 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, .1);
 }
 .content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0%;
-          flex: 1 1 0%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
 }
 footer {
+  z-index: 2;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: rgba(0, 0, 0, 0.03);
-  z-index: 2;
+  color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .02);
+}
+footer a {
+  font-weight: 600;
+  color: rgba(0, 0, 0, .4);
 }
 @media (min-width: 576px) {
-  body {
-    font-size: 1rem;
-  }
   .post {
     width: 80%;
   }
@@ -68,59 +73,59 @@ footer {
 
 .hero {
   position: relative;
-  background-color: rgb(25, 89, 166);
+  background-color: rgb(25, 81, 155);
   /* background-image: url("../img/bg.jpg"); */
   background-position: center 35%;
   background-size: cover;
 }
 .hero::before {
-  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgb(25, 89, 166);
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(29, 53, 143)), to(rgb(9, 180, 206)));
-  background-image: -webkit-linear-gradient(top left, rgb(29, 53, 143), rgb(9, 180, 206));
-  background-image: -o-linear-gradient(top left, rgb(29, 53, 143), rgb(9, 180, 206));
-  background-image: linear-gradient(to bottom right, rgb(29, 53, 143), rgb(9, 180, 206));
-  opacity: 0.95;
+  content: '';
+  opacity: .95;
+  background-color: rgb(25, 81, 155);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(29, 53, 143)), to(rgb(12, 182, 196)));
+  background-image: -webkit-linear-gradient(top left, rgb(29, 53, 143), rgb(12, 182, 196));
+  background-image: -o-linear-gradient(top left, rgb(29, 53, 143), rgb(12, 182, 196));
+  background-image: linear-gradient(to bottom right, rgb(29, 53, 143), rgb(12, 182, 196));
 }
 #hero.flat {
-  background-color: rgb(25, 89, 166);
+  background-color: rgb(25, 81, 155);
 }
 
 /* Navbar */
 
 .navbar {
-  padding: 1.5rem 0 !important;
   z-index: 2;
+  padding: 1.5rem 0 !important;
 }
 .navbar button:focus {
   outline: none;
 }
 .navbar .dropdown-divider {
   margin-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, .4);
 }
 .navbar li>a {
   font-size: 1.2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 }
 .navbar li>a:hover {
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: rgba(255, 255, 255, .85) !important;
 }
 .navbar .nav-item.active a {
   font-weight: 600;
 }
 .navbar-nav {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
 }
 .navbar-brand {
   padding: 0;
@@ -132,8 +137,8 @@ footer {
 @media (min-width: 992px) {
   .navbar ul>li>a {
     font-size: 1rem;
-    padding-left: 2.5rem !important;
     padding-right: 0 !important;
+    padding-left: 2.5rem !important;
   }
 }
 
@@ -146,23 +151,23 @@ footer {
   font-size: 2rem;
   font-weight: 400;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 .block-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .block-bar .icon {
   display: -webkit-box;
@@ -177,24 +182,27 @@ footer {
   height: 2rem;
 }
 .block-bar .title {
+  font-size: 1.5rem;
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 0;
-  font-weight: 400;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .block-bar .additional a {
+  margin-right: .2rem;
+  margin-left: .2rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
   color: inherit;
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
-  text-decoration: underline;
 }
 .block-bar .additional a:hover, .block-bar .additional a:focus {
-  text-decoration: underline;
+  color: rgba(0, 0, 0, .9);
 }
 @media (min-width: 576px) {
   .block-bar .additional a {
@@ -207,8 +215,8 @@ footer {
   }
   .block-bar {
     -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
   }
   .block-bar .title {
     font-size: 2rem;
@@ -218,50 +226,50 @@ footer {
 /* Intro */
 
 .intro {
-  color: rgba(255, 255, 255, 0.6);
   padding-top: 0;
   padding-bottom: 2rem;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, .6);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 }
 .intro h1 {
-  color: rgb(255, 255, 255);
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: rgb(255, 255, 255);
 }
 .intro p a {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, .9);
 }
 .intro .btn {
-  margin-right: 0.5rem;
-  padding-left: 1.75rem;
+  margin-right: .5rem;
   padding-right: 1.75rem;
+  padding-left: 1.75rem;
   text-transform: capitalize;
   text-shadow: none;
 }
 .intro .icon {
+  line-height: 1.5rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   vertical-align: middle;
-  line-height: 1.5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .intro .icon svg {
-  height: 1.25rem;
   width: 1.25rem;
-  margin-right: 0.5rem;
+  height: 1.25rem;
+  margin-right: .5rem;
 }
 .intro .btn:hover {
-  color: rgb(25, 89, 166);
-  background-color: rgb(248, 249, 250);
+  color: rgb(25, 81, 155);
   border-color: rgb(248, 249, 250);
+  background-color: rgb(248, 249, 250);
 }
 @media (min-width: 576px) {
   .intro {
@@ -284,43 +292,43 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
 }
 .carousel-desc {
+  line-height: 1.4;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  position: absolute;
-  padding: 0.8rem 1.5rem;
   margin-bottom: 0;
-  line-height: 1.4;
+  padding: .8rem 1.5rem;
   color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, .8);
 }
 .carousel-desc .title {
   color: rgb(255, 255, 255);
 }
 .carousel-desc a {
-  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
+  color: rgba(255, 255, 255, .7);
 }
 .carousel-inner {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0.5rem;
+  border-radius: .5rem;
+  background-color: rgba(0, 0, 0, .5);
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
 .carousel-indicators {
-  bottom: 0;
   position: relative;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  bottom: 0;
   margin-top: 1rem;
   cursor: pointer;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
 }
 .carousel-item img {
   width: 100%;
@@ -332,7 +340,7 @@ footer {
   text-align: center;
 }
 p.news-date {
-  margin-bottom: 0.8rem;
+  margin-bottom: .8rem;
 }
 .downloads-date {
   margin-top: 1rem;
@@ -341,23 +349,22 @@ p.news-date {
 .downloads-date svg {
   width: 1.5rem;
   height: 1.5rem;
-  margin-right: 0.8rem;
+  margin-right: .8rem;
 }
 .downloads-date p {
   margin-bottom: 0;
 }
 .downloads img {
-  width: 250px;
   display: block;
+  width: 250px;
   margin: auto auto 1rem;
 }
 .downloads .col-lg {
-  margin-top: 0.2rem;
+  margin-top: .2rem;
   margin-bottom: 1rem;
 }
-.downloads h4 {
+.downloads .row h4 {
   font-weight: 400;
-  color: #2D3133;
 }
 @media (min-width: 992px) {
   .downloads, .news {
@@ -371,10 +378,10 @@ p.news-date {
   }
 }
 .row.additional {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
 }
 .row.additional .col {
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, .1);
 }
 .row.additional .col:last-child {
   border-right: 0 transparent;
@@ -391,18 +398,24 @@ p.news-date {
 }
 .sub-block a.external-link {
   display: block;
-  color: rgb(33, 37, 41);
-  text-decoration: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-bottom: 1rem;
   overflow: hidden;
+  margin-bottom: 1rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+  color: rgb(33, 37, 41);
 }
 .sub-block a:hover {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.sub-block.discover h1 {
+  color: #0074b2;
+}
+.sub-block.help h1 {
+  color: #21a845;
 }
 @media (min-width: 576px) {
   .sub-block {
@@ -423,7 +436,7 @@ p.news-date {
   text-align: center;
 }
 .features-block a {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, .9);
 }
 .feature-icon svg {
   width: 4rem;
@@ -449,52 +462,55 @@ p.news-date {
   margin-bottom: 3rem;
 }
 .gallery .col-12 {
-  padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
+  padding-left: 15px;
 }
 .gallery a {
   width: 100%;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  image-rendering: auto;
+  -webkit-backface-visibility: hidden;
 }
 .gallery a:hover {
   -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 .gallery a img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #baguetteBox-overlay {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, .85);
 }
 #baguetteBox-overlay button:focus {
   outline: 0;
 }
 #baguetteBox-overlay figcaption {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
   font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.8);
   padding: 1rem;
-  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  background-color: rgba(0, 0, 0, .8);
 }
 #baguetteBox-overlay figcaption a {
-  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
+  color: rgba(255, 255, 255, .8);
 }
 #baguetteBox-overlay figcaption a:hover, #baguetteBox-overlay figcaption a:focus {
   color: rgb(255, 255, 255);
 }
 @media (min-width: 576px) {
   .gallery .col-12 {
-    padding-left: 4px;
     padding-right: 4px;
     padding-bottom: 8px;
+    padding-left: 4px;
   }
 }
 @media (min-width: 992px) {
@@ -518,14 +534,15 @@ p.news-date {
 }
 .discover-entry h1.title {
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 300;
+  color: #0074b2;
 }
 .discover-icon svg {
   width: 5rem;
   height: 5rem;
   -webkit-transform-origin: 50% 50% 0;
-      -ms-transform-origin: 50% 50% 0;
-          transform-origin: 50% 50% 0;
+  -ms-transform-origin: 50% 50% 0;
+  transform-origin: 50% 50% 0;
 }
 .discover-links {
   margin-top: 2rem;
@@ -535,17 +552,17 @@ p.news-date {
 }
 .discover-links a.external-link {
   display: block;
-  color: rgb(33, 37, 41);
-  text-decoration: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   margin-bottom: 1rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+  color: rgb(33, 37, 41);
 }
 .discover-links a:hover {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .discover-icon.deviantart {
   color: rgb(5, 204, 71);
@@ -567,6 +584,7 @@ p.news-date {
   height: 5rem;
 }
 .discover .warning {
+  color: rgb(240, 91, 25);
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -606,8 +624,8 @@ p.news-date {
   background-color: rgb(0, 129, 200);
 }
 .release-notes .feature {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 .release-notes .revision {
   padding-top: 1rem;
@@ -616,48 +634,48 @@ p.news-date {
   margin-top: 2.5rem;
 }
 .release-notes ul {
-  list-style-type: none;
   padding-left: 0;
   list-style-position: outside;
+  list-style-type: none;
 }
 .release-notes li {
-  padding-bottom: 0.5rem;
-  color: rgb(114, 121, 127);
   position: relative;
+  padding-bottom: .5rem;
+  color: rgb(114, 121, 127);
 }
 .release-notes b {
   color: rgb(33, 37, 41);
 }
 .release-notes .badge {
   position: absolute;
-  top: 0.25rem;
+  top: .25rem;
   left: 0;
   width: 4rem;
-  margin-right: 0.5rem;
+  margin-right: .5rem;
 }
 .release-notes .change-text {
-  margin-left: 5rem;
   display: block;
+  margin-left: 5rem;
 }
 
 /* Error page */
 
 .error404 {
-  color: rgb(255, 255, 255);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(25, 89, 166)), to(rgb(9, 180, 206)));
-  background-image: -webkit-linear-gradient(top, rgb(25, 89, 166), rgb(9, 180, 206));
-  background-image: -o-linear-gradient(top, rgb(25, 89, 166), rgb(9, 180, 206));
-  background-image: linear-gradient(to bottom, rgb(25, 89, 166), rgb(9, 180, 206));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
+  color: rgb(255, 255, 255);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(25, 81, 155)), to(rgb(9, 180, 206)));
+  background-image: -webkit-linear-gradient(top, rgb(25, 81, 155), rgb(9, 180, 206));
+  background-image: -o-linear-gradient(top, rgb(25, 81, 155), rgb(9, 180, 206));
+  background-image: linear-gradient(to bottom, rgb(25, 81, 155), rgb(9, 180, 206));
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .error404 h1 {
   font-size: 10rem;
@@ -665,32 +683,32 @@ p.news-date {
 }
 .error404 .btn:hover {
   color: rgb(33, 37, 41);
-  background-color: rgb(248, 249, 250);
   border-color: rgb(248, 249, 250);
+  background-color: rgb(248, 249, 250);
 }
 .error404 .container {
   z-index: 2;
 }
 .floatingIcons {
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
+  overflow: hidden;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  overflow: hidden;
   margin-bottom: 0;
 }
 .floatingIcons li {
   position: absolute;
-  list-style: none;
-  display: block;
   bottom: -180px;
-  -webkit-animation: animation1 25s infinite;
-          animation: animation1 25s infinite;
+  display: block;
+  list-style: none;
   -webkit-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
-          transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-animation: animation1 25s infinite;
+  animation: animation1 25s infinite;
 }
 .floatingIcons svg {
   width: 100%;
@@ -701,93 +719,93 @@ p.news-date {
   width: 16rem;
   height: 16rem;
   -webkit-animation: animation1 25s infinite;
-          animation: animation1 25s infinite;
+  animation: animation1 25s infinite;
   -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
 }
 .floatingIcons li:nth-child(2) {
   left: 20%;
   width: 11rem;
   height: 11rem;
   -webkit-animation: animation2 25s infinite;
-          animation: animation2 25s infinite;
+  animation: animation2 25s infinite;
   -webkit-animation-delay: 9s;
-          animation-delay: 9s;
+  animation-delay: 9s;
 }
 .floatingIcons li:nth-child(3) {
   left: 5%;
   width: 14rem;
   height: 14rem;
   -webkit-animation: animation1 25s infinite;
-          animation: animation1 25s infinite;
+  animation: animation1 25s infinite;
   -webkit-animation-delay: 13s;
-          animation-delay: 13s;
+  animation-delay: 13s;
 }
 .floatingIcons li:nth-child(4) {
   left: 30%;
   width: 12rem;
   height: 12rem;
   -webkit-animation: animation3 25s infinite;
-          animation: animation3 25s infinite;
+  animation: animation3 25s infinite;
   -webkit-animation-delay: 17s;
-          animation-delay: 17s;
+  animation-delay: 17s;
 }
 .floatingIcons li:nth-child(5) {
   left: 65%;
   width: 13rem;
   height: 13rem;
   -webkit-animation: animation2 25s infinite;
-          animation: animation2 25s infinite;
+  animation: animation2 25s infinite;
   -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  animation-delay: 6s;
 }
 .floatingIcons li:nth-child(6) {
   left: 65%;
   width: 15rem;
   height: 15rem;
   -webkit-animation: animation1 25s infinite;
-          animation: animation1 25s infinite;
+  animation: animation1 25s infinite;
   -webkit-animation-delay: 19s;
-          animation-delay: 19s;
+  animation-delay: 19s;
 }
 .floatingIcons li:nth-child(7) {
   left: 20%;
   width: 14rem;
   height: 14rem;
   -webkit-animation: animation1 25s infinite;
-          animation: animation1 25s infinite;
+  animation: animation1 25s infinite;
   -webkit-animation-delay: 22s;
-          animation-delay: 22s;
+  animation-delay: 22s;
 }
 .floatingIcons li:nth-child(8) {
   left: 80%;
   width: 12rem;
   height: 12rem;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
   -webkit-animation: animation2 25s infinite;
-          animation: animation2 25s infinite;
+  animation: animation2 25s infinite;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
 }
 .floatingIcons li:nth-child(9) {
   left: 85%;
   width: 14rem;
   height: 14rem;
-  -webkit-animation: animation3 25s infinite;
-          animation: animation3 25s infinite;
   -webkit-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
-          transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-animation: animation3 25s infinite;
+  animation: animation3 25s infinite;
   -webkit-animation-delay: 14s;
-          animation-delay: 14s;
+  animation-delay: 14s;
 }
 .floatingIcons li:nth-child(10) {
   left: 50%;
   width: 16rem;
   height: 16rem;
   -webkit-animation: animation1 25s infinite;
-          animation: animation1 25s infinite;
+  animation: animation1 25s infinite;
   -webkit-animation-delay: 12s;
-          animation-delay: 12s;
+  animation-delay: 12s;
 }
 @-webkit-keyframes animation1 {
   0% {
