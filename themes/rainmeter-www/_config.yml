@@ -7,18 +7,20 @@ menu:
 
 # Downloads
 downloads:
+  beta:
+    versionName: '4.1 Beta Release'
+    buildNumber: 'r2873'
+    date: 'September 11, 2017'
+    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.1.0.2873/Rainmeter-4.1-r2873-beta.exe
+    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.1-r2873-beta.exe
+    releaseNotesURL: beta-4-1.html
   final:
     versionName: '4.0 Final Release'
     buildNumber: 'r2746'
+    date: 'January 1, 2017'
     downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.0.0.2746/Rainmeter-4.0.exe
     mirrorURL: https://builds.rainmeter.net/Rainmeter-4.0.exe
     releaseNotesURL: release-4-0.html
-  beta:
-    versionName: '4.1 Beta Release'
-    buildNumber: 'r2858'
-    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.1.0.2858/Rainmeter-4.1-r2858-beta.exe
-    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.1-r2858-beta.exe
-    releaseNotesURL: beta-4-1.html
 
 # News block
 news:
@@ -27,51 +29,91 @@ news:
     date: 'August 27, 2017'
   - title: 'Rainmeter 4.1 Beta Release'
     url: beta-4-1.html
-    date: 'July 28, 2017'
+    date: 'September 11, 2017'
   - title: 'Rainmeter 4.0 Final Release'
     url: release-4-0.html
     date: 'July 28, 2017'
 
 # skin carousel
 carousel:
-  - link: example.com
-    imageURL: http://via.placeholder.com/445x250
-    title: 'Example 1'
-    author: 'test'
-  - link: example.com/2
-    imageURL: http://via.placeholder.com/445x250/6691FF/FFFFFF
-    title: 'Example 2'
-    author: 'test'
+  - link: https://github.com/khanhas/mnmlUI
+    imageURL: img/skins/mnmlUI.png
+    title: 'mnml UI'
+    author: 'khanhas'
+  - link: https://redsaph.deviantart.com/art/Cleartext-for-Rainmeter-519796161
+    imageURL: img/skins/cleartext_by_redsaph.png
+    title: 'Cleartext'
+    author: 'Redsaph'
+  - link: https://jelle-dekkers.deviantart.com/art/MiniWeather-2-02-677053471
+    imageURL: img/skins/miniweather_by _JelleDekkers.png
+    title: 'MiniWeather'
+    author: 'Jelle-Dekkers'
+  - link: https://marcopixel.deviantart.com/art/Monstercat-Visualizer-for-Rainmeter-1-8-0-486330771
+    imageURL: img/skins/monstercat_visualizer_by_marcopixel.png
+    title: 'Monstercat Visualizer'
+    author: 'marcopixel'
+  - link: https://flyinghyrax.deviantart.com/art/Binary-Clock-266686125
+    imageURL: img/skins/Binary_Clock_by_FlyingHyrax.png
+    title: 'Binary Clock'
+    author: 'FlyingHyrax'
+  - link: https://undefinist.deviantart.com/art/VisBubble-Round-Visualizer-for-Rainmeter-488601501
+    imageURL: img/skins/visbubble_by_undefinist.png
+    title: 'VisBubble'
+    author: 'undefinist'
 
 # Showcase gallery
 gallery:
-  - link: https://hiphopium.deviantart.com/art/Momento-698402825
-    thumbnailURL: img/showcase/momento_by_hiphopium.jpg
-    imageURL: img/showcase/momento_by_hiphopium.jpg
+  - type: 'gfycat'
+    link: https://www.reddit.com/r/Rainmeter/comments/5rg8fp/howling_atat/
+    thumbnailURL: img/showcase/thumb_HowlingATAT.png
+    content: BestInsecureHowlermonkey
+    title: 'Howling AT-AT'
+    author: 'Jumats'
+  - type: 'image'
+    link: https://hiphopium.deviantart.com/art/Momento-698402825
+    thumbnailURL: img/showcase/thumb_momento.png
+    content: img/showcase/momento.png
     title: 'Momento'
     author: 'HipHopium'
-  - link: https://www.deviantart.com/art/Rime-Rainmeter-642132946
-    thumbnailURL: img/showcase/rime_rainmeter_by_iroaseta.png
-    imageURL: img/showcase/rime_rainmeter_by_iroaseta.png
+  - type: 'image'
+    link: https://www.deviantart.com/art/Rime-Rainmeter-642132946
+    thumbnailURL: img/showcase/thumb_rime.png
+    content: img/showcase/rime.png
     title: 'Rime Rainmeter'
     author: 'Iroaseta'
-  - link: https://www.reddit.com/r/Rainmeter/comments/60qz2m/cyberpunk_coffee/
-    thumbnailURL: img/showcase/cyberpunk_coffee_by_labr4t_thumb.png
-    imageURL: img/showcase/cyberpunk_coffee_by_labr4t.gif
+  - type: 'image'
+    link: https://www.reddit.com/r/Rainmeter/comments/60qz2m/cyberpunk_coffee/
+    thumbnailURL: img/showcase/thumb_CyberpunkCoffee.png
+    content: img/showcase/cyberpunkcoffee.gif
     title: 'Cyberpunk Coffee'
     author: 'Labr4t'
-  - link: https://www.reddit.com/r/Rainmeter/comments/6fi83s/blue_and_simple/
-    thumbnailURL: img/showcase/blue_and_simple_by_keeWend.jpg
-    imageURL: img/showcase/blue_and_simple_by_keeWend.jpg
+  - type: 'gfycat'
+    link: https://www.reddit.com/r/Rainmeter/comments/5erns9/a_clean_daft_punk_setup_giving_life_back_to_music/
+    thumbnailURL: img/showcase/thumb_cleanDaftPunk.png
+    content: GreatShadyAegeancat
+    title: 'Clean Daft Punk setup'
+    author: 'The_siderian'
+  - type: 'video'
+    link: https://www.reddit.com/r/Rainmeter/comments/6fi83s/blue_and_simple/
+    thumbnailURL: img/showcase/thumb_BlueAndSimple.png
+    content: img/showcase/BlueAndSimple.mp4
     title: 'Blue and Simple'
     author: 'keeWend'
-  - link: https://www.reddit.com/user/khanhas
-    thumbnailURL: img/showcase/polybar_by_khanhas.png
-    imageURL: img/showcase/polybar_by_khanhas.png
+  - type: 'image'
+    link: https://www.reddit.com/user/khanhas
+    thumbnailURL: img/showcase/thumb_polybar.png
+    content: img/showcase/polybar.png
     title: 'polybar'
     author: 'khanhas'
-  - link: https://iroaseta.deviantart.com/art/Geometry-Rainmeter-666821772
-    thumbnailURL: img/showcase/geometry_rainmeter_by_iroaseta.png
-    imageURL: img/showcase/geometry_rainmeter_by_iroaseta.png
+  - type: 'image'
+    link: https://iroaseta.deviantart.com/art/Geometry-Rainmeter-666821772
+    thumbnailURL: img/showcase/thumb_geometry.png
+    content: img/showcase/geometry.png
     title: 'Geometry Rainmeter'
     author: 'Iroaseta'
+  - type: 'gfycat'
+    link: https://www.reddit.com/r/Rainmeter/comments/6gv77s/so_this_is_the_volume2_of_my_zelda_theme/
+    thumbnailURL: img/showcase/thumb_ZeldaTheme2.png
+    content: WelldocumentedGlossyAnkolewatusi
+    title: 'Zelda theme 2.0'
+    author: 'NicoNoFace'

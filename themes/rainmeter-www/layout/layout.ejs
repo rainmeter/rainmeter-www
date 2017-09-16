@@ -6,18 +6,20 @@
 	<title><% if (page.title) { %><%= page.title %> - <% } %>Rainmeter, desktop customization tool</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/rainmeter.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.2/baguetteBox.min.css" integrity="sha256-6yEmPaB1DaciW/2pIyw9Oblw5/KYY6sOQNE4uHT9LAM=" crossorigin="anonymous" />
-	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous" />
 	<link rel="shortcut icon" href="/favicon.ico">
 </head>
 
 <body class="d-flex flex-column">
- <%- body %>
+	<!-- Lazyload script to help with website loading times -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lazyloadjs/3.2.2/lazyload.min.js" integrity="sha256-BYIGSlPqLS5NrndoMKMp7EpW8tbOfXbjiNkN3uATdH8=" crossorigin="anonymous"></script>
+	<%- body %>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.2/baguetteBox.min.js" integrity="sha256-yfd9Cnso93rjJzzcpR84D4sVqvj3UWQmkLfA/i1DQ9w=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js" integrity="sha256-wzoq0P7w2qLzRcJsF319y6G9Oilk3nU5CZ8tnY9TjFI=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/js/main.js"></script>
 
 </body>
