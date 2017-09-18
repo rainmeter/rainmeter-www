@@ -1,0 +1,35 @@
+<div id="downloads" class="downloads col-lg-8">
+  <div class="block-bar text-primary d-flex justify-content-start">
+    <!-- Icon by feathericons.com -->
+    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M3 17v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3"></path><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="2" x2="12" y2="16"></line></svg></div>
+    <h4 class="title mr-auto">Downloads</h4>
+    <span class="additional text-muted"><a href="https://docs.rainmeter.net/history">Version History</a><br class="d-inline d-sm-none"><span class="d-none d-sm-inline"> - </span><a href="https://builds.rainmeter.net/">Old Downloads</a></span>
+  </div>
+  <hr />
+  <div class="row align-items-center">
+    <div id="betaDownload" class="beta col-lg">
+      <h4><%- theme.downloads.beta.versionName %> - <%- theme.downloads.beta.buildNumber %></h4>
+      <div class="downloads-date d-flex text-muted justify-content-center justify-content-lg-start align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        <p class="d-flex"><%- theme.downloads.beta.date %></p>
+      </div>
+      <a class="btn btn-primary btn-lg btn-block" href="<%- theme.downloads.beta.downloadURL %>" role="button">Download Beta</a>
+      <div class="row additional">
+        <div class="col"><a class="btn btn-link btn-block" href="<%- theme.downloads.beta.mirrorURL %>" role="button">Mirror</a></div>
+        <div class="col"><a class="btn btn-link btn-block" href="<%- theme.downloads.beta.releaseNotesURL %>" role="button">Release notes</a></div>
+      </div>
+    </div>
+    <div id="finalDownload" class="final col-lg">
+      <h4><%- theme.downloads.final.versionName %> - <%- theme.downloads.final.buildNumber %></h4>
+      <div class="downloads-date d-flex text-muted justify-content-center justify-content-lg-start align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        <p class="d-flex"><%- theme.downloads.final.date %></p>
+      </div>
+      <a class="btn btn-primary btn-lg btn-block" href="<%- theme.downloads.final.downloadURL %>" role="button">Download Final</a>
+      <div class="row additional">
+        <div class="col"><a class="btn btn-link btn-block" href="<%- theme.downloads.final.mirrorURL %>" role="button">Mirror</a></div>
+        <div class="col"><a class="btn btn-link btn-block" href="<%- theme.downloads.final.releaseNotesURL %>" role="button">Release notes</a></div>
+      </div>
+    </div>
+  </div>
+</div>
