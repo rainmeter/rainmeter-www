@@ -1,8 +1,8 @@
 # Navigation
 menu:
-  Home: /
+  Home: //rainmeter.net/
   Documentation: //docs.rainmeter.net/
-  Discover: /discover/
+  Discover: /discover
   Community: //forum.rainmeter.net
 
 # Downloads
@@ -13,25 +13,25 @@ downloads:
     date: 'September 11, 2017'
     downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.1.0.2873/Rainmeter-4.1-r2873-beta.exe
     mirrorURL: https://builds.rainmeter.net/Rainmeter-4.1-r2873-beta.exe
-    releaseNotesURL: /beta-4-1/
+    releaseNotesURL: /beta-4-1
   final:
     versionName: '4.0 Final Release'
     buildNumber: 'r2746'
     date: 'January 1, 2017'
     downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.0.0.2746/Rainmeter-4.0.exe
     mirrorURL: https://builds.rainmeter.net/Rainmeter-4.0.exe
-    releaseNotesURL: /release-4-0/
+    releaseNotesURL: /release-4-0
 
 # News block
 news:
   - title: 'A fresh coat of paint!'
-    url: /beta-4-1/
+    url: /beta-4-1
     date: 'August 27, 2017'
   - title: 'Rainmeter 4.1 Beta Release'
-    url: /beta-4-1/
+    url: /beta-4-1
     date: 'September 11, 2017'
   - title: 'Rainmeter 4.0 Final Release'
-    url: /release-4-0/
+    url: /release-4-0
     date: 'July 28, 2017'
 
 # skin carousel
