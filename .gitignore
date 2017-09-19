@@ -2,4 +2,5 @@
 _generated
 _ghpages.git
 db.json
+package.json
 node_modules
