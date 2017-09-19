@@ -9,10 +9,10 @@ menu:
 downloads:
   beta:
     versionName: '4.1 Beta Release'
-    buildNumber: 'r2873'
-    date: 'September 11, 2017'
-    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.1.0.2873/Rainmeter-4.1-r2873-beta.exe
-    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.1-r2873-beta.exe
+    buildNumber: 'r2876'
+    date: 'September 19, 2017'
+    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.1.0.2876/Rainmeter-4.1-r2876-beta.exe
+    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.1-r2876-beta.exe
     releaseNotesURL: /beta-4-1
   final:
     versionName: '4.0 Final Release'
@@ -26,7 +26,7 @@ downloads:
 news:
   - title: 'Rainmeter 4.1 Beta Release'
     url: /beta-4-1
-    date: 'September 11, 2017'
+    date: 'September 19, 2017'
   - title: 'Rainmeter 4.0 Final Release'
     url: /release-4-0
     date: 'July 28, 2017'
