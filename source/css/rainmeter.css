@@ -339,7 +339,16 @@ footer a:hover, footer a:focus {
 .carousel-item img {
   width: 100%;
 }
-
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+  opacity: 0;
+}
+.carousel:hover .carousel-control-next,
+.carousel:hover .carousel-control-prev,
+.carousel:focus .carousel-control-next,
+.carousel:focus .carousel-control-prev {
+  opacity: 1;
+}
 /* Download and News block */
 
 .downloads, .news {
