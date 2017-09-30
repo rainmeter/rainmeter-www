@@ -61,6 +61,9 @@ code {
   -ms-flex: 1 1 0;
   flex: 1 1 0;
 }
+.text-muted b {
+    color: #364452;
+}
 footer {
   font-weight: 600;
   z-index: 2;
@@ -656,6 +659,14 @@ p.news-date {
   color: rgb(255, 255, 255);
   background-color: rgb(0, 129, 200);
 }
+.badge-removed {
+  color: rgb(255, 255, 255);
+  background-color: rgb(212, 68, 3);
+}
+.badge-release {
+  color: rgb(255, 255, 255);
+  background-color: rgb(159, 18, 234);
+}
 .release-notes .feature {
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -675,6 +686,7 @@ p.news-date {
   position: relative;
   padding-bottom: .5rem;
   color: rgb(114, 121, 127);
+  margin-left: 5rem;
 }
 .release-notes b {
   color: rgb(33, 37, 41);
@@ -682,13 +694,9 @@ p.news-date {
 .release-notes .badge {
   position: absolute;
   top: .25rem;
-  left: 0;
+  left: -5rem;
   width: 4rem;
   margin-right: .5rem;
-}
-.release-notes .change-text {
-  display: block;
-  margin-left: 5rem;
 }
 
 /* Error page */
