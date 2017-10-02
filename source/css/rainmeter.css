@@ -641,7 +641,7 @@ p.news-date {
 }
 .badge-fixed {
   color: rgb(255, 255, 255);
-  background-color: rgb(0, 129, 200);
+  background-color: rgb(224, 144, 40);
 }
 .release-notes .feature {
   padding-top: .5rem;
