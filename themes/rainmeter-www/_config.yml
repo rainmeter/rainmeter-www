@@ -24,15 +24,15 @@ downloads:
 
 # News block
 news:
+  - title: '<span style="color:#E91706">Need Help with Localization</span>'
+    url: /localization-help
+    date: 'September 30, 2017'
   - title: 'Rainmeter 4.1 Beta Release'
     url: /beta-4-1
     date: 'September 19, 2017'
   - title: 'Rainmeter 4.0 Final Release'
     url: /release-4-0
     date: 'July 28, 2017'
-  - title: 'Updates to Localization Files'
-    url: https://forum.rainmeter.net/viewtopic.php?f=13&t=25139
-    date: January 17, 2017
 
 # skin carousel
 carousel:
