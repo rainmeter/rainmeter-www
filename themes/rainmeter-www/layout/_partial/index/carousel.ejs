@@ -8,7 +8,7 @@
   <div class="carousel-inner">
     <% theme.carousel.forEach(function(carousel, i) { %>
       <div class="carousel-item <% if(i === 0) { %>active<% } %>">
-        <a href="<%- carousel.link %>">
+        <a href="<%- carousel.link %>" target="_blank">
         <img src="<%- carousel.imageURL %>" alt="<%- carousel.title %> by <%- carousel.author %>">
         <p class="carousel-desc"><b class="title"><%- carousel.title %></b> by <%- carousel.author %></a>
       </div>
