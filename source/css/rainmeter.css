@@ -75,7 +75,6 @@ code {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 0;
   flex: 1 1 0;
-  overflow: hidden;
 }
 .text-muted b {
     color: #364452;
