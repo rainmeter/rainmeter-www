@@ -9,10 +9,10 @@ menu:
 downloads:
   beta:
     versionName: '4.1 Beta Release'
-    buildNumber: 'r2917'
-    date: 'October 1, 2017'
-    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.1.0.2917/Rainmeter-4.1-r2917-beta.exe
-    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.1-r2917-beta.exe
+    buildNumber: 'r2921'
+    date: 'October 4, 2017'
+    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.1.0.2921/Rainmeter-4.1-r2921-beta.exe
+    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.1-r2921-beta.exe
     releaseNotesURL: /beta-4-1
   final:
     versionName: '4.0 Final Release'
@@ -26,7 +26,7 @@ downloads:
 news:
   - title: 'Rainmeter 4.1 Beta Release'
     url: /beta-4-1
-    date: 'October 1, 2017'
+    date: 'October 4, 2017'
   - title: '<span style="color:#E91706">Need Help with Localization</span>'
     url: /localization-help
     date: 'September 30, 2017'	
