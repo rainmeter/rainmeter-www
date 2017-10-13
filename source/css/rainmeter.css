@@ -527,6 +527,7 @@ p.news-date {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  cursor: pointer;
 }
 .fancybox-video {
   display: none;
