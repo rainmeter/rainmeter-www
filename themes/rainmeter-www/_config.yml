@@ -1,8 +1,8 @@
 # Navigation
 menu:
-  Home: //rainmeter.net/
+  Home: index.html
   Documentation: //docs.rainmeter.net/
-  Discover: /discover
+  Discover: discover
   Community: //forum.rainmeter.net
 
 # Downloads
@@ -29,7 +29,7 @@ news:
     date: 'October 18, 2017'
   - title: '<span style="color:#E91706">Need Help with Localization</span>'
     url: /localization-help
-    date: 'September 30, 2017'	
+    date: 'September 30, 2017'
   - title: 'Rainmeter 4.0 Final Release'
     url: /release-4-0
     date: 'July 28, 2017'

@@ -158,9 +158,6 @@ footer a:hover, footer a:focus {
 .navbar li>a:hover {
   color: rgba(255, 255, 255, .85) !important;
 }
-.navbar .nav-item.active a {
-  font-weight: 600;
-}
 .navbar-nav {
   margin-top: .5rem;
 }
