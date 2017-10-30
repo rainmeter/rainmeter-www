@@ -13,3 +13,11 @@ $(document).ready(function() {
     }
   });
 });
+
+$(document).ready(function($) {
+    $(".clickable-row").click(function(e) {
+        if ($(e.target).is("td")) {
+            window.location = $(this).data("href");
+        }
+    });
+});

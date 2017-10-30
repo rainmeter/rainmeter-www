@@ -109,6 +109,7 @@ footer a:hover, footer a:focus {
     max-width: 1026px;
   }
 }
+
 /* Hero */
 
 .hero {
@@ -377,6 +378,7 @@ footer a:hover, footer a:focus {
 .carousel:focus .carousel-control-prev {
   opacity: 1;
 }
+
 /* Download and News block */
 
 .downloads, .news {
@@ -716,6 +718,11 @@ p.news-date {
   line-height: 0.65rem;
   height: 1.125rem;
   margin-right: .5rem;
+}
+
+/* Localization */
+.clickable-row {
+  cursor: pointer;
 }
 
 /* Error page */
