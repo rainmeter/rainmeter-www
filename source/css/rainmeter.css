@@ -37,9 +37,15 @@ body {
 }
 
 a {
-  -webkit-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  color: #295cbb;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #007BFF;
+  text-decoration: none;
 }
 iframe, object, embed {
   max-width: 100%;
@@ -129,10 +135,10 @@ footer a:hover, footer a:focus {
   content: '';
   opacity: .95;
   background-color: rgb(25, 81, 155);
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(29, 53, 143)), to(rgb(12, 182, 196)));
-  background-image: -webkit-linear-gradient(top left, rgb(29, 53, 143), rgb(12, 182, 196));
-  background-image: -o-linear-gradient(top left, rgb(29, 53, 143), rgb(12, 182, 196));
-  background-image: linear-gradient(to bottom right, rgb(29, 53, 143), rgb(12, 182, 196));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(35, 64, 169)), to(rgb(14, 199, 216)));
+  background-image: -webkit-linear-gradient(top left, rgb(35, 64, 169), rgb(14, 199, 216));
+  background-image: -o-linear-gradient(top left, rgb(35, 64, 169), rgb(14, 199, 216));
+  background-image: linear-gradient(to bottom right, rgb(35, 64, 169), rgb(14, 199, 216));
 }
 #hero.flat {
   background-color: rgb(25, 81, 155);
@@ -385,6 +391,9 @@ footer a:hover, footer a:focus {
 .downloads, .news {
   text-align: center;
 }
+a.news-title {
+  color: #007bff;
+}
 p.news-date {
   margin-bottom: .8rem;
 }
@@ -477,9 +486,6 @@ p.news-date {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
-}
-.features-block a {
-  color: rgba(0, 0, 0, .9);
 }
 .feature-icon svg {
   width: 4rem;
@@ -601,9 +607,6 @@ p.news-date {
 }
 .discover-links {
   margin-top: 2rem;
-}
-.discover-links a {
-  color: rgb(33, 37, 41);
 }
 .discover-links a.external-link {
   display: block;
