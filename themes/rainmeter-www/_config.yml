@@ -8,12 +8,12 @@ menu:
 # Downloads
 downloads:
   beta:
-    versionName: '4.1 RC3 Release'
-    buildNumber: 'r2983'
-    date: 'November 5, 2017'
-    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.1.0.2983/Rainmeter-4.1-r2983-rc3.exe
-    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.1-r2983-rc3.exe
-    releaseNotesURL: /release-4-1
+    versionName: '4.2 Beta Release'
+    buildNumber: 'r3001'
+    date: 'November 19, 2017'
+    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.2.0.3001/Rainmeter-4.2-r3001-beta.exe
+    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.2-r3001-beta.exe
+    releaseNotesURL: /beta-4-2
   final:
     versionName: '4.1 Final Release'
     buildNumber: 'r2989'
@@ -24,12 +24,12 @@ downloads:
 
 # News block
 news:
+  - title: 'Rainmeter 4.2 Beta Release'
+    url: /beta-4-2
+    date: 'November 19, 2017'	
   - title: 'Rainmeter 4.1 Final Release'
     url: /release-4-1
     date: 'November 6, 2017'
-  - title: 'New Site and Documentation'
-    url: 'https://docs.rainmeter.net/'
-    date: 'November 6, 2017'	
   - title: 'Need Help with Localization'
     url: /localization
     date: 'November 6, 2017'
