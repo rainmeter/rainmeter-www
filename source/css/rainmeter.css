@@ -43,7 +43,7 @@ a {
   transition: all .2s ease-in;
   text-decoration: none;
 }
-a:hover, a:focus {
+a:hover {
   color: #007BFF;
   text-decoration: none;
 }
