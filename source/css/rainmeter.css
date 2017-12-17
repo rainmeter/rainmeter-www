@@ -69,6 +69,23 @@ code {
   text-align: justify;
   hyphens: auto;
 }
+.post h2 {
+  text-align: left;
+}
+.post .release-header {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.post .feature h4 {
+  font-weight: 800;
+}
+.post .text-muted {
+  color: #6f6f6f !important
+}
 .divider {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -504,7 +521,18 @@ p.news-date {
 .feature-icon.helpful {
   color: rgb(233, 23, 6);
 }
-
+@media (min-width: 992px) {
+  .features-other b {
+    position: absolute;
+    left: -12rem;
+    width: 12rem;
+    text-align: left;
+  }
+  .features-other p {
+    position: relative;
+    margin-left: 12rem;
+  }
+}
 /* Showcase gallery */
 
 .gallery {

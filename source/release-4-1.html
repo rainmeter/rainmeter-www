@@ -5,10 +5,10 @@ title: 'Rainmeter 4.1 Release'
 ---
 <div class="release-notes">
 <div class="description">
-	<h1 class="text-center">Rainmeter 4.1 Final Release</h1>
-	<hr>
-	<p>There are a lot of new features and capabilities in the latest Rainmeter 4.1. You can safely install the new 4.1 release version right over your existing Rainmeter 4.0 or any earlier installation, and nothing you have done will be lost or changed. There is never any need to uninstall any earlier version of Rainmeter to use the newest version.</p>
-	<p><b>Note:</b> Rainmeter 4.1 will run on Microsoft Windows 7 through 10. Windows XP and Vista are not supported.</p>
+	<img src="img/posts/release4-1.png" alt="Rainmeter 4.1 Final Release" class="release-header"/>
+	<p>We are excited to announce the release of Rainmeter 4.1! This release includes new features for skin creators and a lot of bug fixes which should help with some nasty issues you might have encountered. Also included is our new Plugin API and SDK which should help people with creating new and exciting new plugins for Rainmeter.</p>
+	<p>There are a lot of new features and capabilities in the latest Rainmeter 4.1. You can safely install the new 4.1 <br>release version right over your existing Rainmeter 4.0 or any earlier installation, and nothing you have done will be lost or changed. There is never any need to uninstall any earlier version of Rainmeter to use the newest version.</p>
+	<p class="text-warning"><b class="text-warning">Note:</b> Rainmeter 4.1 will run on Microsoft Windows 7 through 10. Windows XP and Vista are not supported.</p>
 </div>
 
 <div class="changelog">
@@ -17,35 +17,35 @@ title: 'Rainmeter 4.1 Release'
 
 	<hr>
 	<div class="feature">
-		<h4><b>Variables</b></h4>
+		<h4>Variables</h4>
 		<p class="text-muted">Added an alternative nesting variables syntax, to enable nesting variables, section variables, and mouse variables inside each other. See <a href="https://docs.rainmeter.net/manual-beta/variables/nesting-variables/">Nesting Variables</a> for details.</p>
 		<p class="text-muted">Added Character Reference Variables to allow plain-text coding of Unicode characters and symbols, as well as icons from specialized fonts like FontAwesome. See <a href="https://docs.rainmeter.net/manual-beta/variables/character-variables/">Character Reference Variables</a> for details.</p>
 	</div>
 
 	<div class="feature">
-		<h4><b>FontWeight</b></h4>
+		<h4>FontWeight</h4>
 		<p class="text-muted">Added new <a href="https://docs.rainmeter.net/manual-beta/meters/string/#FontWeight">FontWeight</a> option to the String meter. This much more powerful option should be used in place of StringStyle going forward.</p>
 	</div>
 
 	<div class="feature">
-		<h4><b>Bangs</b></h4>
+		<h4>Bangs</h4>
 		<p class="text-muted">New <a href="https://docs.rainmeter.net/manual-beta/bangs/#EditSkin">!EditSkin</a> bang. Opens the current or a specified skin .ini file in the text editor defined in <a href="https://docs.rainmeter.net/manual-beta/settings/rainmeter-section/#ConfigEditor">ConfigEditor</a> in the Rainmeter settings, or associated with .ini files in Windows. The default will be Windows Notepad.exe.</p>
 		<p class="text-muted">Added new <a href="https://docs.rainmeter.net/manual-beta/bangs/#FadeDuration">!FadeDuration</a> and <a href="https://docs.rainmeter.net/manual-beta/bangs/#FadeDurationGroup">!FadeDurationGroup</a> bangs to set the <a href="https://docs.rainmeter.net/manual-beta/settings/skin-sections/#FadeDuration">FadeDuration</a> in milliseconds when activating/deactivating a skin, using the fade-in / fade-out effects on mouse over, or when the <a href="https://docs.rainmeter.net/manual-beta/bangs/#ShowHideToggleFade">fade bangs</a> are used.</p>
 	</div>
 
 	<div class="feature">
-		<h4><b>Drag Groups</b></h4>
+		<h4>Drag Groups</h4>
 		<p class="text-muted">Drag Groups can now be created by selecting skins while holding CTRL-ALT. Dragging one skin, or nudging with the arrow keys will move all selected skins. See <a href="https://docs.rainmeter.net/manual-beta/arranging-skins/#Multiple">Multiple Skins</a> for details.</p>
 	</div>
 
 	<div class="feature">
-		<h4><b>Lua Scripting</b></h4>
+		<h4>Lua Scripting</h4>
 		<p class="text-muted">Added inline Lua section variables, to support an inline return of a value from Lua with a function() call or by retrieving a variable. See <a href="https://docs.rainmeter.net/manual-beta/lua-scripting/inline-lua/">Inline Lua</a> for details.</p>
 		<p class="text-muted">Due to recent changes made in how each Lua script maintains its own distinct state in the Rainmeter environment, we have been able to add the <em>dofile</em>, <em>debug</em>, <em>setfenv</em>, <em>getfenv</em> and <em>coroutine</em> functionality back into the Lua package.</p>
 	</div>
 
 	<div class="feature">
-		<h4><b>About Dialog</b></h4>
+		<h4>About Dialog</h4>
 		<p class="text-muted">There have been several improvements to the <a href="https://docs.rainmeter.net/manual-beta/user-interface/about/">About</a> dialog. This should be of further assistance when debugging your skins.<p>
 		<ul style="list-style-type: disc;">
 			<li style="margin-left: 2rem;">The Skins panel now shows both the "number" and "string" value of measures, and indicates when a measure is either disabled, paused, or both. See <a href="https://docs.rainmeter.net/manual-beta/user-interface/about/#SkinsTab">Skins Tab</a> for details.</li>
@@ -59,7 +59,7 @@ title: 'Rainmeter 4.1 Release'
 	</div>
 
 	<div class="feature">
-		<h4><b>Plugin API and SDK</b></h4>
+		<h4>Plugin API and SDK</h4>
 		<p class="text-muted">Plugin authors are strongly encouraged to get the latest <a href="https://github.com/rainmeter/rainmeter-plugin-sdk">Plugin SDK</a> and review the new <a href="https://docs.rainmeter.net/developers/">Developer Documentation</a>.</p>
 		<p class="text-muted">Added the ability in the Plugin API to create plugins in C++ or C# supporting Inline Plugin Section Variables in a skin. This is primarily a change for plugin authors, with any documentation for how their plugins should be used in a skin provided by the author. Details on how this can be used in a plugin are at <a href="https://docs.rainmeter.net/developers/plugin/cpp/#Custom">C++</a> and <a href="https://docs.rainmeter.net/developers/plugin/csharp/#Custom">C#</a>.</p>
 		<p class="text-muted">The documentation for plugin authors has been greatly enhanced and improved, and new and improved example plugins added to the SDK.</p>
@@ -67,7 +67,7 @@ title: 'Rainmeter 4.1 Release'
 
 	<h2>Other enhancements and fixes in Rainmeter 4.1</h2>
 	<hr>
-
+	<div class="features-other">
 	<p class="text-muted"><b>CoreTemp Plugin:</b> The author of both the <a href="http://www.alcpu.com/CoreTemp/">CoreTemp application</a> and Rainmeter plugin, Arthur Liberman, added CPU core-specific values to the data available in the plugin. See <a href="https://docs.rainmeter.net/manual-beta/plugins/coretemp/">CoreTemp plugin</a> for details.</p>
 
 	<p class="text-muted"><b>Manage dialog:</b> When a skin is selected in the Skins list, the Enter key will toggle loading and unloading the skin.</p>
@@ -85,7 +85,7 @@ title: 'Rainmeter 4.1 Release'
 	<p class="text-muted"><b>Bitmap meter:</b> Changed the allowable measure value when <a href="https://docs.rainmeter.net/manual-beta/meters/bitmap/#BitmapExtend">BitmapExtend=1</a> from a C-language int data type (2,147,483,647 maximum) to int64 (9,223,372,036,854,775,807 maximum).</p>
 
 	<p class="text-muted"><b>Variables:</b> New <a href="https://docs.rainmeter.net/manual-beta/variables/built-in-variables/#CONFIGEDITOR">#CONFIGEDITOR#</a> built-in variable. The path and executable for the text editor defined in <a href="https://docs.rainmeter.net/manual-beta/settings/rainmeter-section/#ConfigEditor">ConfigEditor</a> in Rainmeter settings, or the text editor associated with .ini files in Windows. The default will be Windows Notepad.exe.</p>
-
+</div>
 	<div class="links">
 		<h2>Version history and details</h2>
 		<hr>
