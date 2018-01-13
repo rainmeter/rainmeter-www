@@ -325,7 +325,8 @@ footer a:hover, footer a:focus {
   height: 1.25rem;
   margin-right: .5rem;
 }
-.intro .btn:hover {
+.intro .btn:hover,
+.intro .btn:active {
   color: rgb(25, 81, 155);
   border-color: rgb(248, 249, 250);
   background-color: rgb(248, 249, 250);
@@ -447,6 +448,10 @@ p.news-date {
   }
   .news {
     padding-left: 25px;
+  }
+  .news .group {
+    height: 11.5rem;
+    overflow-y: scroll;
   }
 }
 .row.additional {
