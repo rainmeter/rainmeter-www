@@ -15,6 +15,11 @@ title: 'Rainmeter 4.2 Beta'
 		<hr>
 		<p>Additional details on important changes during the beta cycle can always be found at <a href="https://forum.rainmeter.net/viewforum.php?f=122">Change Announcements</a>.</p>
 		
+		<p class="revision"><b>June 23, 2018 - Revision 3101</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>UsageMonitor plugin:</b> Fixed an issue where the plugin would fail when Windows is using the French language, due to a conflict bug in the counters stored in perfmon for this language. This should also address any other languages that may have a similar problem in the future.</li>
+		</ul>
+		
 		<p class="revision"><b>June 22, 2018 - Revision 3097</b></p>
 		<ul>
 			<li><span class="badge badge-changed">Changed</span><b>Rainmeter:</b> Added the full path to the currently running skin .ini file to the hidden window "title" of the config window. This is in support of plugins that may be written to use SendMessage() to detect if a particular config is running, and if so, to use the window title to retrieve the "variant" name of the running skin.</li>
