@@ -138,7 +138,7 @@ footer a:hover, footer a:focus {
 
 .hero {
   position: relative;
-  background-color: rgb(25, 81, 155);
+  background-color: rgb(7,27,62);
   /* background-image: url("../img/bg.jpg"); */
   background-position: center 35%;
   background-size: cover;
@@ -151,14 +151,16 @@ footer a:hover, footer a:focus {
   left: 0;
   content: '';
   opacity: .95;
-  background-color: rgb(25, 81, 155);
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(35, 64, 169)), to(rgb(14, 199, 216)));
-  background-image: -webkit-linear-gradient(top left, rgb(35, 64, 169), rgb(14, 199, 216));
-  background-image: -o-linear-gradient(top left, rgb(35, 64, 169), rgb(14, 199, 216));
-  background-image: linear-gradient(to bottom right, rgb(35, 64, 169), rgb(14, 199, 216));
+  background-color: rgb(7,27,62);
+  background: -moz-linear-gradient(top, rgb(8,15,38) 0%, rgb(3,85,179) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(8,15,38)), color-stop(100%, rgb(3,85,179)));
+  background: -webkit-linear-gradient(top, rgb(8,15,38) 0%, rgb(3,85,179) 100%);
+  background: -o-linear-gradient(top, rgb(8,15,38) 0%, rgb(3,85,179) 100%);
+  background: -ms-linear-gradient(top, rgb(8,15,38) 0%, rgb(3,85,179) 100%);
+  background: linear-gradient(to bottom, rgb(8,15,38) 0%, rgb(3,85,179) 100%);
 }
 #hero.flat {
-  background-color: rgb(25, 81, 155);
+  background-color: rgb(7,27,62);
 }
 
 /* Navbar */
