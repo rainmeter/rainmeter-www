@@ -152,12 +152,12 @@ footer a:hover, footer a:focus {
   content: '';
   opacity: .95;
   background-color: rgb(7,27,62);
-  background: -moz-linear-gradient(top, rgb(8,15,38) 0%, rgb(3,85,179) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(8,15,38)), color-stop(100%, rgb(3,85,179)));
-  background: -webkit-linear-gradient(top, rgb(8,15,38) 0%, rgb(3,85,179) 100%);
-  background: -o-linear-gradient(top, rgb(8,15,38) 0%, rgb(3,85,179) 100%);
-  background: -ms-linear-gradient(top, rgb(8,15,38) 0%, rgb(3,85,179) 100%);
-  background: linear-gradient(to bottom, rgb(8,15,38) 0%, rgb(3,85,179) 100%);
+  background: -moz-linear-gradient(top, rgb(8,15,38) 0%, rgb(0,105,217) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(8,15,38)), color-stop(100%, rgb(0,105,217)));
+  background: -webkit-linear-gradient(top, rgb(8,15,38) 0%, rgb(0,105,217) 100%);
+  background: -o-linear-gradient(top, rgb(8,15,38) 0%, rgb(0,105,217) 100%);
+  background: -ms-linear-gradient(top, rgb(8,15,38) 0%, rgb(0,105,217) 100%);
+  background: linear-gradient(to bottom, rgb(8,15,38) 0%, rgb(0,105,217) 100%);
 }
 #hero.flat {
   background-color: rgb(7,27,62);
