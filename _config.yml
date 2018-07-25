@@ -57,6 +57,6 @@ theme: rainmeter-www
 # Deployment
 deploy:
   type: git
-  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
-  repo: git@github.com:marcopixel/rainmeter--www.git
+  message: "Update: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  repo: https://github.com/rainmeter/rainmeter-www.git
   branch: gh-pages
