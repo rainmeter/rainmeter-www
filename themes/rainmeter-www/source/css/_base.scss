@@ -1,0 +1,9 @@
+body {
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 1rem;
+        letter-spacing: 0.015em;
+    }
+}

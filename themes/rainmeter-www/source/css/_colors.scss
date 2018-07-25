@@ -1,0 +1,14 @@
+$primary: #19519B;
+$secondary: #0EC1D4;
+$warning: #F05B19;
+$danger: #E91706;
+
+$gradient-left: lighten($primary, 5%);
+$gradient-right: lighten($secondary, 5%);
+
+$trans-low: rgba($black, 0.75);
+$trans-med: rgba($black, 0.5);
+$trans-high: rgba($black, 0.25);
+
+// load Bootstrap variables + functions + mixins
+@import "bootstrap/scss/bootstrap";

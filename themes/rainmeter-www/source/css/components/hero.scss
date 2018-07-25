@@ -1,0 +1,114 @@
+.hero {
+    position: relative;
+    background: mix($primary, $body-bg, 75%);
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: " ";
+        background: linear-gradient(to bottom right, $gradient-left 25%, $gradient-right 100%);
+    }
+
+    &--flat {
+        background: $gradient-left;
+    }
+
+    .intro {
+        color: rgba($white, 0.6);
+        text-align: justify;
+        padding: 2rem;
+        @include textshadow;
+
+        h1 {
+            color: $white;
+            font-size: 1.75rem;
+        }
+
+        a {
+            color: rgba($white, 0.8);
+        }
+
+        .btn {
+            color: $white;
+            padding: 0.5rem 1.75rem;
+            text-shadow: none;
+
+            @include hover-focus-active {
+                color: $primary;
+            }
+        }
+
+        @include media-breakpoint-up(sm) {
+            font-size: 0.98rem;
+            line-height: 1.5;
+            padding: 2rem 0 4rem 0;
+
+            h1 {
+                font-size: 2.6rem;
+                font-weight: 300;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .carousel {
+            display: flex;
+            flex-direction: column;
+
+            &-item {
+                img {
+                    width: 100%;
+                }
+            }
+
+            &-desc {
+                line-height: 1.4;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                margin-bottom: 0;
+                padding: 0.8rem 1.5rem;
+                color: $white;
+                background-color: $trans-med;
+
+                .title {
+                    color: $white;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: rgba($white, 0.7);
+                }
+            }
+
+            &-inner {
+                border-radius: 0.5rem;
+                background-color: $trans-high;
+                order: 1;
+            }
+
+            &-indicators {
+                position: relative;
+                bottom: 0;
+                margin-top: 1rem;
+                cursor: pointer;
+                order: 2;
+            }
+
+            .carousel-control-next,
+            .carousel-control-prev {
+                opacity: 0;
+                @include transition($transition-fade);
+            }
+
+            @include hover-focus {
+                .carousel-control-next,
+                .carousel-control-prev {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
