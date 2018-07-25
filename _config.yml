@@ -1,10 +1,8 @@
 # Site
-title: Rainmeter WWW
-subtitle:
-description:
-author:
-language:
-timezone:
+title: Rainmeter
+description: Rainmeter allows you to display customizable skins on your desktop, from hardware usage meters to fully functional audio visualizers. You are only limited by your imagination and creativity.
+language: en
+timezone: UTC
 
 # URL
 url: 'https://www.rainmeter.net'
@@ -58,4 +56,7 @@ theme: rainmeter-www
 
 # Deployment
 deploy:
-  type:
+  type: git
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  repo: git@github.com:marcopixel/rainmeter--www.git
+  branch: gh-pages

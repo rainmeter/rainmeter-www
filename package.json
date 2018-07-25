@@ -1,16 +1,23 @@
 {
-  "name": "hexo-rainmeter-www",
+  "name": "rainmeter-www",
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.7.1"
+  },
+  "scripts": {
+    "start": "hexo server --log",
+    "build": "hexo generate --watch",
+    "deploy": "hexo generate --deploy",
+    "clean": "hexo clean"
   },
   "dependencies": {
-    "hexo": "3.2.2",
-    "hexo-renderer-ejs": "0.2.0",
-    "hexo-server": "0.2.0",
     "ejs": "^2.5.5",
+    "hexo": "3.7.1",
+    "hexo-deployer-git": "^0.3.1",
+    "hexo-renderer-ejs": "0.3.1",
+    "hexo-server": "0.3.2",
     "moment": "^2.19.3",
-    "uglify-js": "^2.6.0"
+    "uglify-js": "^3.4.5"
   }
 }
