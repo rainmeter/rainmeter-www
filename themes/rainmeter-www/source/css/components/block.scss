@@ -64,7 +64,8 @@
         display: block;
         text-decoration: none;
         overflow: hidden;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
+        @include transition($transition-base);
 
         @include hover-focus-active {
             transform: scale(1.1);

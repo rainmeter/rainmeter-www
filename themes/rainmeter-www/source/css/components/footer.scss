@@ -1,0 +1,17 @@
+footer {
+     z-index: 2;
+     font-weight: 600;
+     font-size: 0.85rem;
+     padding: 1.5rem;
+     color: rgba($black, 0.35);
+     background: rgba($black, 0.05);
+
+     a {
+         font-weight: 600;
+         color: rgba($black, 0.5);
+
+         @include hover-focus-active {
+             text-decoration: none;
+         }
+     }
+}
