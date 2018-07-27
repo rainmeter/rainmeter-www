@@ -13,5 +13,9 @@ $trans-high: rgba($black, 0.25);
 $text-discover: #0081c8;
 $text-help: #009b72;
 
+$color-features-fast: #fccf31;
+$color-features-customizable: $text-discover;
+$color-features-helpful: $danger;
+
 // load Bootstrap variables + functions + mixins
 @import "bootstrap/scss/bootstrap";
