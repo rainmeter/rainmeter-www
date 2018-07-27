@@ -8,10 +8,6 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
         text-align: center;
-
-        @include media-breakpoint-up(lg) {
-            text-align: left;
-        }
     }
     &-bar {
         display: flex;
