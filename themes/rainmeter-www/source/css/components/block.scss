@@ -1,0 +1,145 @@
+.block {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &-title {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            text-align: left;
+        }
+    }
+    &-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-up(lg) {
+            justify-content: flex-start;
+        }
+
+        .icon {
+            display: flex;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1rem;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            font-size: 1.75rem;
+            margin-bottom: 0;
+        }
+
+        .additional {
+            a {
+                text-decoration: none;
+                color: inherit;
+                margin-left: 0.2rem;
+                margin-right: 0.2rem;
+                @include transition($transition-base);
+
+                @include hover-focus-active {
+                    color: darken($text-muted, 25%) !important;
+                }
+            }
+        }
+    }
+}
+
+.sub-block {
+    width: 100%;
+    margin: 2rem auto;
+    padding-left: ($grid-gutter-width / 2);
+    padding-right: ($grid-gutter-width / 2);
+
+    svg {
+        width: 200px;
+        height: 135px;
+    }
+
+    a.external-link {
+        display: block;
+        text-decoration: none;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+
+        @include hover-focus-active {
+            transform: scale(1.1);
+        }
+    }
+
+    &.discover h1 {
+        color: $text-discover;
+    }
+    &.help h1 {
+        color: $text-help;
+    }
+
+    @include media-breakpoint-up(md) {
+        width: 85%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 45%;
+    }
+}
+
+#downloads {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .downloads {
+        &-date {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .icon {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+    .row.additional {
+        margin-top: 1rem;
+        .col {
+            border-right: 1px solid rgba($black, 0.1);
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+}
+
+#news {
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+
+        .group {
+            height: 12rem;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    }
+}
