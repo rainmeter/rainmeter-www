@@ -19,7 +19,8 @@
     .intro {
         color: rgba($white, 0.6);
         text-align: justify;
-        padding: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
         @include textshadow;
 
         h1 {
@@ -42,17 +43,22 @@
         }
 
         @include media-breakpoint-up(sm) {
-            font-size: 0.98rem;
+            font-size: 0.95rem;
             line-height: 1.5;
-            padding: 2rem 0 4rem 0;
+            padding-top: 2rem;
+            padding-bottom: 4rem;
 
             h1 {
-                font-size: 2.6rem;
+                font-size: 2rem;
                 font-weight: 300;
                 margin-bottom: 1.5rem;
             }
         }
-
+        @include media-breakpoint-up(xl) {
+            h1 {
+                font-size: 2.6rem;
+            }
+        }
         .carousel {
             display: flex;
             flex-direction: column;

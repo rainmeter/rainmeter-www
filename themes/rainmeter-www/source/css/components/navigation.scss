@@ -32,7 +32,7 @@
     }
 
     &-nav {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
 
         @include media-breakpoint-up(lg) {
             margin-top: 0;
@@ -40,17 +40,17 @@
     }
 
     .dropdown-divider {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         border-top: 1px solid rgba($white, 0.2);
     }
 }
 
-#navbar {
-    padding-left: 2rem;
-    padding-right: 2rem;
+// #navbar {
+//     padding-left: 2rem;
+//     padding-right: 2rem;
 
-    @include media-breakpoint-up(sm) {
-            padding-left: 0;
-            padding-right: 0;
-    }
-}
+//     @include media-breakpoint-up(sm) {
+//             padding-left: 0;
+//             padding-right: 0;
+//     }
+// }
