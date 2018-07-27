@@ -1,0 +1,24 @@
+.badge {
+    width: 4rem;
+    
+    &-added {
+        color: $white;
+        background: $badge-added;
+    }
+    &-changed {
+        color: $white;
+        background: $badge-changed;
+    }
+    &-fixed {
+        color: $white;
+        background: $badge-fixed;
+    }
+    &-removed {
+        color: $white;
+        background: $badge-removed;
+    }
+    &-release {
+        color: $white;
+        background: $badge-release;
+    }
+}

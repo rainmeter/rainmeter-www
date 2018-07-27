@@ -11,12 +11,16 @@
 @import "bootstrap/scss/grid";
 @import "bootstrap/scss/carousel";
 
-// import the different components
+// import the base components
 @import "base";
 @import "components/hero";
 @import "components/navigation";
 @import "components/footer";
+@import "components/badge";
 @import "components/block";
+
+// import the page specific components
 @import "components/features";
 @import "components/gallery";
 @import "components/discover";
+@import "components/release-notes";

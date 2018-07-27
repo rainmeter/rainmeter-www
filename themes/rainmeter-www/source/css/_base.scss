@@ -7,10 +7,32 @@ body {
         letter-spacing: 0.015em;
     }
 }
+code {
+    color: $warning;
+    background: darken($gray-100, 2%);
+    padding: 0.2rem 0.3rem;
+    font-size: 90%;
+    border-radius: $border-radius;
+}
 .content {
     padding-top: 2rem;
     padding-bottom: 2rem;
     flex: 1 1 0;
+}
+.post {
+    width: 100%;
+    text-align: justify;
+    hyphens: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2 {
+        text-align: left;
+    }
+
+    @include media-breakpoint-up(md) {
+        width: 80%;
+    }
 }
 .divider {
     margin-top: 0.5rem;
