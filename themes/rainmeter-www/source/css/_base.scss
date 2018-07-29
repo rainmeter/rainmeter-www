@@ -1,4 +1,8 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    z-index: 0;
     font-size: 0.9rem;
     letter-spacing: 0.02em;
 
@@ -30,7 +34,7 @@ code {
         text-align: left;
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         width: 80%;
     }
 }
