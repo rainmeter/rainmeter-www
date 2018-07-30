@@ -4,3 +4,4 @@ _ghpages.git
 .deploy_git
 db.json
 node_modules
+yarn-error.log
