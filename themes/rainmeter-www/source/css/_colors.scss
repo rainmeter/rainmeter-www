@@ -3,8 +3,8 @@ $secondary: #0EC1D4;
 $warning: #F05B19;
 $danger: #E91706;
 
-$gradient-left: lighten($primary, 5%);
-$gradient-right: lighten($secondary, 5%);
+$gradient-left: darken($primary, 10%);
+$gradient-right: $secondary;
 
 $trans-low: rgba($black, 0.75);
 $trans-med: rgba($black, 0.5);
