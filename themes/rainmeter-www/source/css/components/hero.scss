@@ -1,3 +1,7 @@
+@import "../variables";
+@import "../colors";
+@import "../mixins";
+
 .hero {
     position: relative;
     background: mix($primary, $body-bg, 75%);
