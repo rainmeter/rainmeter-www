@@ -9,7 +9,7 @@
     "start": "hexo server --log",
     "build": "./build.sh",
     "deploy": "./deploy.sh",
-    "clean": "hexo clean"
+    "clean": "./clean.sh"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",

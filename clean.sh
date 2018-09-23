@@ -17,22 +17,18 @@ echo -e "${YELLOW}INFO:${WHITE} Starting build script...${SET}"
 sleep 1
 
 # Clean up old files
-echo -e "${YELLOW}1/3:${WHITE} Clean up old files${SET}"
+echo -e "${YELLOW}1/1:${WHITE} Clean up old files${SET}"
 if [ -d "$PUBLIC_DIR" ]; then
     rm -rv $PUBLIC_DIR
 else
     echo -e "INFO  $PUBLIC_DIR doesn't exist, continuing..."
 fi
+if [ -d "$GHPAGES_DIR" ]; then
+    rm -rv $GHPAGES_DIR -f
+else
+    echo -e "INFO  $GHPAGES_DIR doesn't exist, continuing..."
+fi
 hexo clean
-
-# Generate blog
-echo -e "${YELLOW}2/3:${WHITE} Generate blog files${SET}"
-hexo generate
-
-# Run PostCSS
-echo -e "${YELLOW}3/3:${WHITE} Run PostCSS${SET}"
-cd $PUBLIC_DIR
-postcss css/style.css --replace --verbose
 
 echo -e "${YELLOW}INFO:${WHITE} Script finished, will close in 5 seconds...${SET}"
 sleep 5
