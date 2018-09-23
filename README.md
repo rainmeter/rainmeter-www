@@ -1,9 +1,7 @@
 ![Preview image](https://i.imgur.com/5F1eYda.png)
 
----
-Source code of the Rainmeter homepage.
-
-To view the actual site, check out [rainmeter.net](http://rainmeter.net).
+## rainmeter-www
+Source code of the Rainmeter homepage. To view the actual site, check out [rainmeter.net](http://rainmeter.net).
 
 
 Built using [Hexo](https://github.com/hexojs/hexo). Content licensed under [Creative Commons BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/).
