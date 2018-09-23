@@ -1,0 +1,33 @@
+$primary: #19519B;
+$secondary: #0EC1D4;
+$warning: #F05B19;
+$danger: #E91706;
+
+$gradient-left: darken($primary, 10%);
+$gradient-right: $secondary;
+
+$trans-low: rgba($black, 0.75);
+$trans-med: rgba($black, 0.5);
+$trans-high: rgba($black, 0.25);
+
+$text-discover: #0081c8;
+$text-help: #009b72;
+
+$badge-added: $success;
+$badge-changed: $primary;
+$badge-fixed: $warning;
+$badge-removed: $danger;
+$badge-release: #6D67AE;
+
+$color-features-fast: #fccf31;
+$color-features-customizable: $text-discover;
+$color-features-helpful: $danger;
+
+$color-discover-deviantart: #05CC47;
+$color-discover-reddit: #FF4500;
+$color-discover-forums: #0081C8;
+$color-discover-discord: #7289DA;
+$color-discover-lifehacker: #94B330;
+
+// load Bootstrap variables + functions + mixins
+@import "bootstrap/scss/bootstrap";

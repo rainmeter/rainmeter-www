@@ -1,0 +1,27 @@
+// set variables, colors and mixins
+@import "variables";
+@import "colors";
+@import "mixins";
+
+// import bootstrap scss files from node_modules
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/carousel";
+
+// import the base components
+@import "base";
+@import "components/hero";
+@import "components/navigation";
+@import "components/footer";
+@import "components/badge";
+@import "components/block";
+
+// import the page specific components
+@import "components/features";
+@import "components/gallery";
+@import "components/discover";
+@import "components/release-notes";
+@import "components/404";

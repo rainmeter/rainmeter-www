@@ -1,0 +1,36 @@
+@import "../variables";
+@import "../colors";
+@import "../mixins";
+
+.features {
+    &-block {
+        text-align: center;
+
+        .col-md {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &-icon {
+        svg {
+        width: 4rem;
+        height: 4rem;
+        }
+
+        &.fast {
+            color: $color-features-fast;
+        }
+        &.customizable {
+            color: $color-features-customizable;
+        }
+        &.helpful {
+            color: $color-features-helpful;
+        }
+    }
+    
+}

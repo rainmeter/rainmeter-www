@@ -1,5 +1,7 @@
 *debug.log
 _generated
 _ghpages.git
+.deploy_git
 db.json
 node_modules
+yarn-error.log

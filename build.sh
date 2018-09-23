@@ -12,26 +12,22 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-echo -e "${YELLOW}INFO:${WHITE} Starting deploy script...${SET}"
+echo -e "${YELLOW}INFO:${WHITE} Starting build script...${SET}"
 sleep 1
 
 # Clean up old files
-echo -e "${YELLOW}1/4:${WHITE} Clean up old files${SET}"
+echo -e "${YELLOW}1/3:${WHITE} Clean up old files${SET}"
 rm -rv $PUBLIC_DIR
 hexo clean
 
 # Generate blog
-echo -e "${YELLOW}2/4:${WHITE} Generate blog files${SET}"
+echo -e "${YELLOW}2/3:${WHITE} Generate blog files${SET}"
 hexo generate
 
 # Run PostCSS
-echo -e "${YELLOW}3/4:${WHITE} Run PostCSS${SET}"
+echo -e "${YELLOW}3/3:${WHITE} Run PostCSS${SET}"
 cd $PUBLIC_DIR
 postcss css/style.css --replace --verbose
-
-# Deploy to Github Pages
-echo -e "${YELLOW}4/4:${WHITE} Deploy to Github Pages${SET}"
-hexo deploy
 
 echo -e "${YELLOW}INFO:${WHITE} Script finished, will close in 5 seconds...${SET}"
 sleep 5

@@ -1,0 +1,62 @@
+@import "../variables";
+@import "../colors";
+@import "../mixins";
+
+.release-notes {
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+        list-style-position: outside;
+    }
+    li {
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-left: 5rem;
+        color: $text-muted;
+
+    }
+    b {
+        color: $gray-900;
+    }
+    h4 {
+        font-weight: 500;
+    }
+    .changelog {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .links {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .badge {
+        position: absolute;
+        top: 0.175rem;
+        left: -5rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        line-height: 0.65rem;
+        height: 1.125rem;
+        margin-right: 0.5rem;
+    }
+    .revision {
+        padding-top: 1rem;
+    }
+    .feature {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .features-other {
+        b {
+            position: absolute;
+            left: -12rem;
+            width: 12rem;
+            text-align: left;
+        }
+        p {
+            position: relative;
+            margin-left: 12rem;
+        }
+    }
+}

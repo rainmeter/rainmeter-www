@@ -1,0 +1,100 @@
+@import "../variables";
+@import "../colors";
+@import "../mixins";
+
+.discover {
+    font-size: 0.95rem;
+    &-block {
+        width: 100%;
+        margin: 0 auto;
+
+        @include media-breakpoint-up(sm) {
+            width: 70%;
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 55%;
+        }
+    }
+    &-entry {
+        padding-bottom: 1rem;
+
+        .title {
+            font-size: 2rem;
+            font-weight: 300;
+            color: $text-discover;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 4rem;
+            }
+        }
+        svg {
+            width: 151px;
+            margin-bottom: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                width: 201px;
+            }
+        }
+    }
+    &-links {
+        margin-top: 2rem;
+
+        a {
+            text-decoration: none;
+            color: $gray-900;
+        }
+        .col-md,
+        .col-md-4 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        @include media-breakpoint-up(md) {
+            .col-md,
+            .col-md-4 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-icon {
+        margin-bottom: 1rem;
+        svg {
+            width: 5rem;
+            height: 5rem;
+            transform-origin: 50% 50% 0;
+        }
+
+        &.deviantart {
+            color: $color-discover-deviantart;
+        }
+        &.reddit {
+            color: $color-discover-reddit;
+        }
+        &.forums {
+            color: $color-discover-forums;
+        }
+        &.discord {
+            color: $color-discover-discord;
+        }
+        &.lifehacker {
+            color: $color-discover-lifehacker;
+
+            svg {
+                height: 4rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    .warning {
+        margin: 2rem auto;
+        color: $warning;
+
+        svg {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+}
