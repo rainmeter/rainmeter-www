@@ -15,10 +15,10 @@ $ npm install hexo-cli -g
 ## Usage
 
 ``` bash
-$ npm start     # Starts the local webserver for development.
-$ npm build     # Generates the static files in _generated.
-$ npm deploy    # Generates and deploys the files.
-$ npm clean     # Cleans the cache file (db.json) and generated files (public).
+$ npm run start     # Starts the local webserver for development.
+$ npm run build     # Generates the static files in _generated.
+$ npm run deploy    # Generates and deploys the files.
+$ npm run clean     # Cleans the cache file (db.json) and generated files (public).
 ```
 
 If you want to deploy the website yourself, you have to modify the `_config.yml` file to your settings. You also might have to install additional packages, read more about this [Hexo Documentation: Deployment](here:https://hexo.io/docs/deployment)
