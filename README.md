@@ -21,8 +21,11 @@ You need to have Node v8.11.1 and Git installed.
 
 $ git clone https://github.com/rainmeter/rainmeter-www.git
 
-$ npm install hexo-cli -g
+$ cd rainmeter-www
 
+$ npm install   # This will install all dependencies required
+
+$ npm install hexo-cli -g    # REQUIRED, needs to be installed globally to make Hexo run properly
 $ npm install postcss-cli -g   # OPTIONAL, might be required on some systems
 
 ```
