@@ -9,10 +9,10 @@ menu:
 downloads:
   beta:
     versionName: '4.3 Beta Release'
-    buildNumber: '3266'
-    date: 'November 30, 2018'
-    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.3.0.3266/Rainmeter-4.3-r3266-beta.exe
-    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.3-r3266-beta.exe
+    buildNumber: '3270'
+    date: 'December 19, 2018'
+    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.3.0.3270/Rainmeter-4.3-r3270-beta.exe
+    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.3-r3270-beta.exe
     releaseNotesURL: /beta-4-3
     enabled: true
   final:
@@ -28,7 +28,7 @@ downloads:
 news:
   - title: 'Rainmeter 4.3 Beta Release'
     url: /beta-4-3
-    date: 'November 30, 2018'
+    date: 'December 19, 2018'
   - title: 'Rainmeter 4.2 Final Release'
     url: /release-4-2
     date: 'July 8, 2018'
