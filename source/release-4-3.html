@@ -1,0 +1,73 @@
+---
+layout: post
+permalink: release-4-3/
+title: 'Rainmeter 4.3 Release'
+---
+<div class="release-notes">
+<div class="description">
+	<h1 class="text-center">Rainmeter 4.3 Release</h1>
+	<hr>
+	<p>You can safely install the new 4.3 release version right over your existing Rainmeter 4.2 or any earlier installation, and nothing you have done will be lost or changed. There is never any need to uninstall any earlier version of Rainmeter to use the newest version.</p>
+	<p>Rainmeter 4.3 will run on Microsoft Windows 7 through 10. Windows XP and Vista are not supported.</p>
+</div>
+
+<div class="changelog">
+
+	<h2>Major additions and changes in Rainmeter 4.3</h2>
+	<hr>
+		
+	<div class="feature">
+		<h4>Direct2D and Hardware Acceleration</h4>
+		<p class="text-muted">Rainmeter 4.3 has changed entirely from using an older GDI+ graphics engine in Windows to the more modern and capable Direct2D (known as D2D for short). Not only does D2D offer additional capabilities we will be taking advantage of in the near future, but it also allows us to optionally support hardware acceleration. (known as HWA for short) This means that some of the processing, and the memory used, can be offloaded from the CPU to the GPU, and things will be rendered or "draw" significantly faster.</p>
+		
+		<p class="text-muted"><b>Hardware acceleration defaults to "off".</b> This to help us to identify general issues that might come up with the conversion from GDI+ to D2D, and isolate any problems that are strictly related to hardware acceleration. Hardware acceleration can be turned "on" in the <a href="https://docs.rainmeter.net/manual/user-interface/manage/#SettingsTab">Settings dialog</a>, and we recommend it. Future versions will change the default to "on" in Rainmeter.</p>
+		
+		<p class="text-muted"><b>Hardware acceleration and Intel HD integrated graphics</b>: There is a known issue with certain Intel HD integrated graphics chips, often seen on laptop computers, and hardware acceleration. This is due to a bug in the drivers for these chips from Intel, and the problem can generally be solved by updating your system to the most recent version of the graphics drivers from Intel. Details and suggestions for this issue are at: <a href="https://forum.rainmeter.net/viewtopic.php?f=123&t=29394">Intel HD Graphics drawing issue(s) with hardware acceleration</a></p>
+		
+		<p class="text-muted"><b>Reporting problems with Direct2D</b>: We would be very interested in anything you see that is "different" for you when using Rainmeter 4.3. Things that looked different in Rainmeter 4.2. The goal here is to ensure that we fully protect <em>backwards compatibility</em> with existing skins in the change from GDI+ to D2D. Any skin you run in Rainmeter 4.2 should look and work exactly the same in Rainmeter 4.3. Please report these issues in this forum area: <a href="https://forum.rainmeter.net/viewforum.php?f=123">Rainmeter 4.3 D2D Issues</a>.</p>
+	</div>
+
+	<div class="feature">
+		<h4>New Container Functionality</h4>
+		<p class="text-muted"> Added a new <a href="https://docs.rainmeter.net/manual/meters/general-options/container/">Container</a> option to all meter types. This will allow you to place the contents of a meter inside another meter, acting as both a "container" and a "mask". See the documentation for important details and a .rmskin with several examples.</p>
+		</ul>
+	</div>
+	
+	<hr>
+		
+	<h2>Other enhancements and fixes in Rainmeter 4.3</h2>
+	<hr>
+	<div class="features-other">
+		<p class="text-muted"> <b>Section Variables:</b> Added new <code>[SomeMeter:XW]</code> and <code>[SomeMeter:YH]</code> <a href="https://docs.rainmeter.net/manual/variables/section-variables/#XWYH">section variables</a> to allow you to make a meter relative to the end of another meter without requiring <code>X=([SomeMeter:X] + [SomeMeter:W])</code> as a formula.</p>
+
+		<p class="text-muted"> <b>Line meter:</b> Added a new <a href="https://docs.rainmeter.net/manual/meters/line/#TransformStroke">TransformStroke</a> option, which determines how the line (stroke) width is treated when <a href="https://docs.rainmeter.net/manual/meters/general-options/#TransformationMatrix">TransformationMatrix</a> is used on the meter.</p>
+		
+		<p class="text-muted"> <b>About dialog:</b> Corrected an inconsistency with how Measure and Variable values are "displayed" in the About/Skins dialog, and what is "copied" to the Windows clipboard when you use CTRL-C or right-click to copy string values. All string values will display up to 259 characters in the dialog window, being truncated and appended with "..." if longer. The full length of the value will always be copied to the clipboard.</p>
+
+		<p class="text-muted"> <b>AudioLevel plugin:</b> Fixed an incompatibility with the Nahimic audio driver.</p>
+		
+		<p class="text-muted"> <b>NowPlaying:</b> Corrected an old issue with the <code>Lyrics</code> <a href="https://docs.rainmeter.net/manual/measures/nowplaying/#PlayerType">PlayerType</a> option.</p>
+		
+		<p class="text-muted"> <b>AccurateText:</b> When <code>AccurateText=1</code> and the size of a meter was used in a dynamic way in a formula, any fractional amount of size was being rounded down, or truncated. This has been changed so fractional amounts are rounded up to the nearest whole pixel.</p>
+
+		<p class="text-muted"> <b>Rainmeter Installer:</b> If Rainmeter was previously installed wtih "Launch Rainmeter on startup", re-installing it with that box unchecked would not remove the shortcut from the Startup folder.</p>
+		
+		<p class="text-muted"> <b>Skin Installer:</b> Corrected an issue where skins and layouts that were selected to load after the installation of a .rmskin were often not being loaded.</p>
+		
+		<p class="text-muted"> <b>Manage dialog:</b> Corrected an issue where information in the dialog was not properly updated when a layout is loaded.</p>
+		
+		<p class="text-muted"> <b>Rainmeter:</b> Using the notification area tray icon will now properly restore minimized Manage, About and New skin dialogs.</p>
+		
+	</div>
+
+	<div class="links">
+		<h2>Version history and details</h2>
+		<hr>
+		<ul style="list-style-type: disc;">
+			<li style="margin-left: 1rem;">Detailed explanations of major changes at <a href="https://forum.rainmeter.net/viewforum.php?f=106">Change Announcements</a>.</li>
+			<li style="margin-left: 1rem;">Additional details on bug fixes and other minor changes at <a href="https://docs.rainmeter.net/history">Version History</a>.</li>
+			<li style="margin-left: 1rem;">Full history of all changes to the Rainmeter code at <a href="https://github.com/rainmeter/rainmeter/commits/master">Rainmeter GitHub</a>.</li>
+		</ul>
+	</div>
+</div>
+</div>
