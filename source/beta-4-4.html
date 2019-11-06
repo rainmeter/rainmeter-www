@@ -1,0 +1,34 @@
+---
+layout: post
+permalink: beta-4-4/
+title: 'Rainmeter 4.4 Beta'
+---
+<div class="release-notes">
+	<div class="description">
+		<h1 class="text-center">Rainmeter 4.4</h1>
+		<hr>
+		<p>The following are the changes for the 4.4 beta version of Rainmeter. You can safely install the new 4.4 beta version right over top of your existing Rainmeter 4.3.1 or earlier installation, and nothing you have done will be lost or changed. There is never any need to uninstall earlier versions of Rainmeter to use the newest version.</p>
+	</div>
+	<div class="changelog">
+		<h2>Changes in Rainmeter Beta 4.4</h2>
+		<hr>
+		<p><b>Additional details on important changes during the beta cycle can be found at <a href="https://forum.rainmeter.net/viewforum.php?f=125">Change Announcements</a>.</b></p>
+		
+		<p class="revision"><b>November 5, 2019 - Revision 3327</b></p>
+		<ul>
+			<li><span class="badge badge-added">Added</span><b>Rainmeter:</b> Added Game mode. This will allow you to minimize (really eliminate) all CPU and GPU usage by Rainmeter while you are for instance playing a full-screen game.<br/><br/>
+			Game mode does the following:<br/>
+			- Unloads all skins and dialogs<br/>
+			- Prevents activating any skins and dialogs<br/>
+			- Pauses any tray icon animations<br/><br/>
+			Game mode is toggled from the Rainmeter notification area icon right-click context menu.<br/><br/>
+			When Game mode is toggled on, the Rainmeter notification area context menu will be reduced to "Game mode", which will be checked, and "Exit".<br/><br/>
+			When Game mode is toggled back off, all previously running skins will be loaded.<br/><br/>
+			If Rainmeter is restarted, Game mode will be inactive. This is not in any way persistent.<br/><br/>
+			By design, this is a function that is entirely controlled by the "user" of Rainmeter, and cannot be activated with any bang or command by a skin "author".<br/></li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Container:</b> Fixed an issue with using the "R" relative positioning modifier on the first content meter. The first content meter in a container is required to be relative to the container itself. So for example, the first content meter in a container with X/Y=2R is invalid and will assume X/Y=2r instead.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>About/Version:</b> Corrected an incorrect determination of the locale language in some cases.</li>
+		</ul>
+
+	</div>
+</div>
