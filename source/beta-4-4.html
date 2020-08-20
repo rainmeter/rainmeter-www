@@ -14,6 +14,12 @@ title: 'Rainmeter 4.4 Beta'
 		<hr>
 		<p><b>Additional details on important changes during the beta cycle can be found at <a href="https://forum.rainmeter.net/viewforum.php?f=129">Change Announcements</a>.</b></p>
 
+		<p class="revision"><b>August 19, 2020 - Revision 3401</b></p>
+		<ul>
+			<li><span class="badge badge-changed">Changed</span><b>EncodeURL:</b> Changed the <a href="https://docs.rainmeter.net/manual-beta/variables/section-variables/#EncodeURL">:EncodeURL</a> section variable parameter to always encode any character not in the "unreserved" set allowed by URL's.</li>
+			<li><span class="badge badge-changed">Changed</span><b>WebParser:</b> Changed the <a href="https://docs.rainmeter.net/manual-beta/measures/webparser/#URL">URL</a> option to automatically percent-encode any characters after the URI, hostname, and any path, that are not in the "unreserved" or "reserved" set allowed by URL's.</li>	
+		</ul>
+
 		<p class="revision"><b>August 1, 2020 - Revision 3400</b></p>
 		<ul>
 			<li><span class="badge badge-added">Added</span><b>WebParser:</b> Added a new <a href="https://docs.rainmeter.net/manual-beta/measures/webparser/#DecodeCodePoints">DecodeCodePoints</a> option to WebParser child measures, to decode Unicode code point values in the source like <code>\u00A7</code>, which would be <code>§</code>. Codes from <code>\u0000</code> to <code>\uFFFF</code> are supported.</li>
