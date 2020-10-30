@@ -14,14 +14,21 @@ title: 'Rainmeter 4.4 Beta'
 		<hr>
 		<p><b>Additional details on important changes during the beta cycle can be found at <a href="https://forum.rainmeter.net/viewforum.php?f=129">Change Announcements</a>.</b></p>
 
+		<p class="revision"><b>October 30, 2020 - Revision 3408</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>Process measure:</b> Made some internal improvements to the Process measure to eliminate a background thread and improve efficiency.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>FileView plugin:</b> Corrected an issue where embedded icons in .url internet shortcuts was not being detected properly.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>String meter:</b> Fixed a bug where an Inline Setting of <code>Shadow</code> was not being handled correctly if the meter was in a Container.</li>
+		</ul>
+
 		<p class="revision"><b>August 25, 2020 - Revision 3404</b></p>
 		<ul>
-			<li><span class="badge badge-fixed">Fixed</span><b>WebParser:</b> Fixed a long-standing bug where numeric values of child measures were not reset to zero between updates, which could cause a value to stay when the remote resource changed from having a value to not having a value.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>WebParser measure:</b> Fixed a long-standing bug where numeric values of child measures were not reset to zero between updates, which could cause a value to stay when the remote resource changed from having a value to not having a value.</li>
 		</ul>
 
 		<p class="revision"><b>August 24, 2020 - Revision 3403</b></p>
 		<ul>
-			<li><span class="badge badge-changed">Changed</span><b>Process:</b> Changed the  <a href="https://docs.rainmeter.net/manual-beta/measures/process">Process</a> functionality from a plugin to an internal measure. This also corrects an issue with "timing" when instances of Process was used in multiple skins.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Process measure:</b> Changed the  <a href="https://docs.rainmeter.net/manual-beta/measures/process">Process</a> functionality from a plugin to an internal measure. This also corrects an issue with "timing" when instances of Process was used in multiple skins.</li>
 			<li><span class="badge badge-fixed">Fixed</span><b>InlineSetting:</b> Corrected an issue where a dynamic change to the offsets or blur of <a href="https://docs.rainmeter.net/manual-beta/meters/string/inline/#InlineShadow">InlineSetting=Shadow</a> was not being applied.</li>
 		</ul>
 
