@@ -9,10 +9,10 @@ menu:
 downloads:
   beta:
     versionName: '4.4 Beta Release'
-    buildNumber: 'r3433'
-    date: 'February 11, 2021'
-    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.4.0.3433/Rainmeter-4.4-r3433-beta.exe
-    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.4-r3433-beta.exe
+    buildNumber: 'r3438'
+    date: 'March 13, 2021'
+    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.4.0.3438/Rainmeter-4.4-r3438-beta.exe
+    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.4-r3438-beta.exe
     releaseNotesURL: /beta-4-4
     enabled: true
   final:
@@ -28,7 +28,7 @@ downloads:
 news:
   - title: 'Rainmeter 4.4 Beta Release'
     url: /beta-4-4
-    date: 'February 11, 2021'
+    date: 'March 13, 2021'
   - title: 'Need Help with Localization'
     url: /localization
     date: 'November 6, 2017'
