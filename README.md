@@ -53,4 +53,4 @@ $ npm run clean   # Cleans the cache file (db.json) and generated files (public)
 If you want to deploy the website yourself, you have to modify the `_config.yml` file to your settings. You also might have to install additional packages, read more about this [Hexo Documentation: Deployment](https://hexo.io/docs/deployment) here.
   
 ### Warning:
-Please keep of using the built-in Hexo commands as this website uses [postcss-cli](https://github.com/postcss/postcss-cli) to automatically add vendor prefixes to some CSS properties and minify the file at build time. Alternatively you can use the `build.sh`, `deploy.sh` or `clean.sh` scripts to use the different functions above.
+Please keep using the built-in Hexo commands as this website uses [postcss-cli](https://github.com/postcss/postcss-cli) to automatically add vendor prefixes to some CSS properties and minify the file at build time. Alternatively you can use the `build.sh`, `deploy.sh` or `clean.sh` scripts to use the different functions above.
