@@ -1,9 +1,9 @@
 # Navigation
 menu:
-  Home: //www.rainmeter.net/
-  Documentation: //docs.rainmeter.net/
+  Home: https://www.rainmeter.net/
+  Documentation: https://docs.rainmeter.net/
   Discover: discover
-  Community: //forum.rainmeter.net
+  Community: https://forum.rainmeter.net
 
 # Downloads
 downloads:
