@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
 	<meta name="description" content="Rainmeter allows you to display customizable skins on your desktop, from hardware usage meters to fully functional audio visualizers. You are only limited by your imagination and creativity.">
@@ -13,11 +13,13 @@
 	<meta name="og:site_name" content="Rainmeter">
 	<meta name="og:type" content="website">
 	<title>Rainmeter 4.3 Beta - Rainmeter, desktop customization tool</title>
-	<link rel="stylesheet" href="../css/style.css">
+	
+<link rel="stylesheet" href="../css/style.css">
+
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:200,300,400,700">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous" />
 	<link rel="shortcut icon" href="/favicon.ico">
-</head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
 
@@ -26,21 +28,50 @@
 	
 	<div id="hero" class="hero--flat">
   <div id="navbar" class="container">
-	<nav class="navbar navbar-expand-lg navbar-dark">
-			<a class="navbar-brand" href="https://www.rainmeter.net"><img src="\img\logo_nav.png" alt></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
-				<ul class="navbar-nav order-12">
-						<li class="nav-item "><a class="nav-link" href="//www.rainmeter.net/">Home</a></li>
-						<li class="nav-item "><a class="nav-link" href="//docs.rainmeter.net/">Documentation</a></li>
-						<li class="nav-item "><a class="nav-link" href="../discover">Discover</a></li>
-						<li class="nav-item "><a class="nav-link" href="//forum.rainmeter.net">Community</a></li>
-					<div class="dropdown-divider"></div>
-				</ul>
-			</div>
-	</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="https://www.rainmeter.net"><img src="\img\logo_nav.png" alt="" /></a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mainNavigation"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+            <ul class="navbar-nav order-12">
+                
+					
+                		<li class="nav-item>">
+                    		<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+                		</li>
+					
+                
+					
+                		<li class="nav-item>">
+                    		<a class="nav-link" target="_blank" rel="noopener" href="//docs.rainmeter.net/">Documentation</a>
+                		</li>
+					
+                
+					
+						<li class="nav-item ">
+                    		<a class="nav-link" href="../discover/">Discover</a>
+                		</li>
+					
+                
+					
+                		<li class="nav-item>">
+                    		<a class="nav-link" target="_blank" rel="noopener" href="//forum.rainmeter.net/">Community</a>
+                		</li>
+					
+                
+                <div class="dropdown-divider"></div>
+            </ul>
+        </div>
+    </nav>
 </div>
 
 </div>
@@ -58,14 +89,14 @@
 		
 		<p><b>Direct2D and Hardware Acceleration</b>: Rainmeter 4.3 has changed entirely from using an older GDI+ graphics engine in Windows to the more modern and capable Direct2D (known as D2D for short). Not only does D2D offer additional capabilities we will be taking advantage of in the near future, but it also allows us to optionally support hardware acceleration. (known as HWA for short) This means that some of the processing, and the memory used, can be offloaded from the CPU to the GPU, and things will be rendered or "draw" significantly faster.</p>
 		
-		<p>As of the early 4.3 betas, hardware acceleration defaults to "off". This to help us to identify general issues that might come up with the conversion from GDI+ to D2D, and isolate any problems that are strictly related to hardware acceleration. Hardware acceleration can be turned "on" in the <a href="https://docs.rainmeter.net/manual-beta/user-interface/manage/#SettingsTab">Settings dialog</a>, and we recommend it. Future updates will change the default to "on" in Rainmeter.</p>
+		<p>As of the early 4.3 betas, hardware acceleration defaults to "off". This to help us to identify general issues that might come up with the conversion from GDI+ to D2D, and isolate any problems that are strictly related to hardware acceleration. Hardware acceleration can be turned "on" in the <a target="_blank" rel="noopener" href="https://docs.rainmeter.net/manual-beta/user-interface/manage/#SettingsTab">Settings dialog</a>, and we recommend it. Future updates will change the default to "on" in Rainmeter.</p>
 		
-		<p><b>Hardware acceleration and Intel HD integrated graphics</b>: There is a known issue with certain Intel HD integrated graphics chips, often seen on laptop computers, and hardware acceleration. This is due to a bug in the drivers for these chips from Intel, and the problem can generally be solved by updating your system to the most recent version of the graphics drivers from Intel. Details and suggestions for this issue are at: <a href="https://forum.rainmeter.net/viewtopic.php?f=123&t=29394">Intel HD Graphics drawing issue(s) with hardware acceleration</a></p>
+		<p><b>Hardware acceleration and Intel HD integrated graphics</b>: There is a known issue with certain Intel HD integrated graphics chips, often seen on laptop computers, and hardware acceleration. This is due to a bug in the drivers for these chips from Intel, and the problem can generally be solved by updating your system to the most recent version of the graphics drivers from Intel. Details and suggestions for this issue are at: <a target="_blank" rel="noopener" href="https://forum.rainmeter.net/viewtopic.php?f=123&t=29394">Intel HD Graphics drawing issue(s) with hardware acceleration</a></p>
 		
-		<p><b>Reporting problems with Direct2D</b>: For this beta, we would be very interested in anything you see that is "different" for you when using Rainmeter 4.3. Things that looked different in Rainmeter 4.2. The goal here is to first ensure that we fully protect <em>backwards compatibility</em> with existing skins in the change from GDI+ to D2D. Any skin you run in Rainmeter 4.2 should look and work exactly the same in Rainmeter 4.3. Please report these issues in this forum area: <a href="https://forum.rainmeter.net/viewforum.php?f=123">Rainmeter 4.3 Beta</a>.
+		<p><b>Reporting problems with Direct2D</b>: For this beta, we would be very interested in anything you see that is "different" for you when using Rainmeter 4.3. Things that looked different in Rainmeter 4.2. The goal here is to first ensure that we fully protect <em>backwards compatibility</em> with existing skins in the change from GDI+ to D2D. Any skin you run in Rainmeter 4.2 should look and work exactly the same in Rainmeter 4.3. Please report these issues in this forum area: <a target="_blank" rel="noopener" href="https://forum.rainmeter.net/viewforum.php?f=123">Rainmeter 4.3 Beta</a>.
 
 		<hr>
-		</p><p><b>Additional details on important changes during the beta cycle can be found at <a href="https://forum.rainmeter.net/viewforum.php?f=125">Change Announcements</a>.</b></p>
+		<p><b>Additional details on important changes during the beta cycle can be found at <a target="_blank" rel="noopener" href="https://forum.rainmeter.net/viewforum.php?f=125">Change Announcements</a>.</b></p>
 		
 		<p class="revision"><b>March 7, 2019 - Revision 3296</b></p>
 		<ul>
@@ -81,15 +112,15 @@
 
 		<p class="revision"><b>February 21, 2019 - Revision 3294</b></p>
 		<ul>
-			<li><span class="badge badge-added">Added</span><b>Section Variables:</b> Added new <code>[SomeMeter:XW]</code> and <code>[SomeMeter:YH]</code> <a href="https://docs.rainmeter.net/manual-beta/variables/section-variables/#XWYH">section variables</a> to allow you to make a meter relative to the end of another meter without requiring <code>X=([SomeMeter:X] + [SomeMeter:W])</code> as a formula.</li>
+			<li><span class="badge badge-added">Added</span><b>Section Variables:</b> Added new <code>[SomeMeter:XW]</code> and <code>[SomeMeter:YH]</code> <a target="_blank" rel="noopener" href="https://docs.rainmeter.net/manual-beta/variables/section-variables/#XWYH">section variables</a> to allow you to make a meter relative to the end of another meter without requiring <code>X=([SomeMeter:X] + [SomeMeter:W])</code> as a formula.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Localization:</b> Updated the Swedish language.</li>
 			<li><span class="badge badge-fixed">Fixed</span><b>AudioLevel plugin:</b> Fixed an incompatibility with the Nahimic audio driver.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>NowPlaying:</b> Corrected an old issue with the <code>Lyrics</code> <a href="https://docs.rainmeter.net/manual-beta/measures/nowplaying/#PlayerType">PlayerType</a> option.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>NowPlaying:</b> Corrected an old issue with the <code>Lyrics</code> <a target="_blank" rel="noopener" href="https://docs.rainmeter.net/manual-beta/measures/nowplaying/#PlayerType">PlayerType</a> option.</li>
 		</ul>
 		
 		<p class="revision"><b>February 15, 2019 - Revision 3288</b></p>
 		<ul>
-			<li><span class="badge badge-fixed">Fixed</span><b>Container:</b> Corrected an issue with meter X and Y relativity ("r" and "R") where it was possible to make a container meter relative to its own content, which would crash Rainmeter. See <a href="https://docs.rainmeter.net/manual-beta/meters/general-options/container/">Container</a> documentation for a clarification of the simple rules for the functionality.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Container:</b> Corrected an issue with meter X and Y relativity ("r" and "R") where it was possible to make a container meter relative to its own content, which would crash Rainmeter. See <a target="_blank" rel="noopener" href="https://docs.rainmeter.net/manual-beta/meters/general-options/container/">Container</a> documentation for a clarification of the simple rules for the functionality.</li>
 		</ul>
 
 		<p class="revision"><b>February 8, 2019 - Revision 3283</b></p>
@@ -131,12 +162,12 @@
 
 		<p class="revision"><b>November 30, 2018 - Revision 3266</b></p>
 		<ul>
-			<li><span class="badge badge-added">Added</span><b>Container:</b> Added a new <a href="https://docs.rainmeter.net/manual-beta/meters/general-options/container/">Container</a> option to all meter types. This will allow you to place the contents of a meter inside another meter, acting as both a "container" and a "mask". See the documentation for important details and a .rmskin with several examples.</li>
+			<li><span class="badge badge-added">Added</span><b>Container:</b> Added a new <a target="_blank" rel="noopener" href="https://docs.rainmeter.net/manual-beta/meters/general-options/container/">Container</a> option to all meter types. This will allow you to place the contents of a meter inside another meter, acting as both a "container" and a "mask". See the documentation for important details and a .rmskin with several examples.</li>
 		</ul>
 		
 		<p class="revision"><b>October 16, 2018 - Revision 3260</b></p>
 		<ul>
-			<li><span class="badge badge-added">Added</span><b>Line meter:</b> Added a new <a href="https://docs.rainmeter.net/manual-beta/meters/line/#TransformStroke">TransformStroke</a> option, which determines how the line (stroke) width is treated when <a href="https://docs.rainmeter.net/manual-beta/meters/general-options/#TransformationMatrix">TransformationMatrix</a> is used on the meter.</li>
+			<li><span class="badge badge-added">Added</span><b>Line meter:</b> Added a new <a target="_blank" rel="noopener" href="https://docs.rainmeter.net/manual-beta/meters/line/#TransformStroke">TransformStroke</a> option, which determines how the line (stroke) width is treated when <a target="_blank" rel="noopener" href="https://docs.rainmeter.net/manual-beta/meters/general-options/#TransformationMatrix">TransformationMatrix</a> is used on the meter.</li>
 		</ul>
 		
 		<p class="revision"><b>October 14, 2018 - Revision 3258</b></p>
@@ -186,7 +217,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js" integrity="sha256-wzoq0P7w2qLzRcJsF319y6G9Oilk3nU5CZ8tnY9TjFI=" crossorigin="anonymous"></script>
-  <script src="../js/main.js"></script>
+  
+<script src="../js/main.js"></script>
+
 
 </body>
 </html>
