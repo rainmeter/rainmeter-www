@@ -3,13 +3,15 @@
   <p class="text-center text-muted mb-4">Here's a small collection of creative desktops made by the Rainmeter community.</p>
   <div class="row gallery">
   <% theme.gallery.forEach(function(gallery, i) { %>
+      <% var caption = `<a href='${gallery.link}' alt='${gallery.title} by ${gallery.author}'><b>${gallery.title}</b> by ${gallery.author}</a>` %>
+
       <% if (gallery.type === 'image') { %>
-        <a class="col-12 col-md-4" data-fancybox="gallery" data-caption="<a href='<%- gallery.link %>' alt='<%- gallery.title %> by <%- gallery.author %>'><b><%- gallery.title %></b> by <%- gallery.author %></a>" href="<%- gallery.content %>">
+        <a class="col-12 col-md-4" data-fancybox="gallery" data-caption="<%= caption %>" href="<%- gallery.content %>">
           <img data-src="<%- gallery.thumbnailURL %>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<%- gallery.title %> by <%- gallery.author %>">
         </a>
       <% } %>
       <% if (gallery.type === 'video') { %>
-        <a class="col-12 col-md-4" data-fancybox="gallery" data-src="#video<%=i%>" data-caption="<a href='<%- gallery.link %>' alt='<%- gallery.title %> by <%- gallery.author %>'><b><%- gallery.title %></b> by <%- gallery.author %></a>">
+        <a class="col-12 col-md-4" data-fancybox="gallery" data-src="#video<%=i%>" data-caption="<%= caption %>">
           <img data-src="<%- gallery.thumbnailURL %>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<%- gallery.title %> by <%- gallery.author %>">
         </a>
         <video class="fancybox-video" id="video<%=i%>" loop muted controls>
@@ -19,7 +21,7 @@
         </video>
       <% } %>
       <% if (gallery.type === 'gfycat') { %>
-        <a class="col-12 col-md-4" data-fancybox="gallery" data-src="#video<%=i%>" data-caption="<a href='<%- gallery.link %>' alt='<%- gallery.title %> by <%- gallery.author %>'><b><%- gallery.title %></b> by <%- gallery.author %></a>">
+        <a class="col-12 col-md-4" data-fancybox="gallery" data-src="#video<%=i%>" data-caption="<%= caption %>">
           <img data-src="<%- gallery.thumbnailURL %>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<%- gallery.title %> by <%- gallery.author %>">
         </a>
         <video class="fancybox-video" id="video<%=i%>" loop muted controls>
@@ -29,12 +31,12 @@
         </video>
       <% } %>
       <% if (gallery.type === 'youtube') { %>
-        <a class="col-12 col-md-4" data-fancybox="gallery" data-caption="<a href='<%- gallery.link %>' alt='<%- gallery.title %> by <%- gallery.author %>'><b><%- gallery.title %></b> by <%- gallery.author %></a>" href="<%- gallery.content %>&amp;autoplay=1&amp;rel=0&amp;showinfo=0&amp;mute=1">
+        <a class="col-12 col-md-4" data-fancybox="gallery" data-caption="<%= caption %>" href="<%- gallery.content %>&amp;autoplay=1&amp;rel=0&amp;showinfo=0&amp;mute=1">
           <img data-src="<%- gallery.thumbnailURL %>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<%- gallery.title %> by <%- gallery.author %>">
         </a>
       <% } %>
       <% if (gallery.type === 'vimeo') { %>
-        <a class="col-12 col-md-4" data-fancybox="gallery" data-caption="<a href='<%- gallery.link %>' alt='<%- gallery.title %> by <%- gallery.author %>'><b><%- gallery.title %></b> by <%- gallery.author %></a>" href="<%- gallery.content %>">
+        <a class="col-12 col-md-4" data-fancybox="gallery" data-caption="<%= caption %>" href="<%- gallery.content %>">
           <img data-src="<%- gallery.thumbnailURL %>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<%- gallery.title %> by <%- gallery.author %>">
         </a>
       <% } %>

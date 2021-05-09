@@ -1,9 +1,17 @@
 # Navigation
 menu:
-  Home: //www.rainmeter.net/
-  Documentation: //docs.rainmeter.net/
-  Discover: discover
-  Community: //forum.rainmeter.net
+  Home:
+    url: //www.rainmeter.net/
+    external: true
+  Documentation:
+    url: //docs.rainmeter.net/
+    external: true
+  Discover:
+    url: /discover/
+    external: false
+  Community:
+    url: //forum.rainmeter.net/
+    external: true
 
 # Downloads
 downloads:
