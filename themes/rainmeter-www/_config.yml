@@ -19,7 +19,7 @@ downloads:
     versionName: '4.4 Beta Release'
     buildNumber: 'r3488'
     date: 'June 26, 2021'
-    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.4.0.3489/Rainmeter-4.4-r3488-beta.exe
+    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.4.0.3488/Rainmeter-4.4-r3488-beta.exe
     mirrorURL: https://builds.rainmeter.net/Rainmeter-4.4-r3488-beta.exe
     releaseNotesURL: /beta-4-4
     enabled: true
