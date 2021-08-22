@@ -15,22 +15,12 @@ menu:
 
 # Downloads
 downloads:
-  beta:
-    versionName: '4.4 Beta Release'
-    buildNumber: 'r3447'
-    date: 'April 17, 2021'
-    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.4.0.3447/Rainmeter-4.4-r3447-beta.exe
-    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.4-r3447-beta.exe
-    releaseNotesURL: /beta-4-4
-    enabled: true
-  final:
-    versionName: '4.3.1 Final Release'
-    buildNumber: 'r3321'
-    date: 'September 22, 2019'
-    downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.3.0.3321/Rainmeter-4.3.1.exe
-    mirrorURL: https://builds.rainmeter.net/Rainmeter-4.3.1.exe
-    releaseNotesURL: /release-4-3-1
-    enabled: true
+  versionName: '4.4.0 Release'
+  date: 'September 22, 2019'
+  downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.3.0.3321/Rainmeter-4.3.1.exe
+  mirrorURL: https://builds.rainmeter.net/Rainmeter-4.3.1.exe
+  releaseNotesURL: /release-4-3-1
+  enabled: true
 
 # News block
 news:

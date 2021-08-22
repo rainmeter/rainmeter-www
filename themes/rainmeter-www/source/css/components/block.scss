@@ -94,6 +94,10 @@
     }
 }
 
+#mainBlock {
+    margin-bottom: 2rem;
+}
+
 #downloads {
     text-align: center;
     margin-bottom: 1rem;
@@ -110,9 +114,8 @@
     }
 
     .downloads {
-        &-date {
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+        &-info {
+            margin-bottom: 0.5rem;
 
             p {
                 margin-bottom: 0;
@@ -126,7 +129,6 @@
         }
     }
     .row.additional {
-        margin-top: 1rem;
         .col {
             border-right: 1px solid rgba($black, 0.1);
 
@@ -144,7 +146,6 @@
         text-align: left;
 
         .group {
-            height: 12rem;
             overflow-x: hidden;
             overflow-y: scroll;
         }
