@@ -7257,6 +7257,9 @@ a.text-dark:hover, a.text-dark:focus {
     .sub-block {
       width: 45%; } }
 
+#mainBlock {
+  margin-bottom: 2rem; }
+
 #downloads {
   text-align: center;
   margin-bottom: 1rem; }
@@ -7268,21 +7271,18 @@ a.text-dark:hover, a.text-dark:focus {
     background: #343a40;
     border-color: #343a40;
     cursor: none; }
-  #downloads .downloads-date {
-    margin-top: 1rem;
-    margin-bottom: 1rem; }
-    #downloads .downloads-date p {
+  #downloads .downloads-info {
+    margin-bottom: 0.5rem; }
+    #downloads .downloads-info p {
       margin-bottom: 0; }
-    #downloads .downloads-date .icon {
+    #downloads .downloads-info .icon {
       width: 1.5rem;
       height: 1.5rem;
       margin-right: 1rem; }
-  #downloads .row.additional {
-    margin-top: 1rem; }
-    #downloads .row.additional .col {
-      border-right: 1px solid rgba(0, 0, 0, 0.1); }
-      #downloads .row.additional .col:last-child {
-        border-right: none; }
+  #downloads .row.additional .col {
+    border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    #downloads .row.additional .col:last-child {
+      border-right: none; }
 
 #news {
   text-align: center; }
@@ -7290,6 +7290,5 @@ a.text-dark:hover, a.text-dark:focus {
     #news {
       text-align: left; }
       #news .group {
-        height: 12rem;
         overflow-x: hidden;
         overflow-y: scroll; } }
