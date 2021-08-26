@@ -1,0 +1,145 @@
+---
+layout: post
+permalink: release-4-5-0/
+title: 'Rainmeter 4.5.0 Release'
+---
+<div class="release-notes">
+<div class="description">
+	<h1 class="text-center">Rainmeter 4.5.0 Release</h1>
+	<hr>
+	<p>You can safely install the 4.5.0 release version right over your existing Rainmeter 4.4, 4.3, 4.2 or any earlier installation, and nothing you have done will be lost or changed. There is never any need to uninstall any earlier version of Rainmeter to use the newest version.</p>
+	<p>Rainmeter 4.5.0 will run on Microsoft Windows 7 through 10. Windows XP and Vista are not supported.</p>
+</div>
+
+	<h2>Major additions and changes in Rainmeter 4.5.0</h2>
+	<hr>
+
+	<div class="feature">
+		<h4>Auto update</h4>
+		<p class="text-muted"> Added Auto Update to keep the version of Rainmeter current. See <a  href="https://docs.rainmeter.net/manual/installing-rainmeter/auto-update/">Auto Update</a> documentation for details.</p>
+	</div>
+
+	<div class="feature">
+		<h4>Game mode</h4>
+		<p class="text-muted"> This will allow you to minimize (really eliminate) all CPU, GPU, Disk and Network usage by Rainmeter while you are for instance playing a full-screen game. See <a href="https://docs.rainmeter.net/manual/user-interface/manage/#GameModeTab">Game mode documentation</a> for details.</p>
+	</div>
+
+	<div class="feature">
+		<h4>Support for WinGet installations</h4>
+		<p class="text-muted"> Added support for installations and upgrades of Rainmeter using <a href="https://docs.microsoft.com/en-us/windows/package-manager/winget/">winget</a>. See <a href="https://docs.rainmeter.net/manual/installing-rainmeter/#WingetInstallation">Winget Installation</a> for details.</p>
+		</ul>
+	</div>
+	
+	<div class="feature">
+		<h4>Silent Installation of Rainmeter</h4>
+		<p class="text-muted"> Added the ability to do a "Silent Install" of Rainmeter from the command line. See <a href="https://docs.rainmeter.net/manual/installing-rainmeter/#SilentInstallation">Silent Install</a> for details.</p>
+		</ul>
+	</div>
+	
+	<div class="feature">
+		<h4>Start Rainmeter using Safe Start</h4>
+		<p class="text-muted"> You can now hold down <code>CTRL</code> while starting Rainmeter to load in <a href="https://docs.rainmeter.net/manual/user-interface//#SafeStart">Safe Start</a> mode if you have a skin loaded that is preventing Rainmeter from starting normally.</p>
+		</ul>
+	</div>
+
+	<div class="feature">
+		<h4>Default starting values for configs</h4>
+		<p class="text-muted"> Added the ability to set <em>default / starting</em> values for the skin position and other options defined in the [ConfigName] sections in Rainmeter.ini. See <a href="https://docs.rainmeter.net/manual/skins/rainmeter-section/defaults/">Default Settings</a> in the documentation for details.</p>
+		</ul>
+	</div>
+	
+	<div class="feature">
+		<h4>Setting flags for WebParser</h4>
+		<p class="text-muted"> Added a <code>Flags</code> option to parent WebParser measures to enable setting some flags that change the behavior of WebParser when connecting to a remote resource. Details at <a href="https://docs.rainmeter.net/manual/measures/webparser/#Flags">Flags documentation.</a></p>
+		</ul>
+	</div>
+
+	<hr>
+
+	<h2>Other enhancements and fixes in Rainmeter 4.4</h2>
+	<hr>
+	<div class="features-other">
+		<p class="text-muted"> <b>SysInfo plugin:</b> Added new <code>LAST_SLEEP_TIME</code> and <code>LAST_WAKE_TIME</code> measurements to the <a href="https://docs.rainmeter.net/manual/plugins/sysinfo/#SysInfoType">SysInfoType</a> option.</p>
+
+		<p class="text-muted"> <b>Bangs:</b> Added a new <a href="https://docs.rainmeter.net/manual/bangs/#SetWindowPosition">!SetWindowPosition</a> bang to allow for dynamically setting the <code>WindowX</code> and <code>WindowY</code> position, and optionally <code>AnchorX</code> and <code>AnchorY</code> anchor settings for a skin window.</p>
+
+		<p class="text-muted"> <b>Bangs:</b> Added a new <a href="https://docs.rainmeter.net/manual/bangs/#SetAnchor">!SetAnchor</a> bang to allow for dynamically setting the <code>AnchorX</code> and <code>AnchorY</code> anchor settings for a skin window.</p>
+
+		<p class="text-muted"> <b>Settings:</b> Automated the process of restarting Rainmeter when the value of the checkbox "Use hardware acceleration" is changed.</p>
+
+		<p class="text-muted"> <b>WiFiStatus plugin:</b> Added <code>802.11ad</code> and <code>802.11ax</code> to supported <code>PHY</code> values.</p>
+		
+		<p class="text-muted"> <b>Registry measure:</b> Added support for value type REG_BINARY for registry keys.</p>
+		
+		<p class="text-muted"> <b>About / Skins:</b> You can now right-click and copy the name of a measure from the dialog.</p>
+		
+		<p class="text-muted"> <b>Ping plugin:</b> Added support for IPv6 addresses.</p>
+
+		<p class="text-muted"> <b>WebParser measure:</b> Added a new <a href="https://docs.rainmeter.net/manual/measures/webparser/#DecodeCodePoints">DecodeCodePoints</a> option to WebParser child measures, to decode Unicode code point values in the source like <code>\u00A7</code>, which would be <code>§</code>. Codes from <code>\u0000</code> to <code>\uFFFF</code> are supported.</p>
+		
+		<p class="text-muted"> <b>Bangs:</b> Added <code>Span</code> to the list of available <em>Position</em> parameter values for the <a href="https://docs.rainmeter.net/manual/bangs/#SetWallpaper">!SetWallpaper bang</a>. This is only supported with Windows 10, and will cause the wallpaper to be spanned across multiple monitors.</p>
+
+		<p class="text-muted"> <b>InlineSetting:</b> Corrected an issue with inline calls to Lua or plugins when a MeterStyle is used.</p>
+
+		<p class="text-muted"> <b>Settings:</b> Fixed a bug where doing a Refresh All would duplicate the list of languages in the Settings dialog.</p>
+
+		<p class="text-muted"> <b>Bangs:</b> Corrected an issue where a <a href="https://docs.rainmeter.net/manual/bangs/#Delay">!Delay bang</a> defined in a variable to be used within an action could cause any trailing bangs to execute before the delay.</p>
+		
+		<p class="text-muted"> <b>InputText plugin:</b> Corrected an issue where the negative sign was not allowed when both InputNumber and DefaultValue options were set.</p>
+
+		<p class="text-muted"> <b>Variables:</b> Improved the resolution of the <a href="https://docs.rainmeter.net/manual/variables/built-in-variables/#CURRENTSECTION">#CURRENTSECTION#</a> built-in variable when used in either Lua or Plugin inline section variables.</p>
+		
+		<p class="text-muted"> <b>Shape meter:</b> Fixed a bug with the Combine functionality when a shape is combined with a previously combined shape.</p>
+
+		<p class="text-muted"> <b>Skin Packager:</b> Disable "Variables files" field if "Merge skins" is selected. They are mutually exclusive.</p>
+		
+		<p class="text-muted"> <b>SysInfo plugin:</b> Corrected the detection of Windows Server 2019. This was also corrected in the About / Version dialog.</p>
+		
+		<p class="text-muted"> <b>InlineSetting:</b> Fixed a clipping issue with the <code>Shadow</code> InlineSetting.</p>
+		
+		<p class="text-muted"> <b>InlineSetting:</b> Corrected an issue with InlineSetting when the <code>None</code> value was used.</p>
+		
+		<p class="text-muted"> <b>Bangs:</b>  Corrected improperly parsed bangs when a leading extra space was used following a !Delay bang.</p>
+		
+		<p class="text-muted"> <b>Image meter:</b> Fixed a long standing bug where dynamically changing an image from a valid file to a non-existent file would not reset the detected size of the meter. Also added an error in the log when this happens.</p>
+		
+		<p class="text-muted"> <b>FileView plugin:</b> Corrected an issue where embedded icons in .url internet shortcuts were not being detected properly.</p>
+		
+		<p class="text-muted"> <b>String meter:</b> Fixed a bug where an Inline Setting of <code>Shadow</code> was not being handled correctly if the meter was in a Container.</p>
+		
+		<p class="text-muted"> <b>WebParser measure:</b> Fixed a long-standing bug where numeric values of child measures were not reset to zero between updates, which could cause a value to stay when the remote resource changed from having a value to not having a value.</p>
+
+		<p class="text-muted"> <b>InlineSetting:</b> Corrected an issue where a dynamic change to the offsets or blur of <a href="https://docs.rainmeter.net/manual/meters/string/inline/#InlineShadow">InlineSetting=Shadow</a> was not being applied.</p>
+		
+		<p class="text-muted"> <b>EncodeURL:</b> Changed the <a href="https://docs.rainmeter.net/manual/variables/section-variables/#EncodeURL">:EncodeURL</a> section variable parameter to always encode any character not in the "unreserved" set allowed by URL's.</p>
+		
+		<p class="text-muted"> <b>WebParser measure:</b> Changed the <a href="https://docs.rainmeter.net/manual/measures/webparser/#URL">URL</a> option to automatically percent-encode any characters after the <code>protocol://host/path/</code> portion of the URL that are not in the "unreserved" or "reserved" set allowed by URL's.</p>
+
+		<p class="text-muted"> <b>NowPlaying:</b> Changed the download of lyrics to use the UTF-8 codepage to support Unicode.</p>
+		
+		<p class="text-muted"> <b>Skin Packager:</b> Corrected an issue with the <code>Variables files</code> functionality of the <a href="https://docs.rainmeter.net/manual/distributing-skins/#SkinPackager">Skin Packager</a> when an empty value was used for a variable.</p>
+		
+		<p class="text-muted"> <b>InputText plugin:</b> Fixed an issue with <code>FocusDismiss=0</code> when the text box was active and the skin was unloaded.</p>
+		
+		<p class="text-muted"> <b>OnFocusAction:</b> Fixed a bug where <code>LeftMouseDownAction</code> was not properly recognizing that focus was given to the skin.</p>
+		
+		<p class="text-muted"> <b>String meter:</b> Corrected an issue with StringAlign when a string is dynamically updated.</p>
+
+		<p class="text-muted"> <b>Rainmeter:</b> Fixed a longstanding bug where the inital values of the skin position variables #CURRENTCONFIGX# and #CURRENTCONGIFY# could be incorrect.</p>
+
+		<p class="text-muted"> <b>Bangs:</b> Changed <a href="https://docs.rainmeter.net/manual/bangs/#EditSkin">!EditSkin</a> so it will now allow the "config" parameter alone, which will edit the skin .ini file currently running in the defined config folder. Change provided by user <a href="https://forum.rainmeter.net/memberlist.php?mode=viewprofile&u=31268">Yamajac</a>.</p>
+		
+		<p class="text-muted"> <b>Container:</b> Fixed an issue with using the "R" relative positioning modifier on the first content meter. The first content meter in a container is required to be relative to the container itself. So for example, the first content meter in a container with X/Y=2R is invalid and will assume X/Y=2r instead.</p>
+	</div>
+
+	<div class="links">
+		<h2>Version history and details</h2>
+		<hr>
+		<ul style="list-style-type: disc;">
+			<li style="margin-left: 1rem;">Detailed explanations of major changes at <a href="https://forum.rainmeter.net/viewforum.php?f=129">Change Announcements</a>.</li>
+			<li style="margin-left: 1rem;">Additional details on bug fixes and other minor changes at <a href="https://docs.rainmeter.net/history">Version History</a>.</li>
+			<li style="margin-left: 1rem;">Full history of all changes to the Rainmeter code at <a href="https://github.com/rainmeter/rainmeter/commits/master">Rainmeter GitHub</a>.</li>
+		</ul>
+	</div>
+</div>
+</div>
