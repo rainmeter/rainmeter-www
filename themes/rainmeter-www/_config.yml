@@ -58,7 +58,8 @@ carousel:
     title: 'VisBubble'
     author: 'undefinist'
 
-# Showcase gallerygallery:
+# Showcase gallery
+gallery:
   - type: 'gfycat'
     link: https://www.reddit.com/r/Rainmeter/comments/5rg8fp/howling_atat/
     thumbnailURL: img/showcase/thumb_HowlingATAT.png
