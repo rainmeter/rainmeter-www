@@ -15,17 +15,17 @@ menu:
 
 # Downloads
 downloads:
-  versionName: '4.4.0 Release'
-  date: 'September 22, 2019'
-  downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.3.0.3321/Rainmeter-4.3.1.exe
-  mirrorURL: https://builds.rainmeter.net/Rainmeter-4.3.1.exe
-  releaseNotesURL: /release-4-3-1
+  versionName: '4.5.0 Release'
+  date: 'August 26, 2021'
+  downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.5.0.3518/Rainmeter-4.5.0.exe
+  mirrorURL: https://builds.rainmeter.net/Rainmeter-4.5.0.exe
+  releaseNotesURL: /release-4-5-0
   enabled: true
 
 # News block
 news:
-  - title: 'Rainmeter 4.4 Beta Release'
-    url: /beta-4-4
+  - title: 'Rainmeter 4.5.0 Release'
+    url: /release-4-5-0
     date: 'July 27, 2021'
   - title: 'Need Help with Localization'
     url: /localization
@@ -58,8 +58,7 @@ carousel:
     title: 'VisBubble'
     author: 'undefinist'
 
-# Showcase gallery
-gallery:
+# Showcase gallerygallery:
   - type: 'gfycat'
     link: https://www.reddit.com/r/Rainmeter/comments/5rg8fp/howling_atat/
     thumbnailURL: img/showcase/thumb_HowlingATAT.png
