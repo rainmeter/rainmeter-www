@@ -8,15 +8,33 @@ title: 'Rainmeter 4.5 Changes'
 		<h1 class="text-center">Rainmeter 4.5</h1>
 		<hr>
 		<p>The following are the changes for the 4.5 version of Rainmeter.</p>
+		<p>Changes from 4.3 to 4.5 can be found at <a href="https://www.rainmeter.net/release-4-5-0/">4.5.0 Release Notes</a>.</p>
 	</div>
 	<div class="changelog">
 		<h2>Changes in Rainmeter 4.5</h2>
 		<hr>
-		<p><b>Additional details on important changes during the version life-cycle can be found at <a href="https://forum.rainmeter.net/viewforum.php?f=129">Change Announcements</a>.</b></p>
+		<p><b>Additional details on important changes during the version life-cycle can be found at <a href="https://forum.rainmeter.net/viewforum.php?f=142">Change Announcements</a>.</b></p>
 
-		<p class="revision"><b>July 27, 2021 - Revision 3508</b></p>
+		<p class="revision"><b>September 11, 2021 - 4.5.1 - Revision 3538</b></p>
 		<ul>
-			<li><span class="badge badge-fixed">Fixed</span><b>Installer:</b> Fixed a problem with the installer detecting and using the correct value for /AUTOSTARTUP when it is not specified on the command line.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>ToolTip:</b> Fixed a mouse detection issue with ToolTip inside a Container meter.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>SysInfo:</b> Fixed an inconsistency with how an empty string value is returned for <code>SysInfoType=IP_ADDRESS</code>.</li>
+			<li><span class="badge badge-changed">Changed</span><b>SysInfo:</b> SysInfo is now a "measure" instead of a "plugin".</li>
+			<li><span class="badge badge-added">Added</span><b>SysInfo:</b> Added several new <code>SysInfoType</code> values:<br/><br/>
+			ADAPTER_ALIAS<br/>
+			ADAPTER_GUID<br/>
+			ADAPTER_STATE<br/>
+			ADAPTER_STATUS<br/>
+			ADAPTER_TRANSMIT_SPEED<br/>
+			ADAPTER_RECEIVE_SPEED<br/>
+			GATEWAY_ADDRESS_V4<br/>
+			GATEWAY_ADDRESS_V6<br/>
+			INTERNET_CONNECTIVITY_V4<br/>
+			INTERNET_CONNECTIVITY_V6<br/>
+			LAN_CONNECTIVITY_V4<br/>
+			LAN_CONNECTIVITY_V6<br/>
+			MAC_ADDRESS<br/><br/>
+			See <a href="https://docs.rainmeter.net/manual/plugins/sysinfo/">SysInfo Measure</a> for details.</li>
 		</ul>
 
 	</div>
