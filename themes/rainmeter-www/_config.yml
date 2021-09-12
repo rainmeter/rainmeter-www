@@ -15,18 +15,18 @@ menu:
 
 # Downloads
 downloads:
-  versionName: '4.5.1 Release'
-  date: 'September 11, 2021'
-  downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.5.1.3540/Rainmeter-4.5.1.exe
-  mirrorURL: https://builds.rainmeter.net/Rainmeter-4.5.1.exe
+  versionName: '4.5.2 Release'
+  date: 'September 12, 2021'
+  downloadURL: https://github.com/rainmeter/rainmeter/releases/download/v4.5.2.3541/Rainmeter-4.5.2.exe
+  mirrorURL: https://builds.rainmeter.net/Rainmeter-4.5.2.exe
   releaseNotesURL: /changes-4.5
   enabled: true
 
 # News block
 news:
-  - title: 'Rainmeter 4.5.1 Release'
+  - title: 'Rainmeter 4.5.2 Release'
     url: /changes-4.5
-    date: 'September 11, 2021'
+    date: 'September 12, 2021'
   - title: 'Need Help with Localization'
     url: /localization
     date: 'June 25, 2021'
