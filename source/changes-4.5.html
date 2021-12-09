@@ -15,6 +15,13 @@ title: 'Rainmeter 4.5 Changes'
 		<hr>
 		<p><b>Additional details on important changes can be found at <a href="https://forum.rainmeter.net/viewforum.php?f=142">Change Announcements</a>.</b></p>
 
+		<p class="revision"><b>December 9, 2021 - 4.5.7 - Revision 3581</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>WiFiStatus measure:</b> Corrected an error condition when the winlanapi.dll file used by WiFiStatus is not installed in Windows, as with recent Windows Server versions.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>NowPlaying:</b> Corrected a range-check issue that allowed the volume value for the CAD plugin to all outside of 0-100.</li>
+			<li><span class="badge badge-fixed">Changed</span><b>SysInfo measure:</b> Take into account the connection/operational status for finding the "best" interface when specifying the name of the adapter. This will also correct an issue with duplicate interface "names" in Windows.</li>
+		</ul>
+
 		<p class="revision"><b>November 29, 2021 - 4.5.6 - Revision 3573</b></p>
 		<ul>
 			<li><span class="badge badge-fixed">Fixed</span><b>SysInfo:</b> Corrected an issue with the <code>NUM_MONITORS</code> value for <code>SysInfoType</code>.</li>
