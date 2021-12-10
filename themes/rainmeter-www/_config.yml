@@ -117,10 +117,10 @@ gallery:
 
 
 # SASS configuration
-node_sass:
-  debug: true
-  outputStyle: nested
-  precision: 5
-  sourceComments: false
+sass:
+  # debug: true
+  # outputStyle: nested
+  # precision: 5
+  # sourceComments: false
   includePaths:
     - "./node_modules"
