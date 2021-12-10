@@ -1,10 +1,10 @@
 # Navigation
 menu:
   Home:
-    url: //www.rainmeter.net/
+    url: //www.rainmeter.net
     external: true
   Documentation:
-    url: //docs.rainmeter.net/
+    url: //docs.rainmeter.net
     external: true
   Discover:
     url: /discover/
