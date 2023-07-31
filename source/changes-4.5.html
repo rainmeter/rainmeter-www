@@ -14,22 +14,23 @@ title: 'Rainmeter 4.5 Changes'
 		<h2>Changes in Rainmeter 4.5</h2>
 		<hr>
 		<p><b>Additional details on important changes can be found at <a href="https://forum.rainmeter.net/viewforum.php?f=142">Change Announcements</a>.</b></p>
-		
+
 		<p class="revision"><b>July 31, 2023 - 4.5.18 - Revision 3727</b></p>
 		<ul>
 			<li><span class="badge badge-changed">Changed</span><b>Game Mode:</b> Show tray icon if all skins are unloaded.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Game Mode:</b> Allow <a href="https://docs.rainmeter.net/manual/bangs/#Quit">!Quit</a> bang to work from the command line while in Game Mode.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Languages:</b> Updated localization strings for Vietnamese, Swedish, Portuguese (Portugal), Estonian, Greek, Hungarian.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Inline lua:</b> Increase stack size if needed.</li>
-			<li><span class="badge badge-changed">Changed</span><b>Update Check:</b> Added minimum Windows checking when updating, to prevent Rainmeter from downloading a new Rainmeter version that is incompatible with the users system.</li>
+			<li><span class="badge badge-added">Added</span><b>Update Check:</b> Added minimum Windows checking when updating, to prevent Rainmeter from downloading a new Rainmeter version that is incompatible with the users system.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Mouse Actions:</b> Fix skin meter <a href="https://docs.rainmeter.net/manual/mouse-actions/#MouseLeaveAction">MouseLeaveAction</a> being delayed when skin is draggable and global dragging is disabled</li>
 			<li><span class="badge badge-fixed">Fixed</span><b>Manage Dialog:</b> Fix dialog global draggable checkbox not updating state when toggling via tray icon.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Default illustro Suite:</b> Update Network.ini. Code change provided by user <b>nek7u</b>.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Rainmeter:</b> Fix cursor changing to a hand when a meter has a mouse wheel action. Code change provided by user <b>Joehuu</b>.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Rainmeter:</b> Fixed an issue with <a href="https://docs.rainmeter.net/manual/skins/rainmeter-section/#OnWakeAction">OnWakeAction</a> on systems that utilize Connected Standby.</li>
-			<li><span class="badge badge-changed">Changed</span><b>WiFi Status:</b> Added <a href="https://docs.rainmeter.net/manual/measures/wifistatus/#WiFiInfoType">WiFiInfoType</a> support for Wifi 7 (802.11be).</li>
+			<li><span class="badge badge-added">Added</span><b>WiFi Status:</b> Added <a href="https://docs.rainmeter.net/manual/measures/wifistatus/#WiFiInfoType">WiFiInfoType</a> support for Wifi 7 (802.11be).</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Skin Installer:</b> Fixed an issue where 64-bit plugins were installed when a 32-bit version of Rainmeter was installed on 64-bit version of Windows.</li>
 		</ul>
-		
+
 		<p class="revision"><b>December 24, 2022 - 4.5.17 - Revision 3700</b></p>
 		<ul>
 			<li><span class="badge badge-changed">Changed</span><b>String meter:</b> <code>FontSize</code> and <code>InlineSetting=Size</code> now accept floating point (i.e. decimal) values.</li>
@@ -38,7 +39,7 @@ title: 'Rainmeter 4.5 Changes'
 			<li><span class="badge badge-fixed">Fixed</span><b>ConfigParser:</b> Fixed an issue when reading empty color options.</li>
 			<li><span class="badge badge-fixed">Fixed</span><b>GameMode:</b> Fixed layout loading with "On Start" action.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Languages:</b> Updated localization strings for Arabic, Spanish Modern, Polish, Indonesian, Thai.</li>
-		</ul>	
+		</ul>
 
 		<p class="revision"><b>September 20, 2022 - 4.5.16 - Revision 3687</b></p>
 		<ul>
@@ -47,7 +48,7 @@ title: 'Rainmeter 4.5 Changes'
 			<li><span class="badge badge-changed">Changed</span><b>Languages:</b> Updated localization strings for Ukrainian and Arabic.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Plugins:</b> Only log the loading and unloading of plugins in Debug mode.</li>
 		</ul>
-			
+
 		<p class="revision"><b>September 19, 2022 - 4.5.15 - Revision 3678</b></p>
 		<ul>
 			<li><span class="badge badge-fixed">Fixed</span><b>WifiStatus:</b> Corrected an issue with a missing .dll Windows file that could cause crashing on Windows Server systems.</li>
@@ -57,7 +58,7 @@ title: 'Rainmeter 4.5 Changes'
 			<li><span class="badge badge-changed">Changed</span><b>Platform detection:</b> The "Version" value that is used for the About/Version dialog and the log has been changed to show the non-numerical "DisplayVersion" over the "ReleaseId" from the registry. (for instance: 21H2 rather than 2009). Also, added detection of "Windows Server 2022".</li>
 			<li><span class="badge badge-changed">Changed</span><b>Languages:</b> Updated localization strings for Finnish, Portuguese (Brazil), Italian.</li>
 		</ul>
-		
+
 		<p class="revision"><b>September 6, 2022 - 4.5.14 - Revision 3663</b></p>
 		<ul>
 			<li><span class="badge badge-changed">Changed</span><b>Lua:</b> Allow the Lua Update() function to return 2 values (number and string). The order is unimportant. Example: <code>return 'twenty-five', 25</code><br/>Suggested by user <b>@deathcrafter</b>.</li>
@@ -75,7 +76,7 @@ title: 'Rainmeter 4.5 Changes'
 			<li><span class="badge badge-fixed">Fixed</span><b>GeneralImage:</b> Fixed "ImageCrop" formula parsing. See <a href="https://forum.rainmeter.net/viewtopic.php?t=40682#p207510">Forum Thread</a> for details.</li>
 			<li><span class="badge badge-fixed">Fixed</span><b>Rainmeter:</b> Fixed bug with random number generators.</li>
 		</ul>
-		
+
 		<p class="revision"><b>March 23, 2022 - 4.5.13 - Revision 3632</b></p>
 		<ul>
 			<li><span class="badge badge-fixed">Fixed</span><b>About dialog / Plugins tab:</b> Fix Unicode issue in the path when gathering plugin information.</li>
@@ -85,7 +86,7 @@ title: 'Rainmeter 4.5 Changes'
 			<li><span class="badge badge-changed">Changed</span><b>Settings:</b> Deprecated "HideOnMouseOver" and replaced with "OnHover" in Rainmeter.ini.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Languages:</b> Updated localization strings for Serbian and Indonesian.</li>
 		</ul>
-		
+
 		<p class="revision"><b>March 2, 2022 - 4.5.12 - Revision 3616</b></p>
 		<ul>
 			<li><span class="badge badge-fixed">Fixed</span><b>Custom Plugin functions:</b> Matching leading and trailing quotes (double and single) will now be stripped from each parameter before being sent to the plugin.</li>
