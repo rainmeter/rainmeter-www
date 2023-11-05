@@ -20,16 +20,6 @@
           Your browser does not support HTML5 videos.
         </video>
       <% } %>
-      <% if (gallery.type === 'gfycat') { %>
-        <a class="col-12 col-md-4" data-fancybox="gallery" data-src="#video<%=i%>" data-caption="<%= caption %>">
-          <img data-src="<%- gallery.thumbnailURL %>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<%- gallery.title %> by <%- gallery.author %>">
-        </a>
-        <video class="fancybox-video" id="video<%=i%>" loop muted controls>
-          <source src="https://zippy.gfycat.com/<%- gallery.content %>.webm" type="video/webm">
-          <source src="https://giant.gfycat.com/<%- gallery.content %>.mp4" type="video/mp4">
-          Your browser does not support HTML5 videos.
-        </video>
-      <% } %>
       <% if (gallery.type === 'youtube') { %>
         <a class="col-12 col-md-4" data-fancybox="gallery" data-caption="<%= caption %>" href="<%- gallery.content %>&amp;autoplay=1&amp;rel=0&amp;showinfo=0&amp;mute=1">
           <img data-src="<%- gallery.thumbnailURL %>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<%- gallery.title %> by <%- gallery.author %>">

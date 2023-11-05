@@ -60,10 +60,10 @@ carousel:
 
 # Showcase gallery
 gallery:
-  - type: 'gfycat'
+  - type: 'video'
     link: https://www.reddit.com/r/Rainmeter/comments/5rg8fp/howling_atat/
     thumbnailURL: img/showcase/thumb_HowlingATAT.png
-    content: BestInsecureHowlermonkey
+    content: img/showcase/HowlingATAT.webm
     title: 'Howling AT-AT'
     author: 'Jumats'
   - type: 'image'
@@ -84,10 +84,10 @@ gallery:
     content: img/showcase/cyberpunkcoffee.gif
     title: 'Cyberpunk Coffee'
     author: 'Labr4t'
-  - type: 'gfycat'
+  - type: 'video'
     link: https://www.reddit.com/r/Rainmeter/comments/5erns9/a_clean_daft_punk_setup_giving_life_back_to_music/
     thumbnailURL: img/showcase/thumb_cleanDaftPunk.png
-    content: GreatShadyAegeancat
+    content: img/showcase/cleanDaftPunk.webm
     title: 'Clean Daft Punk setup'
     author: 'The_siderian'
   - type: 'video'
@@ -108,10 +108,10 @@ gallery:
     content: img/showcase/geometry.png
     title: 'Geometry Rainmeter'
     author: 'Iroaseta'
-  - type: 'gfycat'
+  - type: 'video'
     link: https://www.reddit.com/r/Rainmeter/comments/6gv77s/so_this_is_the_volume2_of_my_zelda_theme/
     thumbnailURL: img/showcase/thumb_ZeldaTheme2.png
-    content: WelldocumentedGlossyAnkolewatusi
+    content: img/showcase/ZeldaTheme2.webm
     title: 'Zelda theme 2.0'
     author: 'NicoNoFace'
 
