@@ -12,7 +12,7 @@ permalink_defaults:
 
 # Directory
 source_dir: source
-public_dir: _generated
+public_dir: public
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -56,10 +56,3 @@ pagination_dir: page
 
 # Extensions
 theme: rainmeter-www
-
-# Deployment
-deploy:
-  type: git
-  message: "Update: {{ now('YYYY-MM-DD HH:mm:ss') }}"
-  repo: https://github.com/rainmeter/rainmeter-www.git
-  branch: gh-pages

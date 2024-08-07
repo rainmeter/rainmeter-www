@@ -1,7 +1,8 @@
 *debug.log
-_generated
+public/
+_generated/
+node_modules/
 _ghpages.git
 .deploy_git
 db.json
-node_modules
 yarn-error.log
