@@ -14,7 +14,7 @@
         <a class="col-12 col-md-4" data-fancybox="gallery" data-src="#video<%=i%>" data-caption="<%= caption %>">
           <img data-src="<%- gallery.thumbnailURL %>" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" alt="<%- gallery.title %> by <%- gallery.author %>">
         </a>
-        <video class="fancybox-video" id="video<%=i%>" loop muted controls>
+        <video class="fancybox-video" id="video<%=i%>" loop muted controls preload="none">
           <source src="<%- gallery.content %>" type="video/webm">
           <source src="<%- gallery.content %>" type="video/mp4">
           Your browser does not support HTML5 videos.
