@@ -7,10 +7,10 @@ title: 'Rainmeter 5.0 Changes'
      through master at 89e4da5720821fe3c0ac6d9e2e96c755692cfb10. -->
 <div class="release-notes">
 	<div class="description">
-		<h1 class="text-center" id="Rainmeter5">Rainmeter 5.0 <a href="#Rainmeter5" aria-label="Link to Rainmeter 5.0">#</a></h1>
+		<h1 class="text-center" id="Rainmeter5">Rainmeter 5.0 <a class="heading-anchor" href="#Rainmeter5" aria-label="Link to Rainmeter 5.0">#</a></h1>
 		<hr>
 		<p>The following are the user-facing changes in Rainmeter 5.0 since Rainmeter 4.5.26 (revision 3894).</p>
-		<h2 id="Highlights">Highlights <a href="#Highlights" aria-label="Link to Highlights">#</a></h2>
+		<h2 id="Highlights">Highlights <a class="heading-anchor" href="#Highlights" aria-label="Link to Highlights">#</a></h2>
 		<p class="feature"><b>High-DPI support and skin zoom:</b> Skins render at each monitor's display scale and resize when moved between monitors. Zoom individual skins, set a default zoom, or select several skins with CTRL-ALT to move and resize them together. <a href="#Scaling">Scaling and zoom details</a>.</p>
 		<p class="feature"><b>TextEdit meter:</b> Add editable text fields directly to skins, with single-line or multiline input, selection, clipboard support, input filtering, and password masking. <a href="#Meters">Meter details</a>.</p>
 		<p class="feature"><b>SVG meter:</b> Display scalable vector images from files or inline SVG code, and change element attributes dynamically. <a href="#Meters">Meter details</a>.</p>
@@ -23,11 +23,11 @@ title: 'Rainmeter 5.0 Changes'
 		<p>This overview reflects <a href="https://github.com/rainmeter/rainmeter/compare/v4.5.26.3894...89e4da5720821fe3c0ac6d9e2e96c755692cfb10">the source changes through October 6, 2026</a>. Entries describe differences between the tagged release and this version of master.</p>
 	</div>
 	<div class="changelog">
-		<h2 id="Changes">Changes in Rainmeter 5.0 <a href="#Changes" aria-label="Link to Changes in Rainmeter 5.0">#</a></h2>
+		<h2 id="Changes">Changes in Rainmeter 5.0 <a class="heading-anchor" href="#Changes" aria-label="Link to Changes in Rainmeter 5.0">#</a></h2>
 		<hr>
 		<p><b>Additional details and examples can be found in the <a href="https://docs-v5.rainmeter.net/manual/">manual</a> and the <a href="https://forum.rainmeter.net/viewtopic.php?t=45991">Rainmeter 5.0 announcements</a>.</b></p>
 
-		<h3 id="Compatibility">Compatibility and installation <a href="#Compatibility" aria-label="Link to Compatibility and installation">#</a></h3>
+		<h3 id="Compatibility">Compatibility and installation <a class="heading-anchor" href="#Compatibility" aria-label="Link to Compatibility and installation">#</a></h3>
 		<ul>
 			<li><span class="badge badge-changed">Changed</span><b>System requirements:</b> Rainmeter requires 64-bit Windows 10 version 1903 or later, or Windows 11. Support for 32-bit Windows and older Windows versions has been removed.</li>
 			<li><span class="badge badge-added">Added</span><b>Skin syntax:</b> <code>SyntaxVersion=2</code> in the skin's <code>[Rainmeter]</code> section opts into updated syntax behavior. It always enables <code>AccurateText=1</code> and leaves environment variables such as <code>%USERNAME%</code> literal. Use <code>[%USERNAME]</code> to expand them instead. The default syntax version remains 1 for existing skins.</li>
@@ -38,7 +38,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-fixed">Fixed</span><b>Installer:</b> Improved compatibility with Windows Smart App Control, corrected handling of installation paths, and fixed quoting of the Skin Installer command for paths containing spaces.</li>
 		</ul>
 
-		<h3 id="Scaling">Scaling, zoom, and arranging skins <a href="#Scaling" aria-label="Link to Scaling, zoom, and arranging skins">#</a></h3>
+		<h3 id="Scaling">Scaling, zoom, and arranging skins <a class="heading-anchor" href="#Scaling" aria-label="Link to Scaling, zoom, and arranging skins">#</a></h3>
 		<ul>
 			<li><span class="badge badge-added">Added</span><b>Monitor scaling:</b> Skins follow each monitor's DPI scaling and redraw at the appropriate size when moved between monitors or when display settings change. See <a href="https://docs-v5.rainmeter.net/manual/scale-and-zoom/">Scale and Zoom</a>.</li>
 			<li><span class="badge badge-added">Added</span><b>Skin zoom:</b> Zoom individual skins from 10% to 500% using the skin context menu, Manage's Skins tab, or the skin's <code>Zoom</code> setting in Rainmeter.ini.</li>
@@ -48,7 +48,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-changed">Changed</span><b>Coordinates:</b> Skin layout and built-in coordinate and size values use logical coordinates for DPI scaling. New physical and zoomed size variables provide the corresponding pixel and zoomed values.</li>
 		</ul>
 
-		<h3 id="Variables">Variables, formulas, and skin options <a href="#Variables" aria-label="Link to Variables, formulas, and skin options">#</a></h3>
+		<h3 id="Variables">Variables, formulas, and skin options <a class="heading-anchor" href="#Variables" aria-label="Link to Variables, formulas, and skin options">#</a></h3>
 		<ul>
 			<li><span class="badge badge-added">Added</span><b>Skin variables:</b> New <code>[$Skin...]</code> variables provide position, size, physical position and size, zoomed size, DPI factor, zoom factor, z-position, and visibility. See <a href="https://docs-v5.rainmeter.net/manual/variables/built-in-variables/#SkinVariables">Skin variables</a>.</li>
 			<li><span class="badge badge-added">Added</span><b>Display variables:</b> New <code>[$Display...]</code> and <code>[$DisplayDevice...]</code> variables provide monitor and device geometry, work areas, physical coordinates, virtual screen bounds, DPI factors, names, numbers, and counts. Unnumbered variables refer to the display the skin is mostly on; a number selects a specific display or device. See <a href="https://docs-v5.rainmeter.net/manual/variables/built-in-variables/#MonitorVariables">Monitor variables</a>.</li>
@@ -60,7 +60,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-changed">Changed</span><b>Text file encoding:</b> Reading and writing INI files detects and preserves UTF-8 encoding, including files edited with <code>!WriteKeyValue</code>. Rainmeter's own settings files use UTF-16.</li>
 		</ul>
 
-		<h3 id="Bangs">Bangs and command line arguments <a href="#Bangs" aria-label="Link to Bangs and command line arguments">#</a></h3>
+		<h3 id="Bangs">Bangs and command line arguments <a class="heading-anchor" href="#Bangs" aria-label="Link to Bangs and command line arguments">#</a></h3>
 		<ul>
 			<li><span class="badge badge-added">Added</span><b>Zoom bangs:</b> <a href="https://docs-v5.rainmeter.net/manual/bangs/#SetZoomFactor">!SetZoomFactor</a> and <a href="https://docs-v5.rainmeter.net/manual/bangs/#SetZoomFactorGroup">!SetZoomFactorGroup</a> set skin zoom factors. A value of <code>1.25</code> means 125%; <code>Default</code> restores the default zoom.</li>
 			<li><span class="badge badge-added">Added</span><b>Update interval:</b> <a href="https://docs-v5.rainmeter.net/manual/bangs/#SetUpdate">!SetUpdate</a> changes a skin's visible update interval dynamically. The invisible update interval remains unchanged.</li>
@@ -75,7 +75,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-changed">Changed</span><b>Activating skins:</b> Activating an already loaded skin brings it to the front of windows sharing its z-position. Already active or inactive configs no longer produce redundant activation or deactivation warnings.</li>
 		</ul>
 
-		<h3 id="Meters">Meters and images <a href="#Meters" aria-label="Link to Meters and images">#</a></h3>
+		<h3 id="Meters">Meters and images <a class="heading-anchor" href="#Meters" aria-label="Link to Meters and images">#</a></h3>
 		<ul>
 			<li><span class="badge badge-added">Added</span><b>TextEdit meter:</b> <a href="https://docs-v5.rainmeter.net/manual/meters/textedit/">Meter=TextEdit</a> provides text input directly in a skin, with single-line and multiline fields, selection, clipboard operations, undo, scrolling, placeholders, password masking, input filtering, and read-only mode. Actions receive the text through <code>[$Input]</code>; regular expression filter captures are available through <code>[$Input:MatchN]</code>.</li>
 			<li><span class="badge badge-added">Added</span><b>TextEdit bangs:</b> <code>!TextEdit:Focus</code>, <code>:Dismiss</code>, <code>:Submit</code>, <code>:Select</code>, <code>:SelectAll</code>, <code>:SetText</code>, <code>:Clear</code>, <code>:Reset</code>, <code>:ScrollByLine</code>, and <code>:ResetScroll</code> control input fields.</li>
@@ -88,7 +88,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-changed">Changed</span><b>Shape errors:</b> Error and warning messages identify the Shape option number.</li>
 		</ul>
 
-		<h3 id="Measures">Measures <a href="#Measures" aria-label="Link to Measures">#</a></h3>
+		<h3 id="Measures">Measures <a class="heading-anchor" href="#Measures" aria-label="Link to Measures">#</a></h3>
 		<ul>
 			<li><span class="badge badge-changed">Changed</span><b>Built-in measures:</b> ActionTimer, AdvancedCPU, AudioLevel, CoreTemp, FileView, FolderInfo, InputText, iTunes, PerfMon, Ping, Power, Quote, ResMon, RunCommand, SpeedFan, UsageMonitor, WindowMessage, and Audio (formerly Win7Audio) are built-in measures. Existing <code>Measure=Plugin</code> syntax for these measures remains supported.</li>
 			<li><span class="badge badge-added">Added</span><b>DragDrop measure:</b> The Drag&amp;Drop plugin is available as the built-in <code>Measure=DragDrop</code>. Existing plugin syntax remains supported; its former <code>FancyRenderer</code> option is removed.</li>
@@ -113,7 +113,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-changed">Changed</span><b>WiFiStatus:</b> Where supported by Windows, connection quality and speed queries use an interface that avoids repeated location-access requests and excessive growth of Windows' capability access log.</li>
 		</ul>
 
-		<h3 id="Lua">Lua scripting and plugin support <a href="#Lua" aria-label="Link to Lua scripting and plugin support">#</a></h3>
+		<h3 id="Lua">Lua scripting and plugin support <a class="heading-anchor" href="#Lua" aria-label="Link to Lua scripting and plugin support">#</a></h3>
 		<ul>
 			<li><span class="badge badge-changed">Changed</span><b>Lua scripting:</b> Uses LuaJIT 2.1, which is compatible with Lua 5.1.</li>
 			<li><span class="badge badge-added">Added</span><b>Setting options and variables:</b> <a href="https://docs-v5.rainmeter.net/manual/lua-scripting/#SetOption">SKIN:SetOption</a>, <a href="https://docs-v5.rainmeter.net/manual/lua-scripting/#SetOptionGroup">SKIN:SetOptionGroup</a>, and <a href="https://docs-v5.rainmeter.net/manual/lua-scripting/#SetVariable">SKIN:SetVariable</a> set options or variables directly, with support for multiple name/value pairs supplied as tables. Meter and measure objects also support <code>SetOption</code>.</li>
@@ -125,7 +125,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>Plugin API:</b> Plugins can read the skin's effective scale, DPI scale, zoom scale, transparency, click-through state, and draggable state. <code>HandleSkinSettingChange</code> notifies plugins when these settings change. Scaling support also applies to plugin coordinate, size, and font-size options.</li>
 		</ul>
 
-		<h3 id="Interface">User interface and recovery <a href="#Interface" aria-label="Link to User interface and recovery">#</a></h3>
+		<h3 id="Interface">User interface and recovery <a class="heading-anchor" href="#Interface" aria-label="Link to User interface and recovery">#</a></h3>
 		<ul>
 			<li><span class="badge badge-changed">Changed</span><b>About and Debug:</b> Version information is in a separate About dialog. The <a href="https://docs-v5.rainmeter.net/manual/user-interface/debug/">Debug dialog</a> contains Log, Skins, Plugins, Display, and Network tabs. Manage and Debug remember their window sizes.</li>
 			<li><span class="badge badge-added">Added</span><b>Debug Skins tab:</b> Added watches for evaluating expressions and executing actions, filtering measures and variables, and jumping to a meter or measure in the skin file. Values can be added to watches from their context menu or by double-clicking.</li>
@@ -143,7 +143,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-changed">Changed</span><b>Translations:</b> Updated interface translations and made Skin Packager and Skin Installer dialogs translatable. The Bengali translation has been removed.</li>
 		</ul>
 
-		<h3 id="Packager">Skin Packager <a href="#Packager" aria-label="Link to Skin Packager">#</a></h3>
+		<h3 id="Packager">Skin Packager <a class="heading-anchor" href="#Packager" aria-label="Link to Skin Packager">#</a></h3>
 		<ul>
 			<li><span class="badge badge-added">Added</span><b>Load previous:</b> Restores the settings used when a skin was last packaged, including name, author, layouts, plugins, header image, and output folder. Hold Shift to delete entries from the menu. See <a href="https://docs-v5.rainmeter.net/manual/distributing-skins/#LoadPrevious">Skin Packager</a>.</li>
 			<li><span class="badge badge-added">Added</span><b>Plugin selection:</b> Selecting one plugin DLL automatically looks for the other architecture by swapping folder names such as <code>32bit</code> and <code>64bit</code>.</li>
@@ -151,7 +151,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-changed">Changed</span><b>Package options:</b> Removed the minimum Windows version option. Component dialogs are wider, show plugin paths more clearly, and open file browsers at the current selection.</li>
 		</ul>
 
-		<h3 id="Fixes">Other fixes <a href="#Fixes" aria-label="Link to Other fixes">#</a></h3>
+		<h3 id="Fixes">Other fixes <a class="heading-anchor" href="#Fixes" aria-label="Link to Other fixes">#</a></h3>
 		<ul>
 			<li><span class="badge badge-fixed">Fixed</span><b>Measures:</b> Fixed potential freezes and crashes in WebParser, NowPlaying, and RecycleManager.</li>
 			<li><span class="badge badge-fixed">Fixed</span><b>Containers:</b> Empty Container values no longer resolve to unnamed meters and unintentionally clip other meters.</li>

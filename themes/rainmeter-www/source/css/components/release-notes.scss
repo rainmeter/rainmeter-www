@@ -3,6 +3,16 @@
 @import "../mixins";
 
 .release-notes {
+    .heading-anchor {
+        opacity: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        &:hover, &:focus-within {
+            .heading-anchor {
+                opacity: 1;
+            }
+        }
+    }
     ul {
         padding-left: 0;
         list-style-type: none;
