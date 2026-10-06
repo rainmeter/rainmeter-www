@@ -9,5 +9,6 @@ $font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI"
     xl: 1024px
   );
 
-// load Bootstrap variables + functions + mixins
-@import "bootstrap/scss/bootstrap";
+// Load definitions without emitting Bootstrap CSS.
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";

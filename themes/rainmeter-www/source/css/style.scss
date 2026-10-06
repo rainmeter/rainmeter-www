@@ -3,13 +3,8 @@
 @import "colors";
 @import "mixins";
 
-// import bootstrap scss files from node_modules
-@import "bootstrap/scss/reboot";
-@import "bootstrap/scss/type";
-@import "bootstrap/scss/images";
-@import "bootstrap/scss/code";
-@import "bootstrap/scss/grid";
-@import "bootstrap/scss/carousel";
+// Emit Bootstrap CSS once, after applying the theme variables.
+@import "bootstrap/scss/bootstrap";
 
 // import the base components
 @import "base";
