@@ -10,7 +10,7 @@ title: 'Rainmeter 5.0 Changes'
 		<h1 class="text-center">Rainmeter 5.0</h1>
 		<hr>
 		<p>The following are the user-facing changes in Rainmeter 5.0 since Rainmeter 4.5.26 (revision 3894).</p>
-		<p>This overview reflects <a href="https://github.com/rainmeter/rainmeter/compare/v4.5.26.3894...89e4da5720821fe3c0ac6d9e2e96c755692cfb10">the source changes through October 6, 2026</a>. Related changes are grouped together and describe their final behavior.</p>
+		<p>This overview reflects <a href="https://github.com/rainmeter/rainmeter/compare/v4.5.26.3894...89e4da5720821fe3c0ac6d9e2e96c755692cfb10">the source changes through October 6, 2026</a>. Entries describe differences between the tagged release and this version of master.</p>
 	</div>
 	<div class="changelog">
 		<h2>Changes in Rainmeter 5.0</h2>
@@ -36,7 +36,6 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>Multiple skin selection:</b> Hold CTRL-ALT and click to select skins. Selected skins can be moved, resized by dragging their edges or corners, and adjusted together through a shared context menu. See <a href="https://docs-v5.rainmeter.net/manual/arranging-skins/#Multiple">Arranging Skins</a>.</li>
 			<li><span class="badge badge-added">Added</span><b>Display changes:</b> The <a href="https://docs-v5.rainmeter.net/manual/skins/rainmeter-section/#OnDisplayMetricsChange">OnDisplayMetricsChange</a> action runs when any display's layout, resolution, or scaling changes.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Coordinates:</b> Skin layout and built-in coordinate and size values use logical coordinates for DPI scaling. New physical and zoomed size variables provide the corresponding pixel and zoomed values.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>Skin placement:</b> Improved positioning and dragging across monitors with different DPI settings, window snapping, and keeping resized skins on screen. Display changes preserve the authored WindowX and WindowY settings.</li>
 		</ul>
 
 		<h3 id="Variables">Variables, formulas, and skin options</h3>
@@ -74,9 +73,8 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>String meter:</b> <code>StringAlign=Justify</code> supports justified text.</li>
 			<li><span class="badge badge-added">Added</span><b>Line meter:</b> <a href="https://docs-v5.rainmeter.net/manual/meters/line/#LineJoin">LineJoin</a> controls how line segments join.</li>
 			<li><span class="badge badge-added">Added</span><b>System images:</b> <code>SystemImage:</code> image names support icons from the Windows system image list. FileView uses this support to supply file and folder icons.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>Button meter:</b> Mouse hit testing uses the image's alpha mask so transparent areas are not treated as part of the button.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>Meter sizing:</b> Fixed padding being added repeatedly when options are reread, reset empty TransformationMatrix values correctly, and corrected auto-sized text and skin dimensions after refresh.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>Rendering:</b> Fixed inline shadows after DPI and zoom changes, masked image overlap, disabled Shape strokes, and image margins at scaled pixel boundaries. Rendering recovers after graphics device loss.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>TransformationMatrix:</b> Removing the option or setting it to an empty value clears the meter's previous transformation.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Graphics recovery:</b> Skins can recover their rendering after graphics device loss.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Shape errors:</b> Error and warning messages identify the Shape option number.</li>
 		</ul>
 
@@ -86,11 +84,10 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>DragDrop measure:</b> The Drag&amp;Drop plugin is available as the built-in <code>Measure=DragDrop</code>. Existing plugin syntax remains supported; its former <code>FancyRenderer</code> option is removed.</li>
 			<li><span class="badge badge-added">Added</span><b>Mouse measure:</b> <a href="https://docs-v5.rainmeter.net/manual/measures/mouse/">Measure=Mouse</a> provides mouse coordinates and actions as a built-in measure.</li>
 			<li><span class="badge badge-added">Added</span><b>Mouse click capture:</b> <code>!Mouse:StartCapture</code> waits for the next click anywhere on any monitor and runs the matching button-up action with <code>$MouseX$</code> and <code>$MouseY$</code>. Escape or <code>!Mouse:StopCapture</code> cancels capture. <code>CaptureOverlayColor</code> controls the overlay color and <code>CaptureOverlayCursorName</code> selects its system cursor.</li>
-			<li><span class="badge badge-changed">Changed</span><b>Mouse actions:</b> Mouse measure actions respect skin scaling and are suppressed while a skin is selected or the pointer is over Rainmeter menus or dialogs.</li>
+			<li><span class="badge badge-added">Added</span><b>Mouse actions:</b> The new Mouse measure supports skin scaling and suppresses actions while a skin is selected or the pointer is over Rainmeter menus or dialogs.</li>
 			<li><span class="badge badge-added">Added</span><b>WebParser JSON:</b> <a href="https://docs-v5.rainmeter.net/manual/measures/webparser/jsonpointer/">JsonPointer</a> selects values from JSON responses without a regular expression. Child measures can select values relative to the JSON node selected by their parent. <code>JsonPointer=1</code> enables JSON parsing without selecting a value.</li>
 			<li><span class="badge badge-added">Added</span><b>WebParser commands:</b> <code>!WebParser:UpdateData</code> and <code>!WebParser:ResetData</code> provide direct commands for updating or resetting parsed data.</li>
 			<li><span class="badge badge-changed">Changed</span><b>WebParser encoding:</b> Local <code>file://</code> URLs automatically detect text file encoding, such as UTF-8 or UTF-16, when using the default <code>CodePage=0</code>.</li>
-			<li><span class="badge badge-changed">Changed</span><b>WebParser errors:</b> Missing JsonPointer values are not logged as errors, allowing optional fields and shorter arrays.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Quote encoding:</b> The Quote measure automatically detects text file encoding, such as UTF-8 or UTF-16.</li>
 			<li><span class="badge badge-added">Added</span><b>Locale-formatted numbers:</b> <code>NumberConversionFormat=Locale</code> lets String, Registry, and WebParser measures read numbers using the Windows locale's decimal and thousands separators, such as converting <code>1.234,56</code> to <code>1234.56</code>.</li>
 			<li><span class="badge badge-added">Added</span><b>Time measure:</b> <a href="https://docs-v5.rainmeter.net/manual/measures/time/#TimeStampFormat">TimeStampFormat</a> supports ordinal dates, week-number dates, ISO week dates, and the <code>%F</code>, <code>%g</code>, <code>%G</code>, <code>%u</code>, <code>%V</code>, <code>%z</code>, and <code>%Z</code> codes. Time-zone offsets convert timestamps to UTC; <code>%c</code>, <code>%x</code>, and <code>%X</code> use the selected Windows locale and localized formats. Supported modifiers are handled, with errors for invalid or conflicting input.</li>
@@ -108,7 +105,7 @@ title: 'Rainmeter 5.0 Changes'
 
 		<h3 id="Lua">Lua scripting and plugin support</h3>
 		<ul>
-			<li><span class="badge badge-changed">Changed</span><b>Lua scripting:</b> Uses LuaJIT 2.1 while retaining Lua 5.1 compatibility, including legacy vararg behavior, unknown escape handling, and Rainmeter's limit of 256 pattern captures.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Lua scripting:</b> Uses LuaJIT 2.1, which is compatible with Lua 5.1.</li>
 			<li><span class="badge badge-added">Added</span><b>Setting options and variables:</b> <a href="https://docs-v5.rainmeter.net/manual/lua-scripting/#SetOption">SKIN:SetOption</a>, <a href="https://docs-v5.rainmeter.net/manual/lua-scripting/#SetOptionGroup">SKIN:SetOptionGroup</a>, and <a href="https://docs-v5.rainmeter.net/manual/lua-scripting/#SetVariable">SKIN:SetVariable</a> set options or variables directly, with support for multiple name/value pairs supplied as tables. Meter and measure objects also support <code>SetOption</code>.</li>
 			<li><span class="badge badge-added">Added</span><b>Unicode strings:</b> <a href="https://docs-v5.rainmeter.net/manual/lua-scripting/#Unicode">Unicode scripts</a> have <code>uc</code> variants of string functions for matching, substitution, length, slicing, case conversion, reversing, and codepoint conversion. Scripts saved with a UTF-8 BOM are recognized as Unicode scripts, in addition to UTF-16 scripts.</li>
 			<li><span class="badge badge-added">Added</span><b>Text files:</b> <code>SKIN:ReadTextFile</code> and <code>SKIN:WriteTextFile</code> read and write text files with Unicode conversion. WriteTextFile defaults to UTF-8.</li>
@@ -130,7 +127,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>Context menu shortcuts:</b> Holding Shift changes <b>Exit</b> to <b>Restart</b> in the Rainmeter context menu, and <b>Refresh skin</b> to <b>Focus skin</b> in a skin context menu. Focus skin raises the skin within its current z-position. Skin menus also include <b>Debug skin</b>.</li>
 			<li><span class="badge badge-removed">Removed</span><b>Context menus:</b> Removed the Game Mode and Logging submenus from the Rainmeter context menu. Game Mode remains available in Manage; logging controls are in Debug.</li>
 			<li><span class="badge badge-added">Added</span><b>Skin discovery:</b> Changes to the Skins folder are detected automatically. Rainmeter rescans the skin list when opening a context menu or activating Manage, and checks for newly added skins when activating a config.</li>
-			<li><span class="badge badge-changed">Changed</span><b>Dialogs:</b> Improved high-DPI rendering, positioning across monitors, and clipped labels. Browsing for files and folders uses modern Windows dialogs. Application, installer, and skin tree icons have been updated.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Dialogs:</b> Dialogs support high-DPI rendering and positioning across monitors. Browsing for files and folders uses modern Windows dialogs. Application, installer, and skin tree icons have been updated.</li>
 			<li><span class="badge badge-added">Added</span><b>Crash dumps:</b> Crash dumps are saved in <code>Crashes\</code> under the Rainmeter settings folder. Dumps older than one week are removed automatically and can be included when reporting crashes.</li>
 			<li><span class="badge badge-added">Added</span><b>Safe Start recovery:</b> After detecting two crashes within five minutes, Rainmeter prompts to start in Safe Start mode. To trigger Safe Start manually, hold CTRL-SHIFT for one second during startup.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Translations:</b> Updated interface translations and made Skin Packager and Skin Installer dialogs translatable. The Bengali translation has been removed.</li>
@@ -142,19 +139,13 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>Plugin selection:</b> Selecting one plugin DLL automatically looks for the other architecture by swapping folder names such as <code>32bit</code> and <code>64bit</code>.</li>
 			<li><span class="badge badge-added">Added</span><b>Back button:</b> Returns to the previous packaging step without starting over.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Package options:</b> Removed the minimum Windows version option. Component dialogs are wider, show plugin paths more clearly, and open file browsers at the current selection.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>Packager dialog:</b> Escape no longer closes the dialog accidentally. Corrected clipped controls, hover rendering, and tab backgrounds when navigating back.</li>
 		</ul>
 
 		<h3 id="Fixes">Other fixes</h3>
 		<ul>
-			<li><span class="badge badge-fixed">Fixed</span><b>Measures:</b> Fixed freezes and crashes in WebParser, NowPlaying, and RecycleManager. Corrected Substitute handling in converted measures and preserved quoted separators and trailing spaces in replacement text.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>ActionTimer:</b> Actions run in order and changes made by one action correctly affect subsequent actions.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>InputText:</b> Fixed the input box closing on its first click, text disappearing when the box is too short, long text becoming unreachable, and dismissal while the copy/paste menu is open.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>FileView:</b> Fixed IndexUp/IndexDown handling with a step count, disappearing icons during updates, and crashes when Rainmeter exits.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>Variables and includes:</b> Corrected overriding included options and parsing included variables. <code>CURRENTSECTION</code> resolves in the proper section in variables, Lua scripts, plugin callbacks, and nested actions.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Measures:</b> Fixed potential freezes and crashes in WebParser, NowPlaying, and RecycleManager.</li>
 			<li><span class="badge badge-fixed">Fixed</span><b>Containers:</b> Empty Container values no longer resolve to unnamed meters and unintentionally clip other meters.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>Skin visibility:</b> Fixed refreshing during a fade leaving a skin partially transparent, hover-hide skins remaining hidden after a fade, and incorrect tooltip positions after meter visibility changes.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>Windows 11:</b> Improved skin window behavior while respecting the chosen z-position.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Skin fading:</b> Refreshing a skin during a fade no longer leaves it partially transparent. Starting a new fade while another is running no longer makes it jump to its end value.</li>
 		</ul>
 	</div>
 </div>
