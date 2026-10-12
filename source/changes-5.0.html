@@ -9,17 +9,13 @@ title: 'Rainmeter 5.0 Changes'
 	<div class="description">
 		<h1 class="text-center" id="Rainmeter5">Rainmeter 5.0 <a class="heading-anchor" href="#Rainmeter5" aria-label="Link to Rainmeter 5.0">#</a></h1>
 		<hr>
-		<p>The following are the user-facing changes in Rainmeter 5.0 since Rainmeter 4.5.26 (revision 3894).</p>
 		<h2 id="Highlights">Highlights <a class="heading-anchor" href="#Highlights" aria-label="Link to Highlights">#</a></h2>
-		<p class="feature"><b>High-DPI support and skin zoom:</b> Skins render at each monitor's display scale and resize when moved between monitors. Zoom individual skins, set a default zoom, or select several skins with CTRL-ALT to move and resize them together. <a href="#Scaling">Scaling and zoom details</a>.</p>
-		<p class="feature"><b>TextEdit meter:</b> Add editable text fields directly to skins, with single-line or multiline input, selection, clipboard support, input filtering, and password masking. <a href="#Meters">Meter details</a>.</p>
-		<p class="feature"><b>SVG meter:</b> Display scalable vector images from files or inline SVG code, and change element attributes dynamically. <a href="#Meters">Meter details</a>.</p>
-		<p class="feature"><b>New Debug dialog:</b> Inspect skins, watch expressions, view display and network information, and automatically refresh skins when their files change. <a href="#Interface">Interface details</a>.</p>
-		<p class="feature"><b>More tools for skin authors:</b> Built-in replacements for bundled plugins, JSON parsing in WebParser, Lua Unicode functions, and new commands for controlling skins, meters, and measures. <a href="#Measures">Measure details</a> and <a href="#Lua">Lua details</a>.</p>
-		<p class="feature"><b>Invisible skin updates:</b> Give obscured skins a slower update interval or suspend their regular updates while invisible. <a href="#Variables">Skin option details</a>.</p>
-		<p class="feature"><b>Windows requirements:</b> Rainmeter 5.0 requires 64-bit Windows 10 version 1903 or later, or Windows 11. Older Windows versions and 32-bit systems are no longer supported. <a href="#Compatibility">System requirements</a>.</p>
-
-		<p>This overview reflects <a href="https://github.com/rainmeter/rainmeter/compare/v4.5.26.3894...89e4da5720821fe3c0ac6d9e2e96c755692cfb10">the source changes through October 6, 2026</a>. Entries describe differences between the tagged release and this version of master.</p>
+		<p class="feature"><b>High-DPI support and skin zoom:</b> Rainmeter now fully supports high-DPI displays (e.g. 4K displays) so skins will no longer be blurry. Skins can now also be individually zoomed to make them smaller or bigger. See <a href="#Scaling">Scaling and zoom details</a>.</p>
+		<p class="feature"><b>Dark mode UI:</b> The Rainmeter user interface (dialogs, context menus, etc.) now fully supports Windows dark mode!</p>
+		<p class="feature"><b>Performance:</b> Rainmeter 5.0 is even faster and is even more efficient with memory. Some users will see significant reductions in CPU, GPU, and memory usage.</p>
+		<p class="feature"><b>New Debug dialog:</b> Inspect skins, watch expressions, view display and network information, and automatically refresh skins when their files change. <a href="#Interface">See details</a>.</p>
+		<p class="feature"><b>More tools for skin authors:</b> New <a href="/manual/meters/textedit/">TextEdit meter</a> for proper editable text fields, new <a href="/manual/meters/svg/">SVG meter</a> for display scalable vector images, built-in replacements for bundled plugins, JSON parsing in WebParser, <a href="#Lua">Lua Unicode functions</a>, and new commands for controlling skins, meters, and measures.</p>
+		<p class="feature"><b>Optimized invisible skin updates:</b> Rainmeter no longer renders skins that are not visible. Skin authors may further reduce resource consumption of invisible skins with a slower update interval, <a href="/manual/skins/rainmeter-section/#InvisibleUpdates">see details</a>.</p>
 	</div>
 	<div class="changelog">
 		<h2 id="Changes">Changes in Rainmeter 5.0 <a class="heading-anchor" href="#Changes" aria-label="Link to Changes in Rainmeter 5.0">#</a></h2>
@@ -29,15 +25,12 @@ title: 'Rainmeter 5.0 Changes'
 		<h3 id="Compatibility">Compatibility and installation <a class="heading-anchor" href="#Compatibility" aria-label="Link to Compatibility and installation">#</a></h3>
 		<ul>
 			<li><span class="badge badge-changed">Changed</span><b>System requirements:</b> Rainmeter requires 64-bit Windows 10 version 1903 or later, or Windows 11. Support for 32-bit Windows and older Windows versions has been removed.</li>
-			<li><span class="badge badge-changed">Changed</span><b>Installer:</b> Improved rendering on high-DPI displays, updated the artwork, and included the version on the welcome page. Portable installations remember the chosen installation folder and preserve an existing Rainmeter.ini.</li>
-			<li><span class="badge badge-changed">Changed</span><b>Startup:</b> The start-with-Windows setting uses a Windows startup registry entry instead of a Startup folder shortcut.</li>
-			<li><span class="badge badge-changed">Changed</span><b>Skin packages:</b> Rainmeter repairs the <code>.rmskin</code> file association on startup. Packages appear as <b>Rainmeter Skin Package</b> in File Explorer.</li>
-			<li><span class="badge badge-fixed">Fixed</span><b>Installer:</b> Improved compatibility with Windows Smart App Control, corrected handling of installation paths, and fixed quoting of the Skin Installer command for paths containing spaces.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Installer:</b> Improved compatibility with Windows Smart App Control.</li>
 		</ul>
 
 		<h3 id="Scaling">Scaling, zoom, and arranging skins <a class="heading-anchor" href="#Scaling" aria-label="Link to Scaling, zoom, and arranging skins">#</a></h3>
 		<ul>
-			<li><span class="badge badge-added">Added</span><b>Monitor scaling:</b> Skins follow each monitor's DPI scaling and redraw at the appropriate size when moved between monitors or when display settings change. See <a href="https://docs-v5.rainmeter.net/manual/scale-and-zoom/">Scale and Zoom</a>.</li>
+			<li><span class="badge badge-added">Added</span><b>High-DPI scaling:</b> Skins properly support each monitor's DPI scaling and redraw at the appropriate size when moved between monitors or when display settings change. See <a href="https://docs-v5.rainmeter.net/manual/scale-and-zoom/">Scale and Zoom</a>.</li>
 			<li><span class="badge badge-added">Added</span><b>Skin zoom:</b> Zoom individual skins from 10% to 500% using the skin context menu, Manage's Skins tab, or the skin's <code>Zoom</code> setting in Rainmeter.ini. See <a href="https://docs-v5.rainmeter.net/manual/scale-and-zoom/">Scale and Zoom</a>.</li>
 			<li><span class="badge badge-added">Added</span><b>Default zoom:</b> Manage's Settings tab includes <b>Default zoom</b> and <b>Force</b>. These correspond to <code>DefaultZoom</code> and <code>ForceDefaultZoom</code> in Rainmeter.ini. Force applies the default zoom to all skins and prevents individual zoom changes.</li>
 			<li><span class="badge badge-added">Added</span><b>Multiple skin selection:</b> Hold CTRL-ALT and click to select skins. Selected skins can be moved, resized by dragging their edges or corners, and adjusted together through a shared context menu. See <a href="https://docs-v5.rainmeter.net/manual/arranging-skins/#Multiple">Arranging Skins</a>.</li>
@@ -53,23 +46,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>Option inheritance:</b> <code>@Inherit</code> allows both meters and measures to inherit options from other sections. It provides the functionality of <code>MeterStyle</code> for measures as well as meters. See <a href="https://docs-v5.rainmeter.net/manual/skins/inherit/">Option inheritance</a>.</li>
 			<li><span class="badge badge-added">Added</span><b>Formulas:</b> Measure names and <code>$Skin...</code> and <code>$Display...</code> variables can be used without brackets in formulas throughout skins.</li>
 			<li><span class="badge badge-added">Added</span><b>Invisible updates:</b> The <a href="https://docs-v5.rainmeter.net/manual/skins/rainmeter-section/#InvisibleUpdates">Update</a> option accepts a separate interval for invisible skins, such as <code>Update=1000 | Invisible 10000</code>. <code>Invisible 0</code> suspends regular updates while invisible. Refresh and <code>!Update</code> still update the skin. See <a href="https://docs-v5.rainmeter.net/manual/skins/rainmeter-section/#InvisibleUpdates">Invisible updates</a>.</li>
-			<li><span class="badge badge-changed">Changed</span><b>Invisible skins:</b> Rainmeter skips unnecessary redraws when a skin is fully obscured and skips updates and redraws while its window is minimized. Visibility is reevaluated when the stacking order changes. See <a href="https://docs-v5.rainmeter.net/manual/skins/rainmeter-section/#InvisibleUpdates">Invisible updates</a>.</li>
-			<li><span class="badge badge-changed">Changed</span><b>Text file encoding:</b> Reading and writing INI files detects and preserves UTF-8 encoding, including files edited with <code>!WriteKeyValue</code>. Rainmeter's own settings files use UTF-16.</li>
-		</ul>
-
-		<h3 id="Bangs">Bangs and command line arguments <a class="heading-anchor" href="#Bangs" aria-label="Link to Bangs and command line arguments">#</a></h3>
-		<ul>
-			<li><span class="badge badge-added">Added</span><b>Zoom bangs:</b> <a href="https://docs-v5.rainmeter.net/manual/bangs/#SetZoomFactor">!SetZoomFactor</a> and <a href="https://docs-v5.rainmeter.net/manual/bangs/#SetZoomFactorGroup">!SetZoomFactorGroup</a> set skin zoom factors. A value of <code>1.25</code> means 125%; <code>Default</code> restores the default zoom.</li>
-			<li><span class="badge badge-added">Added</span><b>Update interval:</b> <a href="https://docs-v5.rainmeter.net/manual/bangs/#SetUpdate">!SetUpdate</a> changes a skin's visible update interval dynamically. The invisible update interval remains unchanged.</li>
-			<li><span class="badge badge-added">Added</span><b>Visibility override:</b> <code>!ForceEnableVisibleMode</code> disables occlusion tracking for the targeted skin, allowing it to continue updating and drawing as visible.</li>
-			<li><span class="badge badge-added">Added</span><b>Measure groups:</b> <a href="https://docs-v5.rainmeter.net/manual/bangs/#CommandMeasureGroup">!CommandMeasureGroup</a> sends a command to measures in a group.</li>
-			<li><span class="badge badge-added">Added</span><b>Debug dialog:</b> <a href="https://docs-v5.rainmeter.net/manual/bangs/#Debug">!Debug</a> opens the Debug dialog. Optional parameters select Log, Display, Network, Plugins, or Skin, with an optional config name for the Skin tab.</li>
-			<li><span class="badge badge-added">Added</span><b>Restart:</b> <code>!Restart</code> restarts Rainmeter. <code>Rainmeter.exe /Restart</code> replaces RestartRainmeter.exe, while existing skin actions that invoke RestartRainmeter.exe remain supported. See <a href="https://docs-v5.rainmeter.net/manual/bangs/#Restart">!Restart</a>.</li>
-			<li><span class="badge badge-added">Added</span><b>Launch before executing bangs:</b> <code>Rainmeter.exe [!Launch][!Bang][!Bang2]</code> starts Rainmeter if necessary and then executes the bangs, even when Rainmeter was not already running. See <a href="https://docs-v5.rainmeter.net/manual/bangs/#Launch">!Launch</a>.</li>
-			<li><span class="badge badge-added">Added</span><b>Skin bang namespace:</b> <code>!Skin:Load</code>, <code>!Skin:Unload</code>, <code>!Skin:Toggle</code>, and <code>!Skin:Edit</code> provide aliases for the existing config commands. <code>[!Skin:Unload *]</code> unloads all skins. The <code>!Skin:</code> prefix also allows bangs that accept a skin target to place that target first.</li>
-			<li><span class="badge badge-added">Added</span><b>Meter and measure bangs:</b> New <code>!TextEdit:</code>, <code>!WebParser:</code>, <code>!NowPlaying:</code>, and <code>!Mouse:</code> commands control their respective meters and measures. Section commands can use <code>Group=GroupName</code> as the section selector, or omit the selector when running in a matching section's action.</li>
-			<li><span class="badge badge-changed">Changed</span><b>SetOption:</b> The section argument of <code>!SetOption</code> can be omitted to set an option on the current section.</li>
-			<li><span class="badge badge-changed">Changed</span><b>Activating skins:</b> Activating an already loaded skin brings it to the front of windows sharing its z-position. Already active or inactive configs no longer produce redundant activation or deactivation warnings.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Text file encoding:</b> Rainmeter now fully supports UTF-8 skin and configuration files.</li>
 		</ul>
 
 		<h3 id="Meters">Meters and images <a class="heading-anchor" href="#Meters" aria-label="Link to Meters and images">#</a></h3>
@@ -110,9 +87,24 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-changed">Changed</span><b>WiFiStatus:</b> Where supported by Windows, connection quality and speed queries use an interface that avoids repeated location-access requests and excessive growth of Windows' capability access log.</li>
 		</ul>
 
+		<h3 id="Bangs">Bangs and command line arguments <a class="heading-anchor" href="#Bangs" aria-label="Link to Bangs and command line arguments">#</a></h3>
+		<ul>
+			<li><span class="badge badge-added">Added</span><b>Zoom bangs:</b> <a href="https://docs-v5.rainmeter.net/manual/bangs/#SetZoomFactor">!SetZoomFactor</a> set skin zoom factors. A value of <code>1.25</code> means 125%; <code>Default</code> restores the default zoom.</li>
+			<li><span class="badge badge-added">Added</span><b>Update interval:</b> <a href="https://docs-v5.rainmeter.net/manual/bangs/#SetUpdate">!SetUpdate</a> changes a skin's visible update interval dynamically. The invisible update interval remains unchanged.</li>
+			<li><span class="badge badge-added">Added</span><b>Visibility override:</b> <code>!ForceEnableVisibleMode</code> disables occlusion tracking for the targeted skin, allowing it to continue updating and drawing as visible.</li>
+			<li><span class="badge badge-added">Added</span><b>Measure groups:</b> <a href="https://docs-v5.rainmeter.net/manual/bangs/#CommandMeasureGroup">!CommandMeasureGroup</a> sends a command to measures in a group.</li>
+			<li><span class="badge badge-added">Added</span><b>Debug dialog:</b> <a href="https://docs-v5.rainmeter.net/manual/bangs/#Debug">!Debug</a> opens the Debug dialog. Optional parameters select Log, Display, Network, Plugins, or Skin, with an optional config name for the Skin tab.</li>
+			<li><span class="badge badge-added">Added</span><b>Restart:</b> <code>!Restart</code> restarts Rainmeter. <code>Rainmeter.exe /Restart</code> replaces RestartRainmeter.exe, while existing skin actions that invoke RestartRainmeter.exe remain supported. See <a href="https://docs-v5.rainmeter.net/manual/bangs/#Restart">!Restart</a>.</li>
+			<li><span class="badge badge-added">Added</span><b>Launch before executing bangs:</b> <code>Rainmeter.exe [!Launch][!Bang][!Bang2]</code> starts Rainmeter if necessary and then executes the bangs, even when Rainmeter was not already running. See <a href="https://docs-v5.rainmeter.net/manual/bangs/#Launch">!Launch</a>.</li>
+			<li><span class="badge badge-added">Added</span><b>Skin bang namespace:</b> <code>!Skin:Load</code>, <code>!Skin:Unload</code>, <code>!Skin:Toggle</code>, and <code>!Skin:Edit</code> provide aliases for the existing config commands. <code>[!Skin:Unload *]</code> unloads all skins. The <code>!Skin:</code> prefix also allows bangs that accept a skin target to place that target first.</li>
+			<li><span class="badge badge-added">Added</span><b>Meter and measure bangs:</b> New <code>!TextEdit:</code>, <code>!WebParser:</code>, <code>!NowPlaying:</code>, and <code>!Mouse:</code> commands control their respective meters and measures. Section commands can use <code>Group=GroupName</code> as the section selector, or omit the selector when running in a matching section's action.</li>
+			<li><span class="badge badge-changed">Changed</span><b>SetOption:</b> The section argument of <code>!SetOption</code> can be omitted to set an option on the current section.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Activating skins:</b> Activating an already loaded skin brings it to the front of windows sharing its z-position. Already active or inactive configs no longer produce redundant activation or deactivation warnings.</li>
+		</ul>
+
 		<h3 id="Lua">Lua scripting and plugin support <a class="heading-anchor" href="#Lua" aria-label="Link to Lua scripting and plugin support">#</a></h3>
 		<ul>
-			<li><span class="badge badge-changed">Changed</span><b>Lua scripting:</b> Uses LuaJIT 2.1, which is compatible with Lua 5.1.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Lua scripting:</b> Switched to LuaJIT for improved performance.</li>
 			<li><span class="badge badge-added">Added</span><b>Setting options and variables:</b> <a href="https://docs-v5.rainmeter.net/manual/lua-scripting/#SetOption">SKIN:SetOption</a>, <a href="https://docs-v5.rainmeter.net/manual/lua-scripting/#SetOptionGroup">SKIN:SetOptionGroup</a>, and <a href="https://docs-v5.rainmeter.net/manual/lua-scripting/#SetVariable">SKIN:SetVariable</a> set options or variables directly, with support for multiple name/value pairs supplied as tables. Meter and measure objects also support <code>SetOption</code>.</li>
 			<li><span class="badge badge-added">Added</span><b>Unicode strings:</b> <a href="https://docs-v5.rainmeter.net/manual/lua-scripting/#Unicode">Unicode scripts</a> have <code>uc</code> variants of string functions for matching, substitution, length, slicing, case conversion, reversing, and codepoint conversion. Scripts saved with a UTF-8 BOM are recognized as Unicode scripts, in addition to UTF-16 scripts.</li>
 			<li><span class="badge badge-added">Added</span><b>Text files:</b> <code>SKIN:ReadTextFile</code> and <code>SKIN:WriteTextFile</code> read and write text files with Unicode conversion. WriteTextFile defaults to UTF-8.</li>
