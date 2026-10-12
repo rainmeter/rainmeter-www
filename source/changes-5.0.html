@@ -4,7 +4,7 @@ permalink: changes-5.0/
 title: 'Rainmeter 5.0 Changes'
 ---
 <!-- Source comparison: rainmeter/rainmeter v4.5.26.3894 (5a124b6a09e2f7f67f8be9232718c489100e6173)
-     through master at 89e4da5720821fe3c0ac6d9e2e96c755692cfb10. -->
+     through master at 8221c6122f62b90ee900256a882b8ed867a0fc13. -->
 <div class="release-notes">
 	<div class="description">
 		<h1 class="text-center" id="Rainmeter5">Rainmeter 5.0 <a class="heading-anchor" href="#Rainmeter5" aria-label="Link to Rainmeter 5.0">#</a></h1>
@@ -23,7 +23,7 @@ title: 'Rainmeter 5.0 Changes'
 		</div>
 		<h2 id="Highlights">Highlights <a class="heading-anchor" href="#Highlights" aria-label="Link to Highlights">#</a></h2>
 		<p class="feature"><span aria-hidden="true">🔍</span> <b>High-DPI support and skin zoom:</b> Skins now look crisp on high-DPI displays, including 4K monitors. You can also zoom each skin to make it smaller or larger. See <a href="#Scaling">Scaling and zoom details</a>.</p>
-		<p class="feature"><span aria-hidden="true">🌙</span> <b>Dark mode UI:</b> Rainmeter’s dialogs and context menus now follow Windows dark mode.</p>
+		<p class="feature"><span aria-hidden="true">🌙</span> <b>Dark mode UI:</b> Rainmeter’s dialogs, context menus, and skin tooltips now follow Windows dark mode.</p>
 		<p class="feature"><span aria-hidden="true">⚡</span> <b>Performance:</b> Rainmeter now runs faster and uses memory more efficiently. Depending on your skins, you may see much lower CPU, GPU, and memory usage.</p>
 		<p class="feature"><span aria-hidden="true">💤</span> <b>Optimized invisible skin updates:</b> Rainmeter now skips drawing skins that are hidden from view. Skin authors can save even more resources by updating hidden skins less often. <a href="/manual/skins/rainmeter-section/#InvisibleUpdates">See details</a>.</p>
 		<p class="feature"><span aria-hidden="true">🐛</span> <b>New Debug dialog:</b> The new Debug dialog lets you inspect skins, watch expressions, and check display and network details. It can also refresh skins automatically when their files change. <a href="#Interface">See details</a>.</p>
@@ -59,6 +59,8 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>Formulas:</b> Measure names and <code>$Skin...</code> and <code>$Display...</code> variables can now be used without brackets in formulas throughout skins.</li>
 			<li><span class="badge badge-added">Added</span><b>Invisible updates:</b> The <a href="/manual/skins/rainmeter-section/#InvisibleUpdates">Update</a> option now lets you set a separate update interval for hidden skins, such as <code>Update=1000 | Invisible 10000</code>. <code>Invisible 0</code> pauses regular updates while the skin is hidden. Refreshing the skin or using <code>!Update</code> still updates it. See <a href="/manual/skins/rainmeter-section/#InvisibleUpdates">Invisible updates</a>.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Text file encoding:</b> Rainmeter now fully supports UTF-8 skin and configuration files.</li>
+			<li><span class="badge badge-added">Added</span><b>Syntax version:</b> Skin authors can now opt into <code>SyntaxVersion=2</code> in the Rainmeter section. This enables accurate text rendering and leaves <code>%VariableName%</code> text unchanged; use <code>[%VariableName]</code> for environment variables. It also disables the deprecated Image meter <code>Path</code> option, WebParser <code>ForceReload</code> option, and Lua <code>GetStringValue()</code> and automatic <code>PROPERTIES</code> table. Version 1 remains the default. Unsupported syntax versions are rejected.</li>
+			<li><span class="badge badge-added">Added</span><b>Required version:</b> <code>AppVersion</code> now accepts version strings such as <code>5.0.0</code> or <code>5.0.0.5291</code>, so skins can require a specific revision. Existing packed integer values still work.</li>
 		</ul>
 
 		<h3 id="Meters">Meters and images <a class="heading-anchor" href="#Meters" aria-label="Link to Meters and images">#</a></h3>
@@ -79,9 +81,8 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>DragDrop measure:</b> The Drag&amp;Drop plugin is now built in as <code>Measure=DragDrop</code>. The existing plugin syntax still works. The <code>FancyRenderer</code> option has been removed.</li>
 			<li><span class="badge badge-added">Added</span><b>Mouse measure:</b> <a href="/manual/measures/mouse/">Measure=Mouse</a> is now built in, with support for mouse coordinates and actions.</li>
 			<li><span class="badge badge-added">Added</span><b>Mouse click capture:</b> You can now use <code>!Mouse:StartCapture</code> to capture the next click on any monitor. It runs the matching button-up action with the click position in <code>$MouseX$</code> and <code>$MouseY$</code>. Press Escape or use <code>!Mouse:StopCapture</code> to cancel. Set the overlay color with <code>CaptureOverlayColor</code> and its system cursor with <code>CaptureOverlayCursorName</code>.</li>
-			<li><span class="badge badge-added">Added</span><b>Mouse actions:</b> The new Mouse measure follows skin scaling. It pauses mouse actions while a skin is selected or the pointer is over a Rainmeter menu or dialog.</li>
 			<li><span class="badge badge-added">Added</span><b>WebParser JSON:</b> <a href="/manual/measures/webparser/jsonpointer/">JsonPointer</a> now lets you read values from JSON responses without a regular expression. Child measures can select values within their parent’s selected JSON node. Use <code>JsonPointer=1</code> to enable JSON parsing without selecting a value.</li>
-			<li><span class="badge badge-added">Added</span><b>WebParser commands:</b> <code>!WebParser:UpdateData</code> and <code>!WebParser:ResetData</code> now let you update or reset parsed data directly.</li>
+			<li><span class="badge badge-added">Added</span><b>WebParser commands:</b> <code>!WebParser:Refetch</code> and <code>!WebParser:ClearResults</code> now let you fetch fresh data or clear the parsed results.</li>
 			<li><span class="badge badge-changed">Changed</span><b>WebParser encoding:</b> WebParser now detects the text encoding of local <code>file://</code> URLs, including UTF-8 and UTF-16, when using the default <code>CodePage=0</code>.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Quote encoding:</b> The Quote measure now detects text file encoding automatically, including UTF-8 and UTF-16.</li>
 			<li><span class="badge badge-added">Added</span><b>Locale-formatted numbers:</b> String, Registry, and WebParser measures can now use <code>NumberConversionFormat=Locale</code> to read numbers in your Windows regional format. For example, <code>1.234,56</code> can be read as <code>1234.56</code>.</li>
@@ -96,6 +97,8 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-fixed">Fixed</span><b>RecycleManager:</b> Rainmeter no longer freezes while emptying a large recycle bin.</li>
 			<li><span class="badge badge-changed">Changed</span><b>RunCommand:</b> Stopping a command now also stops any processes it started, including their child processes.</li>
 			<li><span class="badge badge-changed">Changed</span><b>WiFiStatus:</b> Where Windows supports it, WiFiStatus now checks connection quality and speed without repeatedly requesting location access. This also keeps the Windows capability access log from growing too large.</li>
+			<li><span class="badge badge-added">Added</span><b>Windows media players:</b> NowPlaying can now use <code>PlayerName=Windows</code> to read track details and control the current Windows media session. This works with apps that publish Windows media controls, including Spotify and supported browser players. Available track details and controls depend on the app. File, year, rating, volume, and commands to open or close the player are not supported.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Spotify:</b> <code>PlayerName=Spotify</code> now uses the same Windows media session as <code>PlayerName=Windows</code>. That session may belong to another app. <code>OpenPlayer</code>, <code>ClosePlayer</code>, and <code>TogglePlayer</code> no longer launch or close Spotify.</li>
 		</ul>
 
 		<h3 id="Bangs">Bangs and command line arguments <a class="heading-anchor" href="#Bangs" aria-label="Link to Bangs and command line arguments">#</a></h3>
@@ -111,6 +114,14 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>Meter and measure bangs:</b> New <code>!TextEdit:</code>, <code>!WebParser:</code>, <code>!NowPlaying:</code>, and <code>!Mouse:</code> commands let you control these meters and measures. Section commands can now target a group with <code>Group=GroupName</code>. You can also leave out the section selector when running a command from a matching section’s action.</li>
 			<li><span class="badge badge-changed">Changed</span><b>SetOption:</b> You can now leave out the section argument of <code>!SetOption</code> to change an option in the current section.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Activating skins:</b> Activating a loaded skin now brings it in front of other windows at the same z-position. Activating an active config or deactivating an inactive one no longer produces unnecessary warnings.</li>
+			<li><span class="badge badge-added">Added</span><b>Group selectors:</b> Skin and meter selectors can now match several groups. Use <code>Group=a|b</code> to match either group, or <code>Group=a&amp;b</code> to require both. A selector cannot mix <code>|</code> and <code>&amp;</code>.</li>
+			<li><span class="badge badge-added">Added</span><b>Media keys:</b> <code>!SendKey</code> now lets you send <code>MediaNextTrack</code>, <code>MediaPrevTrack</code>, <code>MediaStop</code>, <code>MediaPlayPause</code>, <code>VolumeMute</code>, <code>VolumeDown</code>, and <code>VolumeUp</code>. It replaces the now deprecated MediaKey measure.</li>
+			<li><span class="badge badge-added">Added</span><b>Audio measure bangs:</b> New <code>!Audio:SetVolume</code>, <code>!Audio:SetOutputIndex</code>, <code>!Audio:Mute</code>, <code>!Audio:Unmute</code>, and <code>!Audio:ToggleMute</code> bangs let you control volume, output devices, and mute state.</li>
+			<li><span class="badge badge-added">Added</span><b>ActionTimer measure bangs:</b> You can now start and stop action lists with <code>!ActionTimer:Execute</code> and <code>!ActionTimer:Stop</code>.</li>
+			<li><span class="badge badge-added">Added</span><b>Loop measure bang:</b> <code>!Loop:Reset</code> now lets you reset a Loop measure.</li>
+			<li><span class="badge badge-added">Added</span><b>RecycleManage measure bangs:</b> You can now empty the recycle bin with <code>!RecycleManager:EmptyBin</code> or <code>!RecycleManager:EmptyBinSilent</code>, and open it with <code>!RecycleManager:OpenBin</code>.</li>
+			<li><span class="badge badge-added">Added</span><b>RunCommand measure bangs:</b> You can now run, close, or terminate a command with <code>!RunCommand:Run</code>, <code>!RunCommand:Close</code>, and <code>!RunCommand:Kill</code>.</li>
+			<li><span class="badge badge-added">Added</span><b>WindowMessage measure bang:</b> <code>!WindowMessage:Send</code> now lets you send a message through a WindowMessage measure.</li>
 		</ul>
 
 		<h3 id="Lua">Lua scripting and plugin support <a class="heading-anchor" href="#Lua" aria-label="Link to Lua scripting and plugin support">#</a></h3>
@@ -141,6 +152,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>Crash dumps:</b> Crash dumps are now saved in <code>Crashes\</code> under the Rainmeter settings folder. You can include these files when reporting a crash. Dumps older than one week are removed automatically.</li>
 			<li><span class="badge badge-added">Added</span><b>Safe Start recovery:</b> If Rainmeter crashes twice within five minutes, it now offers to start in Safe Start mode. You can also enter Safe Start by holding CTRL-SHIFT for one second during startup.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Translations:</b> The Skin Packager and Skin Installer dialogs are now translatable.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Debug icons:</b> The Debug log now uses updated icons.</li>
 		</ul>
 
 		<h3 id="Packager">Skin Packager <a class="heading-anchor" href="#Packager" aria-label="Link to Skin Packager">#</a></h3>
