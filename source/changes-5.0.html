@@ -4,26 +4,26 @@ permalink: changes-5.0/
 title: 'Rainmeter 5.0 Changes'
 ---
 <!-- Source comparison: rainmeter/rainmeter v4.5.26.3894 (5a124b6a09e2f7f67f8be9232718c489100e6173)
-     through master at 8221c6122f62b90ee900256a882b8ed867a0fc13. -->
+     through v5.0.0.5360 at 698d695ecd4ce70f256e6502b7f57b456d254992. -->
 <div class="release-notes">
 	<div class="description">
 		<h1 class="text-center" id="Rainmeter5">Rainmeter 5.0 <a class="heading-anchor" href="#Rainmeter5" aria-label="Link to Rainmeter 5.0">#</a></h1>
 		<hr>
 		<p>Rainmeter 5.0 is our biggest release in years, packed with new features and optimizations. From crisp skins on high-DPI displays and a refreshed dark mode interface to faster performance and more powerful tools for skin authors, there's something for everyone.</p>
 		<div class="text-center my-4">
-			<a class="btn btn-primary btn-lg d-inline-flex align-items-center" href="https://github.com/rainmeter/rainmeter/releases/download/v5.0.0.5293/Rainmeter-5.0.0.5293-RC1.exe" role="button">
+			<a class="btn btn-primary btn-lg d-inline-flex align-items-center" href="https://github.com/rainmeter/rainmeter/releases/download/v5.0.0.5363/Rainmeter-5.0.0.5363-RC2.exe" role="button">
 				<svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
 					<path d="M3 17v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3"></path>
 					<polyline points="7 9 12 14 17 9"></polyline>
 					<line x1="12" y1="14" x2="12" y2="2"></line>
 				</svg>
-				Download Rainmeter 5.0 RC1
+				Download Rainmeter 5.0 RC2
 			</a>
-			<p class="text-muted mt-3 mb-0"><time datetime="2026-10-12">October 12, 2026</time></p>
+			<p class="text-muted mt-3 mb-0"><time datetime="2026-11-09">November 16, 2026</time></p>
 		</div>
 		<h2 id="Highlights">Highlights <a class="heading-anchor" href="#Highlights" aria-label="Link to Highlights">#</a></h2>
 		<p class="feature"><span aria-hidden="true">🔍</span> <b>High-DPI support and skin zoom:</b> Skins now look crisp on high-DPI displays, including 4K monitors. You can also zoom each skin to make it smaller or larger. See <a href="#Scaling">Scaling and zoom details</a>.</p>
-		<p class="feature"><span aria-hidden="true">🌙</span> <b>Dark mode UI:</b> Rainmeter’s dialogs, context menus, and skin tooltips now follow Windows dark mode.</p>
+		<p class="feature"><span aria-hidden="true">🌙</span> <b>Dark mode UI:</b> Rainmeter’s dialogs, context menus, and skin tooltips now support dark mode. Choose Auto, Light, or Dark in Manage’s Settings tab.</p>
 		<p class="feature"><span aria-hidden="true">⚡</span> <b>Performance:</b> Rainmeter now runs faster and uses memory more efficiently. Depending on your skins, you may see much lower CPU, GPU, and memory usage.</p>
 		<p class="feature"><span aria-hidden="true">💤</span> <b>Optimized invisible skin updates:</b> Rainmeter now skips drawing skins that are hidden from view. Skin authors can save even more resources by updating hidden skins less often. <a href="https://docs-v5.rainmeter.net/manual/skins/rainmeter-section/#InvisibleUpdates">See details</a>.</p>
 		<p class="feature"><span aria-hidden="true">🐛</span> <b>New Debug dialog:</b> The new Debug dialog lets you inspect skins, watch expressions, and check display and network details. It can also refresh skins automatically when their files change. <a href="#Interface">See details</a>.</p>
@@ -33,6 +33,7 @@ title: 'Rainmeter 5.0 Changes'
 		<h2 id="Changes">Changes in Rainmeter 5.0 <a class="heading-anchor" href="#Changes" aria-label="Link to Changes in Rainmeter 5.0">#</a></h2>
 		<hr>
 		<p><b>Find more details and examples in the <a href="https://docs-v5.rainmeter.net/manual/">manual</a> and the <a href="https://forum.rainmeter.net/viewtopic.php?t=45991">Rainmeter 5.0 announcements</a>.</b></p>
+		<p>To report issues, please visit the <a href="https://forum.rainmeter.net/viewforum.php?f=143">Rainmeter Forum</a>.</p>
 
 		<h3 id="Compatibility">Compatibility and installation <a class="heading-anchor" href="#Compatibility" aria-label="Link to Compatibility and installation">#</a></h3>
 		<ul>
@@ -46,7 +47,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>Skin zoom:</b> You can now zoom each skin from 10% to 500% using the skin context menu, Manage's Skins tab, or the skin's <code>Zoom</code> setting in Rainmeter.ini. See <a href="https://docs-v5.rainmeter.net/manual/scale-and-zoom/">Scale and Zoom</a>.</li>
 			<li><span class="badge badge-added">Added</span><b>Default zoom:</b> You can now set a <b>Default zoom</b> in Manage’s Settings tab. Enable <b>Force</b> to apply it to all skins and prevent individual zoom changes. These settings use <code>DefaultZoom</code> and <code>ForceDefaultZoom</code> in Rainmeter.ini.</li>
 			<li><span class="badge badge-added">Added</span><b>Multiple skin selection:</b> You can now select several skins by holding CTRL-ALT and clicking them. Move them together, drag their edges or corners to resize them, or change their settings through a shared context menu. See <a href="https://docs-v5.rainmeter.net/manual/arranging-skins/#Multiple">Arranging Skins</a>.</li>
-			<li><span class="badge badge-added">Added</span><b>Display changes:</b> The <a href="https://docs-v5.rainmeter.net/manual/skins/rainmeter-section/#OnDisplayMetricsChange">OnDisplayMetricsChange</a> action now runs when any display’s layout, resolution, or scaling changes.</li>
+			<li><span class="badge badge-added">Added</span><b>Display changes:</b> The <a href="https://docs-v5.rainmeter.net/manual/skins/rainmeter-section/#OnDisplayMetricsChangeAction">OnDisplayMetricsChangeAction</a> action now runs when any display’s layout, resolution, or scaling changes.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Coordinates:</b> Skin layouts and built-in position and size values now use logical coordinates to account for DPI scaling. New variables let you read physical pixel values and zoomed sizes too. See <a href="https://docs-v5.rainmeter.net/manual/variables/built-in-variables/#SkinVariables">Skin variables</a>.</li>
 		</ul>
 
@@ -122,6 +123,7 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>RecycleManage measure bangs:</b> You can now empty the recycle bin with <code>!RecycleManager:EmptyBin</code> or <code>!RecycleManager:EmptyBinSilent</code>, and open it with <code>!RecycleManager:OpenBin</code>.</li>
 			<li><span class="badge badge-added">Added</span><b>RunCommand measure bangs:</b> You can now run, close, or terminate a command with <code>!RunCommand:Run</code>, <code>!RunCommand:Close</code>, and <code>!RunCommand:Kill</code>.</li>
 			<li><span class="badge badge-added">Added</span><b>WindowMessage measure bang:</b> <code>!WindowMessage:Send</code> now lets you send a message through a WindowMessage measure.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Writing multiline values:</b> <code>!WriteKeyValue</code> now preserves line breaks by saving them as <code>#CRLF#</code>.</li>
 		</ul>
 
 		<h3 id="Lua">Lua scripting and plugin support <a class="heading-anchor" href="#Lua" aria-label="Link to Lua scripting and plugin support">#</a></h3>
@@ -153,6 +155,11 @@ title: 'Rainmeter 5.0 Changes'
 			<li><span class="badge badge-added">Added</span><b>Safe Start recovery:</b> If Rainmeter crashes twice within five minutes, it now offers to start in Safe Start mode. You can also enter Safe Start by holding CTRL-SHIFT for one second during startup.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Translations:</b> The Skin Packager and Skin Installer dialogs are now translatable.</li>
 			<li><span class="badge badge-changed">Changed</span><b>Debug icons:</b> The Debug log now uses updated icons.</li>
+			<li><span class="badge badge-added">Added</span><b>Theme selection:</b> Choose Auto, Light, or Dark in Manage’s Settings tab. Auto follows Windows. The <code>UITheme</code> setting in Rainmeter.ini uses <code>0</code> for Auto, <code>1</code> for Light, and <code>2</code> for Dark.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Manage settings:</b> Reorganized settings into User interface, General, and Skins groups. Logging controls are now only in Debug, and <b>Reset statistics</b> has moved to Debug’s Network tab.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Update settings:</b> <code>DisableAutoUpdate</code> now controls both update checks and automatic downloads. The old <code>DisableVersionCheck</code> setting is still recognized for compatibility.</li>
+			<li><span class="badge badge-added">Added</span><b>Update confirmation:</b> Automatic updates now ask you to confirm installation. Cancelling the update or its Windows permission prompt restarts Rainmeter. A cancelled version is no longer offered repeatedly; newer versions can still be offered.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Debug Plugins tab:</b> Built-in measures no longer appear in the plugin list.</li>
 		</ul>
 
 		<h3 id="Packager">Skin Packager <a class="heading-anchor" href="#Packager" aria-label="Link to Skin Packager">#</a></h3>
